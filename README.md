@@ -2,7 +2,9 @@
 
 I wanted some images using Debian Bookworm for RockPi 4A and 4C, so I made tweaks to rbuild to make it work.
 
-Prebuild images are available in [Releases](https://github.com/bishopdynamics/rbuild-bookworm/releases), they have NOT been thoroughly tested.
+Prebuilt images are available in [Releases](https://github.com/bishopdynamics/rbuild-bookworm/releases), they have NOT been thoroughly tested.
+
+The log from the most recent release build can be found in [build.log](./build.log).
 
 Github actions were removed, see [original repo](https://github.com/radxa-repo/rbuild).
 
