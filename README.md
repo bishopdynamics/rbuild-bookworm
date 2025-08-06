@@ -1,5 +1,13 @@
 # rbuild - Radxa Image Builder
 
+I wanted some images using Debian Bookworm for RockPi 4A and 4C, so I made tweaks to rbuild to make it work.
+
+Prebuild images are available in [Releases](https://github.com/bishopdynamics/rbuild-bookworm/releases), they have NOT been thoroughly tested.
+
+Github actions were removed, see [original repo](https://github.com/radxa-repo/rbuild).
+
+## Original Readme below
+
 [![Build](https://github.com/radxa-repo/rbuild/actions/workflows/build.yaml/badge.svg?branch=main)](https://github.com/radxa-repo/rbuild/actions/workflows/build.yaml)
 
 After more than 2 years of development, we have grown beyond what `rbuild`'s underlying dependencies are capable of.
@@ -10,9 +18,10 @@ existing `rbuild` systems. `rbuild` is now in maintenance mode.
 
 ## Usage
 
-### Local 
+### Local
 
 Please run the following command to check all available options:
+
 ```
 git clone --depth 1 https://github.com/radxa-repo/rbuild.git
 rbuild/rbuild
@@ -26,12 +35,13 @@ Please check out our [GitHub workflows](https://github.com/radxa-repo/rbuild/tre
 
 ## Default image configuration
 
-* Default user and password are all `radxa`
-* Default user is in `sudo` group
-* SSH is disabled by default to prevent unauthorized access. Host key will be generated at first boot.
-* First boot will expand the system partition to fill the storage media
+- Default user and password are all `radxa`
+- Default user is in `sudo` group
+- SSH is disabled by default to prevent unauthorized access. Host key will be generated at first boot.
+- First boot will expand the system partition to fill the storage media
 
 Please check out the [first boot configuration script](https://github.com/radxa-repo/rbuild/tree/main/common/overlays/common/config/before.txt).
 
 ## Documentation
+
 Please visit [Radxa Documentation](https://radxa-doc.github.io/).

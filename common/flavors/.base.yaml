@@ -24,7 +24,7 @@ actions:
 {{ else if eq $distro "ubuntu" }}
       - linux-firmware
 {{ end }}
-  
+
   - action: apt
     description: Install system utilities
     packages:
@@ -134,7 +134,7 @@ actions:
       - libreelec-alsa-utils
       - radxa-bootutils
       - radxa-firmware
-      - radxa-otgutils
+      # - radxa-otgutils  #  removed to build bookworm
       - radxa-udev
       - rsetup
       - rsetup-config-first-boot

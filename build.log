@@ -1,0 +1,2057 @@
+################################################################################################################################
+ Starting build - Tue Aug  5 08:52:56 PM PDT 2025
+################################################################################################################################
+################################################################################################################################
+ Building for: rock-pi-4a cli - Tue Aug  5 08:52:56 PM PDT 2025
+################################################################################################################################
+latest: Pulling from godebos/debos
+Digest: sha256:6786ba076bc303a6327d65817b4127712ad11b7bca6a4838392207388d2ff878
+Status: Image is up to date for godebos/debos:latest
+docker.io/godebos/debos:latest
+Using debian_bookworm_cli.tar rootfs.
+2025/08/06 03:53:02 ==== Set up swap ====
+2025/08/06 03:53:03 ==== Enable swap device ====
+2025/08/06 03:53:03 set -e... | Setting up swapspace version 1, size = 4 GiB (4294963200 bytes)
+2025/08/06 03:53:03 set -e... | no label, UUID=7e12c0be-bd47-47fa-a024-5510eb840b11
+2025/08/06 03:53:03 ==== Set up on-disk layout ====
+2025/08/06 03:53:03 Formatting partition 1 | mkfs.fat: Warning: lowercase labels might not work properly on some systems
+2025/08/06 03:53:03 Formatting partition 1 | WARNING: Number of clusters for 32 bit FAT is less then suggested minimum.
+2025/08/06 03:53:03 Formatting partition 1 | mkfs.fat 4.2 (2021-01-31)
+2025/08/06 03:53:04 Formatting partition 2 | mkfs.fat: Warning: lowercase labels might not work properly on some systems
+2025/08/06 03:53:04 Formatting partition 2 | mkfs.fat 4.2 (2021-01-31)
+2025/08/06 03:53:04 Formatting partition 3 | mke2fs 1.47.0 (5-Feb-2023)
+2025/08/06 03:53:04 Formatting partition 3 | Discarding device blocks:       0/1487867               done                            
+2025/08/06 03:53:04 Formatting partition 3 | Creating filesystem with 1487867 4k blocks and 372416 inodes
+2025/08/06 03:53:04 Formatting partition 3 | Filesystem UUID: a1843d3a-0fac-4c2b-a711-3f69c91c39f0
+2025/08/06 03:53:04 Formatting partition 3 | Superblock backups stored on blocks: 
+2025/08/06 03:53:04 Formatting partition 3 | 	32768, 98304, 163840, 229376, 294912, 819200, 884736
+2025/08/06 03:53:04 Formatting partition 3 | 
+2025/08/06 03:53:04 Formatting partition 3 | Allocating group tables:  0/46     done                            
+2025/08/06 03:53:04 Formatting partition 3 | Writing inode tables:  0/46     done                            
+2025/08/06 03:53:04 Formatting partition 3 | Creating journal (16384 blocks): done
+2025/08/06 03:53:04 Formatting partition 3 | Writing superblocks and filesystem accounting information:  0/46     done
+2025/08/06 03:53:04 Formatting partition 3 | 
+2025/08/06 03:53:05 ==== Unpack rootfs ====
+2025/08/06 03:53:12 ==== Deploying filesystem onto image ====
+2025/08/06 03:53:14 Setting up /etc/fstab
+2025/08/06 03:53:14 ==== Install task-rock-pi-4a package ====
+2025/08/06 03:53:15 apt | Get:1 https://radxa-repo.github.io/bookworm bookworm InRelease [14.8 kB]
+2025/08/06 03:53:15 apt | Get:2 https://deb.debian.org/debian bookworm InRelease [151 kB]
+2025/08/06 03:53:16 apt | Get:3 https://deb.debian.org/debian bookworm-backports InRelease [59.4 kB]
+2025/08/06 03:53:16 apt | Get:4 https://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+2025/08/06 03:53:16 apt | Get:5 https://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+2025/08/06 03:53:17 apt | Get:6 https://radxa-repo.github.io/bookworm bookworm/main all Packages [38.0 kB]
+2025/08/06 03:53:17 apt | Get:7 https://radxa-repo.github.io/bookworm bookworm/main arm64 Packages [50.9 kB]
+2025/08/06 03:53:19 apt | Get:8 https://deb.debian.org/debian bookworm/main arm64 Packages [8693 kB]
+2025/08/06 03:53:21 apt | Get:9 https://deb.debian.org/debian bookworm/main Translation-en [6109 kB]
+2025/08/06 03:53:22 apt | Get:10 https://deb.debian.org/debian bookworm/contrib arm64 Packages [45.7 kB]
+2025/08/06 03:53:22 apt | Get:11 https://deb.debian.org/debian bookworm/contrib Translation-en [48.4 kB]
+2025/08/06 03:53:22 apt | Get:12 https://deb.debian.org/debian bookworm/non-free arm64 Packages [75.8 kB]
+2025/08/06 03:53:22 apt | Get:13 https://deb.debian.org/debian bookworm/non-free Translation-en [68.1 kB]
+2025/08/06 03:53:22 apt | Get:14 https://deb.debian.org/debian bookworm/non-free-firmware arm64 Packages [5832 B]
+2025/08/06 03:53:22 apt | Get:15 https://deb.debian.org/debian bookworm/non-free-firmware Translation-en [20.9 kB]
+2025/08/06 03:53:22 apt | Get:16 https://deb.debian.org/debian bookworm-backports/main arm64 Packages [303 kB]
+2025/08/06 03:53:22 apt | Get:17 https://deb.debian.org/debian bookworm-backports/main Translation-en [257 kB]
+2025/08/06 03:53:22 apt | Get:18 https://deb.debian.org/debian bookworm-backports/contrib arm64 Packages [5176 B]
+2025/08/06 03:53:22 apt | Get:19 https://deb.debian.org/debian bookworm-backports/contrib Translation-en [5864 B]
+2025/08/06 03:53:22 apt | Get:20 https://deb.debian.org/debian bookworm-backports/non-free arm64 Packages [12.6 kB]
+2025/08/06 03:53:22 apt | Get:21 https://deb.debian.org/debian bookworm-backports/non-free Translation-en [8460 B]
+2025/08/06 03:53:22 apt | Get:22 https://deb.debian.org/debian bookworm-backports/non-free-firmware arm64 Packages [3832 B]
+2025/08/06 03:53:22 apt | Get:23 https://deb.debian.org/debian bookworm-backports/non-free-firmware Translation-en [2860 B]
+2025/08/06 03:53:24 apt | Get:24 https://deb.debian.org/debian-security bookworm-security/main arm64 Packages [268 kB]
+2025/08/06 03:53:24 apt | Get:25 https://deb.debian.org/debian-security bookworm-security/main Translation-en [163 kB]
+2025/08/06 03:53:24 apt | Get:26 https://deb.debian.org/debian-security bookworm-security/contrib arm64 Packages [508 B]
+2025/08/06 03:53:24 apt | Get:27 https://deb.debian.org/debian-security bookworm-security/contrib Translation-en [652 B]
+2025/08/06 03:53:24 apt | Get:28 https://deb.debian.org/debian-security bookworm-security/non-free-firmware Translation-en [472 B]
+2025/08/06 03:53:26 apt | Get:29 https://deb.debian.org/debian bookworm-updates/main arm64 Packages [6936 B]
+2025/08/06 03:53:26 apt | Get:30 https://deb.debian.org/debian bookworm-updates/main Translation-en [5448 B]
+2025/08/06 03:53:28 apt | Fetched 16.5 MB in 14s (1216 kB/s)
+2025/08/06 03:53:33 apt | Reading package lists...
+2025/08/06 03:53:34 apt | Reading package lists...
+2025/08/06 03:53:34 apt | Building dependency tree...
+2025/08/06 03:53:34 apt | Reading state information...
+2025/08/06 03:53:35 apt | The following additional packages will be installed:
+2025/08/06 03:53:35 apt |   bzip2 cpp cpp-12 dkms dpkg-dev gcc gcc-12 libasan8 libatomic1 libcc1-0
+2025/08/06 03:53:35 apt |   libdpkg-perl libgcc-12-dev libhwasan0 libisl23 libitm1 liblsan0 libmpc3
+2025/08/06 03:53:35 apt |   libmpfr6 libtsan2 libubsan1 make patch r8125-dkms
+2025/08/06 03:53:35 apt |   radxa-system-config-bookworm radxa-system-config-common
+2025/08/06 03:53:35 apt |   radxa-system-config-kernel-cmdline-ttyfiq0 radxa-system-config-r8125-dkms
+2025/08/06 03:53:35 apt | Suggested packages:
+2025/08/06 03:53:35 apt |   bzip2-doc cpp-doc gcc-12-locales cpp-12-doc menu debian-keyring gcc-multilib
+2025/08/06 03:53:35 apt |   manpages-dev autoconf automake libtool flex bison gdb gcc-doc gcc-12-doc
+2025/08/06 03:53:35 apt |   gnupg | sq | sqop | pgpainless-cli git bzr make-doc ed diffutils-doc
+2025/08/06 03:53:35 apt | Recommended packages:
+2025/08/06 03:53:35 apt |   fakeroot linux-headers-generic | linux-headers-686-pae | linux-headers-amd64
+2025/08/06 03:53:35 apt |   | linux-headers build-essential gnupg | sq | sqop | pgpainless-cli
+2025/08/06 03:53:35 apt |   libalgorithm-merge-perl libc6-dev | libc-dev libc6-dev
+2025/08/06 03:53:35 apt |   libfile-fcntllock-perl liblocale-gettext-perl radxa-desktop-branding
+2025/08/06 03:53:35 apt |   task-rk3399
+2025/08/06 03:53:35 apt | The following NEW packages will be installed:
+2025/08/06 03:53:35 apt |   bzip2 cpp cpp-12 dkms dpkg-dev gcc gcc-12 libasan8 libatomic1 libcc1-0
+2025/08/06 03:53:35 apt |   libdpkg-perl libgcc-12-dev libhwasan0 libisl23 libitm1 liblsan0 libmpc3
+2025/08/06 03:53:35 apt |   libmpfr6 libtsan2 libubsan1 make patch r8125-dkms
+2025/08/06 03:53:35 apt |   radxa-system-config-bookworm radxa-system-config-common
+2025/08/06 03:53:35 apt |   radxa-system-config-kernel-cmdline-ttyfiq0 radxa-system-config-r8125-dkms
+2025/08/06 03:53:35 apt |   task-rock-pi-4a
+2025/08/06 03:53:35 apt | 0 upgraded, 28 newly installed, 0 to remove and 2 not upgraded.
+2025/08/06 03:53:35 apt | Need to get 36.6 MB of archives.
+2025/08/06 03:53:35 apt | After this operation, 137 MB of additional disk space will be used.
+2025/08/06 03:53:35 apt | Get:1 https://deb.debian.org/debian bookworm/main arm64 libisl23 arm64 0.25-1.1 [610 kB]
+2025/08/06 03:53:35 apt | Get:2 https://deb.debian.org/debian bookworm/main arm64 libmpfr6 arm64 4.2.0-1 [600 kB]
+2025/08/06 03:53:35 apt | Get:3 https://radxa-repo.github.io/bookworm bookworm/main arm64 r8125-dkms all 9.013.02-1-3 [106 kB]
+2025/08/06 03:53:36 apt | Get:4 https://deb.debian.org/debian bookworm/main arm64 libmpc3 arm64 1.3.1-1 [49.2 kB]
+2025/08/06 03:53:36 apt | Get:5 https://deb.debian.org/debian bookworm/main arm64 cpp-12 arm64 12.2.0-14+deb12u1 [8228 kB]
+2025/08/06 03:53:36 apt | Get:6 https://radxa-repo.github.io/bookworm bookworm/main arm64 radxa-system-config-common all 0.6.17 [10.3 kB]
+2025/08/06 03:53:36 apt | Get:7 https://radxa-repo.github.io/bookworm bookworm/main arm64 radxa-system-config-bookworm all 0.6.17 [11.8 kB]
+2025/08/06 03:53:36 apt | Get:8 https://radxa-repo.github.io/bookworm bookworm/main arm64 radxa-system-config-kernel-cmdline-ttyfiq0 all 0.6.17 [6824 B]
+2025/08/06 03:53:36 apt | Get:9 https://radxa-repo.github.io/bookworm bookworm/main arm64 radxa-system-config-r8125-dkms all 0.6.17 [6820 B]
+2025/08/06 03:53:36 apt | Get:10 https://radxa-repo.github.io/bookworm bookworm/main arm64 task-rock-pi-4a all 0.4.32 [5292 B]
+2025/08/06 03:53:36 apt | Get:11 https://deb.debian.org/debian bookworm/main arm64 cpp arm64 4:12.2.0-3 [6832 B]
+2025/08/06 03:53:36 apt | Get:12 https://deb.debian.org/debian bookworm/main arm64 libcc1-0 arm64 12.2.0-14+deb12u1 [37.7 kB]
+2025/08/06 03:53:36 apt | Get:13 https://deb.debian.org/debian bookworm/main arm64 libitm1 arm64 12.2.0-14+deb12u1 [24.0 kB]
+2025/08/06 03:53:36 apt | Get:14 https://deb.debian.org/debian bookworm/main arm64 libatomic1 arm64 12.2.0-14+deb12u1 [9568 B]
+2025/08/06 03:53:36 apt | Get:15 https://deb.debian.org/debian bookworm/main arm64 libasan8 arm64 12.2.0-14+deb12u1 [2096 kB]
+2025/08/06 03:53:37 apt | Get:16 https://deb.debian.org/debian bookworm/main arm64 liblsan0 arm64 12.2.0-14+deb12u1 [926 kB]
+2025/08/06 03:53:37 apt | Get:17 https://deb.debian.org/debian bookworm/main arm64 libtsan2 arm64 12.2.0-14+deb12u1 [2178 kB]
+2025/08/06 03:53:37 apt | Get:18 https://deb.debian.org/debian bookworm/main arm64 libubsan1 arm64 12.2.0-14+deb12u1 [862 kB]
+2025/08/06 03:53:37 apt | Get:19 https://deb.debian.org/debian bookworm/main arm64 libhwasan0 arm64 12.2.0-14+deb12u1 [999 kB]
+2025/08/06 03:53:37 apt | Get:20 https://deb.debian.org/debian bookworm/main arm64 libgcc-12-dev arm64 12.2.0-14+deb12u1 [956 kB]
+2025/08/06 03:53:37 apt | Get:21 https://deb.debian.org/debian bookworm/main arm64 gcc-12 arm64 12.2.0-14+deb12u1 [16.3 MB]
+2025/08/06 03:53:38 apt | Get:22 https://deb.debian.org/debian bookworm/main arm64 gcc arm64 4:12.2.0-3 [5244 B]
+2025/08/06 03:53:39 apt | Get:23 https://deb.debian.org/debian bookworm/main arm64 libdpkg-perl all 1.21.22 [603 kB]
+2025/08/06 03:53:39 apt | Get:24 https://deb.debian.org/debian bookworm/main arm64 bzip2 arm64 1.0.8-5+b1 [48.9 kB]
+2025/08/06 03:53:39 apt | Get:25 https://deb.debian.org/debian bookworm/main arm64 patch arm64 2.7.6-7 [121 kB]
+2025/08/06 03:53:39 apt | Get:26 https://deb.debian.org/debian bookworm/main arm64 make arm64 4.3-4.1 [391 kB]
+2025/08/06 03:53:39 apt | Get:27 https://deb.debian.org/debian bookworm/main arm64 dpkg-dev all 1.21.22 [1353 kB]
+2025/08/06 03:53:39 apt | Get:28 https://deb.debian.org/debian bookworm/main arm64 dkms all 3.0.10-8+deb12u1 [48.7 kB]
+2025/08/06 03:53:41 apt | Fetched 36.6 MB in 4s (9363 kB/s)
+2025/08/06 03:53:41 apt | Selecting previously unselected package libisl23:arm64.
+2025/08/06 03:53:42 apt | (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27375 files and directories currently installed.)
+2025/08/06 03:53:42 apt | Preparing to unpack .../00-libisl23_0.25-1.1_arm64.deb ...
+2025/08/06 03:53:42 apt | Unpacking libisl23:arm64 (0.25-1.1) ...
+2025/08/06 03:53:42 apt | Selecting previously unselected package libmpfr6:arm64.
+2025/08/06 03:53:42 apt | Preparing to unpack .../01-libmpfr6_4.2.0-1_arm64.deb ...
+2025/08/06 03:53:42 apt | Unpacking libmpfr6:arm64 (4.2.0-1) ...
+2025/08/06 03:53:42 apt | Selecting previously unselected package libmpc3:arm64.
+2025/08/06 03:53:42 apt | Preparing to unpack .../02-libmpc3_1.3.1-1_arm64.deb ...
+2025/08/06 03:53:42 apt | Unpacking libmpc3:arm64 (1.3.1-1) ...
+2025/08/06 03:53:43 apt | Selecting previously unselected package cpp-12.
+2025/08/06 03:53:43 apt | Preparing to unpack .../03-cpp-12_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 03:53:43 apt | Unpacking cpp-12 (12.2.0-14+deb12u1) ...
+2025/08/06 03:53:45 apt | Selecting previously unselected package cpp.
+2025/08/06 03:53:45 apt | Preparing to unpack .../04-cpp_4%3a12.2.0-3_arm64.deb ...
+2025/08/06 03:53:45 apt | Unpacking cpp (4:12.2.0-3) ...
+2025/08/06 03:53:45 apt | Selecting previously unselected package libcc1-0:arm64.
+2025/08/06 03:53:45 apt | Preparing to unpack .../05-libcc1-0_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 03:53:45 apt | Unpacking libcc1-0:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 03:53:46 apt | Selecting previously unselected package libitm1:arm64.
+2025/08/06 03:53:46 apt | Preparing to unpack .../06-libitm1_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 03:53:46 apt | Unpacking libitm1:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 03:53:46 apt | Selecting previously unselected package libatomic1:arm64.
+2025/08/06 03:53:46 apt | Preparing to unpack .../07-libatomic1_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 03:53:46 apt | Unpacking libatomic1:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 03:53:46 apt | Selecting previously unselected package libasan8:arm64.
+2025/08/06 03:53:46 apt | Preparing to unpack .../08-libasan8_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 03:53:46 apt | Unpacking libasan8:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 03:53:47 apt | Selecting previously unselected package liblsan0:arm64.
+2025/08/06 03:53:47 apt | Preparing to unpack .../09-liblsan0_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 03:53:47 apt | Unpacking liblsan0:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 03:53:47 apt | Selecting previously unselected package libtsan2:arm64.
+2025/08/06 03:53:47 apt | Preparing to unpack .../10-libtsan2_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 03:53:48 apt | Unpacking libtsan2:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 03:53:48 apt | Selecting previously unselected package libubsan1:arm64.
+2025/08/06 03:53:48 apt | Preparing to unpack .../11-libubsan1_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 03:53:48 apt | Unpacking libubsan1:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 03:53:49 apt | Selecting previously unselected package libhwasan0:arm64.
+2025/08/06 03:53:49 apt | Preparing to unpack .../12-libhwasan0_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 03:53:49 apt | Unpacking libhwasan0:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 03:53:50 apt | Selecting previously unselected package libgcc-12-dev:arm64.
+2025/08/06 03:53:50 apt | Preparing to unpack .../13-libgcc-12-dev_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 03:53:50 apt | Unpacking libgcc-12-dev:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 03:53:50 apt | Selecting previously unselected package gcc-12.
+2025/08/06 03:53:50 apt | Preparing to unpack .../14-gcc-12_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 03:53:50 apt | Unpacking gcc-12 (12.2.0-14+deb12u1) ...
+2025/08/06 03:53:53 apt | Selecting previously unselected package gcc.
+2025/08/06 03:53:53 apt | Preparing to unpack .../15-gcc_4%3a12.2.0-3_arm64.deb ...
+2025/08/06 03:53:53 apt | Unpacking gcc (4:12.2.0-3) ...
+2025/08/06 03:53:53 apt | Selecting previously unselected package libdpkg-perl.
+2025/08/06 03:53:53 apt | Preparing to unpack .../16-libdpkg-perl_1.21.22_all.deb ...
+2025/08/06 03:53:53 apt | Unpacking libdpkg-perl (1.21.22) ...
+2025/08/06 03:53:54 apt | Selecting previously unselected package bzip2.
+2025/08/06 03:53:54 apt | Preparing to unpack .../17-bzip2_1.0.8-5+b1_arm64.deb ...
+2025/08/06 03:53:54 apt | Unpacking bzip2 (1.0.8-5+b1) ...
+2025/08/06 03:53:54 apt | Selecting previously unselected package patch.
+2025/08/06 03:53:54 apt | Preparing to unpack .../18-patch_2.7.6-7_arm64.deb ...
+2025/08/06 03:53:54 apt | Unpacking patch (2.7.6-7) ...
+2025/08/06 03:53:54 apt | Selecting previously unselected package make.
+2025/08/06 03:53:54 apt | Preparing to unpack .../19-make_4.3-4.1_arm64.deb ...
+2025/08/06 03:53:54 apt | Unpacking make (4.3-4.1) ...
+2025/08/06 03:53:54 apt | Selecting previously unselected package dpkg-dev.
+2025/08/06 03:53:54 apt | Preparing to unpack .../20-dpkg-dev_1.21.22_all.deb ...
+2025/08/06 03:53:54 apt | Unpacking dpkg-dev (1.21.22) ...
+2025/08/06 03:53:55 apt | Selecting previously unselected package dkms.
+2025/08/06 03:53:55 apt | Preparing to unpack .../21-dkms_3.0.10-8+deb12u1_all.deb ...
+2025/08/06 03:53:57 apt | Unpacking dkms (3.0.10-8+deb12u1) ...
+2025/08/06 03:53:58 apt | Selecting previously unselected package r8125-dkms.
+2025/08/06 03:53:58 apt | Preparing to unpack .../22-r8125-dkms_9.013.02-1-3_all.deb ...
+2025/08/06 03:53:58 apt | Unpacking r8125-dkms (9.013.02-1-3) ...
+2025/08/06 03:53:58 apt | Selecting previously unselected package radxa-system-config-common.
+2025/08/06 03:53:58 apt | Preparing to unpack .../23-radxa-system-config-common_0.6.17_all.deb ...
+2025/08/06 03:53:58 apt | Unpacking radxa-system-config-common (0.6.17) ...
+2025/08/06 03:53:58 apt | Selecting previously unselected package radxa-system-config-bookworm.
+2025/08/06 03:53:58 apt | Preparing to unpack .../24-radxa-system-config-bookworm_0.6.17_all.deb ...
+2025/08/06 03:53:58 apt | Adding 'diversion of /usr/share/desktop-base/kf5-settings/kdeglobals to /usr/share/desktop-base/kf5-settings/kdeglobals.bak by radxa-system-config-bookworm'
+2025/08/06 03:53:58 apt | Unpacking radxa-system-config-bookworm (0.6.17) ...
+2025/08/06 03:53:59 apt | Selecting previously unselected package radxa-system-config-kernel-cmdline-ttyfiq0.
+2025/08/06 03:53:59 apt | Preparing to unpack .../25-radxa-system-config-kernel-cmdline-ttyfiq0_0.6.17_all.deb ...
+2025/08/06 03:53:59 apt | Unpacking radxa-system-config-kernel-cmdline-ttyfiq0 (0.6.17) ...
+2025/08/06 03:53:59 apt | Selecting previously unselected package radxa-system-config-r8125-dkms.
+2025/08/06 03:53:59 apt | Preparing to unpack .../26-radxa-system-config-r8125-dkms_0.6.17_all.deb ...
+2025/08/06 03:53:59 apt | Unpacking radxa-system-config-r8125-dkms (0.6.17) ...
+2025/08/06 03:53:59 apt | Selecting previously unselected package task-rock-pi-4a.
+2025/08/06 03:53:59 apt | Preparing to unpack .../27-task-rock-pi-4a_0.4.32_all.deb ...
+2025/08/06 03:53:59 apt | Unpacking task-rock-pi-4a (0.4.32) ...
+2025/08/06 03:53:59 apt | Setting up radxa-system-config-common (0.6.17) ...
+2025/08/06 03:54:00 apt | Setting up bzip2 (1.0.8-5+b1) ...
+2025/08/06 03:54:00 apt | Setting up make (4.3-4.1) ...
+2025/08/06 03:54:00 apt | Setting up libmpfr6:arm64 (4.2.0-1) ...
+2025/08/06 03:54:00 apt | Setting up libmpc3:arm64 (1.3.1-1) ...
+2025/08/06 03:54:00 apt | Setting up libatomic1:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 03:54:00 apt | Setting up patch (2.7.6-7) ...
+2025/08/06 03:54:00 apt | Setting up libdpkg-perl (1.21.22) ...
+2025/08/06 03:54:00 apt | Setting up libubsan1:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 03:54:00 apt | Setting up libhwasan0:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 03:54:00 apt | Setting up libasan8:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 03:54:00 apt | Setting up libtsan2:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 03:54:00 apt | Setting up libisl23:arm64 (0.25-1.1) ...
+2025/08/06 03:54:00 apt | Setting up radxa-system-config-kernel-cmdline-ttyfiq0 (0.6.17) ...
+2025/08/06 03:54:00 apt | P: Checking for EXTLINUX directory... not found.
+2025/08/06 03:54:00 apt | P: Creating EXTLINUX directory... done: /boot/extlinux
+2025/08/06 03:54:00 apt | P: Updating /boot/extlinux/extlinux.conf...
+2025/08/06 03:54:00 apt | Setting up libcc1-0:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 03:54:00 apt | Setting up liblsan0:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 03:54:00 apt | Setting up libitm1:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 03:54:00 apt | Setting up cpp-12 (12.2.0-14+deb12u1) ...
+2025/08/06 03:54:00 apt | Setting up dpkg-dev (1.21.22) ...
+2025/08/06 03:54:00 apt | Setting up libgcc-12-dev:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 03:54:00 apt | Setting up cpp (4:12.2.0-3) ...
+2025/08/06 03:54:00 apt | Setting up gcc-12 (12.2.0-14+deb12u1) ...
+2025/08/06 03:54:00 apt | Setting up gcc (4:12.2.0-3) ...
+2025/08/06 03:54:01 apt | Setting up dkms (3.0.10-8+deb12u1) ...
+2025/08/06 03:54:03 apt | Setting up r8125-dkms (9.013.02-1-3) ...
+2025/08/06 03:54:04 apt | Loading new r8125-9.013.02-1 DKMS files...
+2025/08/06 03:54:05 apt | It is likely that 6.1.0-31-amd64 belongs to a chroot's host
+2025/08/06 03:54:05 apt | Building for 
+2025/08/06 03:54:05 apt | Setting up radxa-system-config-r8125-dkms (0.6.17) ...
+2025/08/06 03:54:05 apt | Processing triggers for u-boot-menu (4.2.2) ...
+2025/08/06 03:54:05 apt | P: Checking for EXTLINUX directory... found.
+2025/08/06 03:54:06 apt | Processing triggers for initramfs-tools (0.142+deb12u3) ...
+2025/08/06 03:54:07 apt | Processing triggers for libc-bin (2.36-9+deb12u10) ...
+2025/08/06 03:54:07 apt | Processing triggers for man-db (2.11.2-2) ...
+2025/08/06 03:54:09 apt | Setting up radxa-system-config-bookworm (0.6.17) ...
+2025/08/06 03:54:09 apt | Processing triggers for initramfs-tools (0.142+deb12u3) ...
+2025/08/06 03:54:10 apt | Setting up task-rock-pi-4a (0.4.32) ...
+2025/08/06 03:54:11 ==== Add rockchip-bookworm Repo ====
+2025/08/06 03:54:11 ==== Installl keyring from package ====
+2025/08/06 03:54:11 ==== Add repo ====
+2025/08/06 03:54:11 set -e... |   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+2025/08/06 03:54:11 set -e... |                                  Dload  Upload   Total   Spent    Left  Speed
+2025/08/06 03:54:12 set -e... |   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  2342  100  2342    0     0   3610      0 --:--:-- --:--:-- --:--:--  3659
+2025/08/06 03:54:12 ==== Upgrade stale rootfs ====
+2025/08/06 03:54:13 set -e... | Hit:1 https://deb.debian.org/debian bookworm InRelease
+2025/08/06 03:54:13 set -e... | Hit:2 https://deb.debian.org/debian bookworm-backports InRelease
+2025/08/06 03:54:13 set -e... | Hit:3 https://deb.debian.org/debian-security bookworm-security InRelease
+2025/08/06 03:54:13 set -e... | Hit:4 https://deb.debian.org/debian bookworm-updates InRelease
+2025/08/06 03:54:13 set -e... | Get:5 https://radxa-repo.github.io/bookworm rockchip-bookworm InRelease [14.8 kB]
+2025/08/06 03:54:13 set -e... | Hit:6 https://radxa-repo.github.io/bookworm bookworm InRelease
+2025/08/06 03:54:23 set -e... | Get:7 https://radxa-repo.github.io/bookworm rockchip-bookworm/main arm64 Packages [387 B]
+2025/08/06 03:54:23 set -e... | Get:8 https://radxa-repo.github.io/bookworm rockchip-bookworm/main all Packages [387 B]
+2025/08/06 03:54:24 set -e... | Fetched 15.6 kB in 11s (1425 B/s)
+2025/08/06 03:54:28 set -e... | Reading package lists...
+2025/08/06 03:54:29 set -e... | Reading package lists...
+2025/08/06 03:54:29 set -e... | Building dependency tree...
+2025/08/06 03:54:30 set -e... | Reading state information...
+2025/08/06 03:54:30 set -e... | Calculating upgrade...
+2025/08/06 03:54:30 set -e... | The following packages will be upgraded:
+2025/08/06 03:54:30 set -e... |   libgnutls30 radxa-archive-keyring
+2025/08/06 03:54:31 set -e... | 2 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+2025/08/06 03:54:31 set -e... | Need to get 1320 kB of archives.
+2025/08/06 03:54:31 set -e... | After this operation, 2048 B disk space will be freed.
+2025/08/06 03:54:31 set -e... | Get:1 https://deb.debian.org/debian-security bookworm-security/main arm64 libgnutls30 arm64 3.7.9-2+deb12u5 [1314 kB]
+2025/08/06 03:54:31 set -e... | Get:2 https://radxa-repo.github.io/bookworm bookworm/main arm64 radxa-archive-keyring all 0.2.0 [6740 B]
+2025/08/06 03:54:33 set -e... | apt-listchanges: Reading changelogs...
+2025/08/06 03:54:34 set -e... | dpkg-preconfigure: unable to re-open stdin: No such file or directory
+2025/08/06 03:54:34 set -e... | Fetched 1320 kB in 1s (1951 kB/s)
+2025/08/06 03:54:34 set -e... | (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 28253 files and directories currently installed.)
+2025/08/06 03:54:34 set -e... | Preparing to unpack .../libgnutls30_3.7.9-2+deb12u5_arm64.deb ...
+2025/08/06 03:54:34 set -e... | Unpacking libgnutls30:arm64 (3.7.9-2+deb12u5) over (3.7.9-2+deb12u4) ...
+2025/08/06 03:54:35 set -e... | Setting up libgnutls30:arm64 (3.7.9-2+deb12u5) ...
+2025/08/06 03:54:35 set -e... | (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 28253 files and directories currently installed.)
+2025/08/06 03:54:35 set -e... | Preparing to unpack .../radxa-archive-keyring_0.2.0_all.deb ...
+2025/08/06 03:54:35 set -e... | Unpacking radxa-archive-keyring (0.2.0) over (0.2.0) ...
+2025/08/06 03:54:35 set -e... | Setting up radxa-archive-keyring (0.2.0) ...
+2025/08/06 03:54:35 set -e... | Processing triggers for libc-bin (2.36-9+deb12u10) ...
+2025/08/06 03:54:37 set -e... | Reading package lists...
+2025/08/06 03:54:37 set -e... | Building dependency tree...
+2025/08/06 03:54:37 set -e... | Reading state information...
+2025/08/06 03:54:38 set -e... | Calculating upgrade...
+2025/08/06 03:54:38 set -e... | 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+2025/08/06 03:54:39 set -e... | Reading package lists...
+2025/08/06 03:54:39 set -e... | Building dependency tree...
+2025/08/06 03:54:39 set -e... | Reading state information...
+2025/08/06 03:54:40 set -e... | 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+2025/08/06 03:54:40 ==== Install Radxa firmware ====
+2025/08/06 03:54:41 apt | Hit:1 https://deb.debian.org/debian bookworm InRelease
+2025/08/06 03:54:41 apt | Hit:2 https://deb.debian.org/debian bookworm-backports InRelease
+2025/08/06 03:54:41 apt | Hit:3 https://deb.debian.org/debian-security bookworm-security InRelease
+2025/08/06 03:54:41 apt | Hit:4 https://deb.debian.org/debian bookworm-updates InRelease
+2025/08/06 03:54:41 apt | Hit:5 https://radxa-repo.github.io/bookworm rockchip-bookworm InRelease
+2025/08/06 03:54:41 apt | Hit:6 https://radxa-repo.github.io/bookworm bookworm InRelease
+2025/08/06 03:54:56 apt | Reading package lists...
+2025/08/06 03:54:57 apt | Reading package lists...
+2025/08/06 03:54:57 apt | Building dependency tree...
+2025/08/06 03:54:57 apt | Reading state information...
+2025/08/06 03:54:58 apt | The following additional packages will be installed:
+2025/08/06 03:54:58 apt |   u-boot-latest
+2025/08/06 03:54:58 apt | The following NEW packages will be installed:
+2025/08/06 03:54:58 apt |   u-boot-latest u-boot-rock-pi-4a
+2025/08/06 03:54:58 apt | 0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+2025/08/06 03:54:58 apt | Need to get 7082 kB of archives.
+2025/08/06 03:54:58 apt | After this operation, 57.2 MB of additional disk space will be used.
+2025/08/06 03:54:58 apt | Get:1 https://radxa-repo.github.io/bookworm bookworm/main arm64 u-boot-latest arm64 2023.10-12-cc60ff40 [7081 kB]
+2025/08/06 03:55:00 apt | Get:2 https://radxa-repo.github.io/bookworm bookworm/main arm64 u-boot-rock-pi-4a all 2023.10-12-b4f0ad0 [1120 B]
+2025/08/06 03:55:03 apt | Fetched 7082 kB in 3s (2646 kB/s)
+2025/08/06 03:55:03 apt | Selecting previously unselected package u-boot-latest.
+2025/08/06 03:55:03 apt | (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 28252 files and directories currently installed.)
+2025/08/06 03:55:03 apt | Preparing to unpack .../u-boot-latest_2023.10-12-cc60ff40_arm64.deb ...
+2025/08/06 03:55:03 apt | Unpacking u-boot-latest (2023.10-12-cc60ff40) ...
+2025/08/06 03:55:05 apt | Selecting previously unselected package u-boot-rock-pi-4a.
+2025/08/06 03:55:05 apt | Preparing to unpack .../u-boot-rock-pi-4a_2023.10-12-b4f0ad0_all.deb ...
+2025/08/06 03:55:05 apt | Unpacking u-boot-rock-pi-4a (2023.10-12-b4f0ad0) ...
+2025/08/06 03:55:06 apt | Setting up u-boot-latest (2023.10-12-cc60ff40) ...
+2025/08/06 03:55:06 apt | Setting up u-boot-rock-pi-4a (2023.10-12-b4f0ad0) ...
+2025/08/06 03:55:07 ==== Apply to disk ====
+2025/08/06 03:55:07 set -e... | Writting to /dev/vdb
+2025/08/06 03:55:07 set -e... | 431+1 records in
+2025/08/06 03:55:07 set -e... | 431+1 records out
+2025/08/06 03:55:07 set -e... | 221180 bytes (221 kB, 216 KiB) copied, 0.0047559 s, 46.5 MB/s
+2025/08/06 03:55:07 set -e... | 2048+0 records in
+2025/08/06 03:55:07 set -e... | 2048+0 records out
+2025/08/06 03:55:07 set -e... | 1048576 bytes (1.0 MB, 1.0 MiB) copied, 0.0206879 s, 50.7 MB/s
+2025/08/06 03:55:07 set -e... | 2048+0 records in
+2025/08/06 03:55:07 set -e... | 2048+0 records out
+2025/08/06 03:55:07 set -e... | 1048576 bytes (1.0 MB, 1.0 MiB) copied, 0.0224193 s, 46.8 MB/s
+2025/08/06 03:55:07 ==== Install Radxa kernel header ====
+2025/08/06 03:55:08 apt | Hit:1 https://deb.debian.org/debian bookworm InRelease
+2025/08/06 03:55:08 apt | Hit:2 https://deb.debian.org/debian bookworm-backports InRelease
+2025/08/06 03:55:08 apt | Hit:3 https://radxa-repo.github.io/bookworm rockchip-bookworm InRelease
+2025/08/06 03:55:08 apt | Hit:4 https://radxa-repo.github.io/bookworm bookworm InRelease
+2025/08/06 03:55:08 apt | Hit:5 https://deb.debian.org/debian-security bookworm-security InRelease
+2025/08/06 03:55:08 apt | Hit:6 https://deb.debian.org/debian bookworm-updates InRelease
+2025/08/06 03:55:23 apt | Reading package lists...
+2025/08/06 03:55:24 apt | Reading package lists...
+2025/08/06 03:55:25 apt | Building dependency tree...
+2025/08/06 03:55:25 apt | Reading state information...
+2025/08/06 03:55:25 apt | The following additional packages will be installed:
+2025/08/06 03:55:25 apt |   linux-headers-6.1.115-3-rk2501
+2025/08/06 03:55:25 apt | The following NEW packages will be installed:
+2025/08/06 03:55:25 apt |   linux-headers-6.1.115-3-rk2501 linux-headers-rock-pi-4a
+2025/08/06 03:55:26 apt | 0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+2025/08/06 03:55:26 apt | Need to get 8555 kB of archives.
+2025/08/06 03:55:26 apt | After this operation, 53.1 MB of additional disk space will be used.
+2025/08/06 03:55:26 apt | Get:1 https://radxa-repo.github.io/bookworm bookworm/main arm64 linux-headers-6.1.115-3-rk2501 arm64 6.1.115-3 [8553 kB]
+2025/08/06 03:55:27 apt | Get:2 https://radxa-repo.github.io/bookworm bookworm/main arm64 linux-headers-rock-pi-4a all 6.1.115-3 [2040 B]
+2025/08/06 03:55:30 apt | Fetched 8555 kB in 2s (4808 kB/s)
+2025/08/06 03:55:30 apt | Selecting previously unselected package linux-headers-6.1.115-3-rk2501.
+2025/08/06 03:55:30 apt | (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 28408 files and directories currently installed.)
+2025/08/06 03:55:30 apt | Preparing to unpack .../linux-headers-6.1.115-3-rk2501_6.1.115-3_arm64.deb ...
+2025/08/06 03:55:30 apt | Unpacking linux-headers-6.1.115-3-rk2501 (6.1.115-3) ...
+2025/08/06 03:55:33 apt | Selecting previously unselected package linux-headers-rock-pi-4a.
+2025/08/06 03:55:33 apt | Preparing to unpack .../linux-headers-rock-pi-4a_6.1.115-3_all.deb ...
+2025/08/06 03:55:33 apt | Unpacking linux-headers-rock-pi-4a (6.1.115-3) ...
+2025/08/06 03:55:33 apt | Setting up linux-headers-6.1.115-3-rk2501 (6.1.115-3) ...
+2025/08/06 03:55:33 apt | Setting up linux-headers-rock-pi-4a (6.1.115-3) ...
+2025/08/06 03:55:35 ==== Install Radxa kernel ====
+2025/08/06 03:55:36 apt | Hit:1 https://deb.debian.org/debian bookworm InRelease
+2025/08/06 03:55:36 apt | Hit:2 https://deb.debian.org/debian bookworm-backports InRelease
+2025/08/06 03:55:36 apt | Hit:3 https://deb.debian.org/debian-security bookworm-security InRelease
+2025/08/06 03:55:36 apt | Hit:4 https://deb.debian.org/debian bookworm-updates InRelease
+2025/08/06 03:55:36 apt | Hit:5 https://radxa-repo.github.io/bookworm rockchip-bookworm InRelease
+2025/08/06 03:55:36 apt | Hit:6 https://radxa-repo.github.io/bookworm bookworm InRelease
+2025/08/06 03:55:51 apt | Reading package lists...
+2025/08/06 03:55:51 apt | Reading package lists...
+2025/08/06 03:55:52 apt | Building dependency tree...
+2025/08/06 03:55:52 apt | Reading state information...
+2025/08/06 03:55:52 apt | The following additional packages will be installed:
+2025/08/06 03:55:52 apt |   linux-image-6.1.115-3-rk2501 radxa-overlays-dkms
+2025/08/06 03:55:53 apt | The following NEW packages will be installed:
+2025/08/06 03:55:53 apt |   linux-image-6.1.115-3-rk2501 linux-image-rock-pi-4a radxa-overlays-dkms
+2025/08/06 03:55:54 apt | 0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+2025/08/06 03:55:54 apt | Need to get 28.0 MB of archives.
+2025/08/06 03:55:54 apt | After this operation, 109 MB of additional disk space will be used.
+2025/08/06 03:55:54 apt | Get:1 https://radxa-repo.github.io/bookworm bookworm/main arm64 linux-image-6.1.115-3-rk2501 arm64 6.1.115-3 [27.9 MB]
+2025/08/06 03:55:56 apt | Get:2 https://radxa-repo.github.io/bookworm bookworm/main arm64 radxa-overlays-dkms all 0.1.28 [78.5 kB]
+2025/08/06 03:55:56 apt | Get:3 https://radxa-repo.github.io/bookworm bookworm/main arm64 linux-image-rock-pi-4a all 6.1.115-3 [2052 B]
+2025/08/06 03:55:59 apt | Fetched 28.0 MB in 4s (7751 kB/s)
+2025/08/06 03:55:59 apt | Selecting previously unselected package linux-image-6.1.115-3-rk2501.
+2025/08/06 03:55:59 apt | (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39075 files and directories currently installed.)
+2025/08/06 03:55:59 apt | Preparing to unpack .../linux-image-6.1.115-3-rk2501_6.1.115-3_arm64.deb ...
+2025/08/06 03:55:59 apt | Unpacking linux-image-6.1.115-3-rk2501 (6.1.115-3) ...
+2025/08/06 03:56:02 apt | Selecting previously unselected package radxa-overlays-dkms.
+2025/08/06 03:56:02 apt | Preparing to unpack .../radxa-overlays-dkms_0.1.28_all.deb ...
+2025/08/06 03:56:02 apt | Unpacking radxa-overlays-dkms (0.1.28) ...
+2025/08/06 03:56:02 apt | Selecting previously unselected package linux-image-rock-pi-4a.
+2025/08/06 03:56:02 apt | Preparing to unpack .../linux-image-rock-pi-4a_6.1.115-3_all.deb ...
+2025/08/06 03:56:02 apt | Unpacking linux-image-rock-pi-4a (6.1.115-3) ...
+2025/08/06 03:56:03 apt | Setting up linux-image-6.1.115-3-rk2501 (6.1.115-3) ...
+2025/08/06 03:56:03 apt | dkms: running auto installation service for kernel 6.1.115-3-rk2501.
+2025/08/06 03:56:04 apt | Sign command: /lib/modules/6.1.115-3-rk2501/build/scripts/sign-file
+2025/08/06 03:56:04 apt | Binary /lib/modules/6.1.115-3-rk2501/build/scripts/sign-file not found, modules won't be signed
+2025/08/06 03:56:05 apt | 
+2025/08/06 03:56:05 apt | Building module:
+2025/08/06 03:56:07 apt | Cleaning build area...
+2025/08/06 03:56:53 apt | make -j4 KERNELRELEASE=6.1.115-3-rk2501 -C /lib/modules/6.1.115-3-rk2501/build M=/var/lib/dkms/r8125/9.013.02-1/build..................
+2025/08/06 03:56:55 apt | Cleaning build area...
+2025/08/06 03:56:55 apt | 
+2025/08/06 03:56:55 apt | r8125.ko.xz:
+2025/08/06 03:56:55 apt | Running module version sanity check.
+2025/08/06 03:56:55 apt |  - Original module
+2025/08/06 03:56:56 apt |    - No original module exists within this kernel
+2025/08/06 03:56:56 apt |  - Installation
+2025/08/06 03:56:56 apt |    - Installing to /lib/modules/6.1.115-3-rk2501/updates/dkms/
+2025/08/06 03:57:00 apt | depmod....
+2025/08/06 03:57:00 apt | dkms: autoinstall for kernel: 6.1.115-3-rk2501.
+2025/08/06 03:57:00 apt | update-initramfs: Generating /boot/initrd.img-6.1.115-3-rk2501
+2025/08/06 03:58:27 apt | I: The initramfs will attempt to resume from /dev/vda
+2025/08/06 03:58:27 apt | I: Set the RESUME variable to override this.
+2025/08/06 03:58:49 apt | Decompressing /boot/vmlinuz-6.1.115-3-rk2501 ...
+2025/08/06 03:58:50 apt | Rebuilding overlay data folder for '6.1.115-3-rk2501'...
+2025/08/06 03:58:50 apt | Building list of compatible overlays...
+2025/08/06 03:58:51 apt | Installing compatible overlays...
+2025/08/06 03:58:51 apt | Reenable previously enabled overlays...
+2025/08/06 03:58:51 apt | Commiting changes...
+2025/08/06 03:58:51 apt | Overlay data folder has been successfully rebuilt.
+2025/08/06 03:58:51 apt | P: Checking for EXTLINUX directory... found.
+2025/08/06 03:58:52 apt | P: Writing config for vmlinuz-6.1.115-3-rk2501...
+2025/08/06 03:58:52 apt | P: Updating /boot/extlinux/extlinux.conf...
+2025/08/06 03:58:52 apt | Setting up radxa-overlays-dkms (0.1.28) ...
+2025/08/06 03:58:53 apt | Loading new radxa-overlays-0.1.28 DKMS files...
+2025/08/06 03:58:54 apt | It is likely that 6.1.0-31-amd64 belongs to a chroot's host
+2025/08/06 03:58:54 apt | Building for 6.1.115-3-rk2501
+2025/08/06 03:58:55 apt | Building initial module for 6.1.115-3-rk2501
+2025/08/06 04:00:48 apt | Done.
+2025/08/06 04:00:52 apt | 
+2025/08/06 04:00:52 apt | radxa-overlays.ko.xz:
+2025/08/06 04:00:52 apt | Running module version sanity check.
+2025/08/06 04:00:52 apt |  - Original module
+2025/08/06 04:00:52 apt |    - No original module exists within this kernel
+2025/08/06 04:00:52 apt |  - Installation
+2025/08/06 04:00:52 apt |    - Installing to /lib/modules/6.1.115-3-rk2501/updates/dkms/
+2025/08/06 04:00:52 apt | 
+2025/08/06 04:00:52 apt | Running the post_install script:
+2025/08/06 04:00:52 apt | Kernel '6.1.115-3-rk2501' does not support 'allwinner'. Skip.
+2025/08/06 04:00:52 apt | Kernel '6.1.115-3-rk2501' does not support 'amlogic'. Skip.
+2025/08/06 04:00:52 apt | Linking '/var/lib/dkms/radxa-overlays/0.1.28/6.1.115-3-rk2501/aarch64/module/arch/arm64/boot/dts/rockchip/overlays' to '/usr/lib/linux-image-6.1.115-3-rk2501/rockchip/overlays'...
+2025/08/06 04:00:53 apt | Rebuilding overlay data folder for '6.1.115-3-rk2501'...
+2025/08/06 04:00:53 apt | Removing managed overlays...
+2025/08/06 04:00:53 apt | Building list of compatible overlays...
+2025/08/06 04:00:53 apt | Installing compatible overlays...
+2025/08/06 04:01:20 apt | Reenable previously enabled overlays...
+2025/08/06 04:01:20 apt | Commiting changes...
+2025/08/06 04:01:20 apt | Overlay data folder has been successfully rebuilt.
+2025/08/06 04:01:25 apt | depmod....
+2025/08/06 04:01:25 apt | Setting up linux-image-rock-pi-4a (6.1.115-3) ...
+2025/08/06 04:01:26 ==== Product specific setup ====
+2025/08/06 04:01:27 ==== Clean up rootfs ====
+2025/08/06 04:01:27 ==== Clean up rootfs ====
+2025/08/06 04:01:27 apt clean... | 
+2025/08/06 04:01:27 apt clean... | WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+2025/08/06 04:01:27 apt clean... | 
+2025/08/06 04:01:27 ==== Clean up swap device ====
+2025/08/06 04:01:27 ==== Workaround cloud-initramfs-growroot bug ====
+2025/08/06 04:01:27 ==== Rebuild initramfs to not waiting for (now missing) suspend/resume device ====
+2025/08/06 04:01:28 set -e... | update-initramfs: Generating /boot/initrd.img-6.1.115-3-rk2501
+2025/08/06 04:03:17 ==== Recipe done ====
+Partition 3 is root partition.
+e2fsck 1.47.0 (5-Feb-2023)
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+rootfs: 48412/372416 files (0.1% non-contiguous), 422669/1487867 blocks
+610299 of 1487867 blocks are in use.
+e2fsck 1.47.0 (5-Feb-2023)
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+rootfs: 48412/372416 files (0.1% non-contiguous), 422669/1487867 blocks
+resize2fs 1.47.0 (5-Feb-2023)
+Resizing the filesystem on /dev/mapper/loop14p3 to 610299 (4k) blocks.
+The filesystem on /dev/mapper/loop14p3 is now 610299 (4k) blocks long.
+
+Root filesystem has been shrinked to 610299 blocks.
+Root partition has been shrinked to 2847911936.
+Caution: invalid backup GPT header, but valid main header; regenerating
+backup header from main header.
+
+Warning! Error 25 reading partition table for CRC check!
+Warning! One or more CRCs don't match. You should repair the disk!
+Main header: OK
+Backup header: ERROR
+Main partition table: OK
+Backup partition table: ERROR
+
+Image shrunked from 6442450944 to 2847929344.
+rbuild is finished.
+Execution started at 2025-08-05T2052-0700
+Total execution time: 00:13:04
+Build success
+################################################################################################################################
+ Building for: rock-pi-4a xfce - Tue Aug  5 09:06:00 PM PDT 2025
+################################################################################################################################
+latest: Pulling from godebos/debos
+Digest: sha256:6786ba076bc303a6327d65817b4127712ad11b7bca6a4838392207388d2ff878
+Status: Image is up to date for godebos/debos:latest
+docker.io/godebos/debos:latest
+Using debian_bookworm_xfce.tar rootfs.
+2025/08/06 04:06:06 ==== Set up swap ====
+2025/08/06 04:06:06 ==== Enable swap device ====
+2025/08/06 04:06:06 set -e... | mkswap: /dev/vda: warning: wiping old swap signature.
+2025/08/06 04:06:06 set -e... | Setting up swapspace version 1, size = 4 GiB (4294963200 bytes)
+2025/08/06 04:06:06 set -e... | no label, UUID=9cd41bbd-d17e-4e90-aed7-d3fca89add0f
+2025/08/06 04:06:06 ==== Set up on-disk layout ====
+2025/08/06 04:06:07 Formatting partition 1 | mkfs.fat: Warning: lowercase labels might not work properly on some systems
+2025/08/06 04:06:07 Formatting partition 1 | WARNING: Number of clusters for 32 bit FAT is less then suggested minimum.
+2025/08/06 04:06:07 Formatting partition 1 | mkfs.fat 4.2 (2021-01-31)
+2025/08/06 04:06:07 Formatting partition 2 | mkfs.fat: Warning: lowercase labels might not work properly on some systems
+2025/08/06 04:06:07 Formatting partition 2 | mkfs.fat 4.2 (2021-01-31)
+2025/08/06 04:06:08 Formatting partition 3 | mke2fs 1.47.0 (5-Feb-2023)
+2025/08/06 04:06:08 Formatting partition 3 | Discarding device blocks:       0/1487867               done                            
+2025/08/06 04:06:08 Formatting partition 3 | Creating filesystem with 1487867 4k blocks and 372416 inodes
+2025/08/06 04:06:08 Formatting partition 3 | Filesystem UUID: 72222ca0-515c-40c4-ab30-254167138b92
+2025/08/06 04:06:08 Formatting partition 3 | Superblock backups stored on blocks: 
+2025/08/06 04:06:08 Formatting partition 3 | 	32768, 98304, 163840, 229376, 294912, 819200, 884736
+2025/08/06 04:06:08 Formatting partition 3 | 
+2025/08/06 04:06:08 Formatting partition 3 | Allocating group tables:  0/46     done                            
+2025/08/06 04:06:08 Formatting partition 3 | Writing inode tables:  0/46     done                            
+2025/08/06 04:06:08 Formatting partition 3 | Creating journal (16384 blocks): done
+2025/08/06 04:06:08 Formatting partition 3 | Writing superblocks and filesystem accounting information:  0/46     done
+2025/08/06 04:06:08 Formatting partition 3 | 
+2025/08/06 04:06:08 ==== Unpack rootfs ====
+2025/08/06 04:06:29 ==== Deploying filesystem onto image ====
+2025/08/06 04:06:33 Setting up /etc/fstab
+2025/08/06 04:06:33 ==== Install task-rock-pi-4a package ====
+2025/08/06 04:06:34 apt | Get:1 https://radxa-repo.github.io/bookworm bookworm InRelease [14.8 kB]
+2025/08/06 04:06:34 apt | Get:2 https://deb.debian.org/debian bookworm InRelease [151 kB]
+2025/08/06 04:06:35 apt | Get:3 https://download.vscodium.com/debs vscodium InRelease
+2025/08/06 04:06:35 apt | Get:4 https://deb.debian.org/debian bookworm-backports InRelease [59.4 kB]
+2025/08/06 04:06:35 apt | Get:5 https://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+2025/08/06 04:06:35 apt | Get:6 https://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+2025/08/06 04:06:36 apt | Get:7 https://radxa-repo.github.io/bookworm bookworm/main arm64 Packages [50.9 kB]
+2025/08/06 04:06:36 apt | Get:8 https://radxa-repo.github.io/bookworm bookworm/main all Packages [38.0 kB]
+2025/08/06 04:06:38 apt | Get:9 https://deb.debian.org/debian bookworm/main arm64 Packages [8693 kB]
+2025/08/06 04:06:38 apt | Get:10 https://deb.debian.org/debian bookworm/main Translation-en [6109 kB]
+2025/08/06 04:06:39 apt | Get:11 https://deb.debian.org/debian bookworm/contrib arm64 Packages [45.7 kB]
+2025/08/06 04:06:39 apt | Get:12 https://download.vscodium.com/debs vscodium/main arm64 Packages [1218 B]
+2025/08/06 04:06:39 apt | Get:13 https://deb.debian.org/debian bookworm/contrib Translation-en [48.4 kB]
+2025/08/06 04:06:39 apt | Get:14 https://deb.debian.org/debian bookworm/non-free arm64 Packages [75.8 kB]
+2025/08/06 04:06:39 apt | Get:15 https://deb.debian.org/debian bookworm/non-free Translation-en [68.1 kB]
+2025/08/06 04:06:39 apt | Get:16 https://deb.debian.org/debian bookworm/non-free-firmware arm64 Packages [5832 B]
+2025/08/06 04:06:39 apt | Get:17 https://deb.debian.org/debian bookworm/non-free-firmware Translation-en [20.9 kB]
+2025/08/06 04:06:41 apt | Get:18 https://deb.debian.org/debian bookworm-backports/main arm64 Packages [303 kB]
+2025/08/06 04:06:41 apt | Get:19 https://deb.debian.org/debian bookworm-backports/main Translation-en [257 kB]
+2025/08/06 04:06:41 apt | Get:20 https://deb.debian.org/debian bookworm-backports/contrib arm64 Packages [5176 B]
+2025/08/06 04:06:41 apt | Get:21 https://deb.debian.org/debian bookworm-backports/contrib Translation-en [5864 B]
+2025/08/06 04:06:41 apt | Get:22 https://deb.debian.org/debian bookworm-backports/non-free arm64 Packages [12.6 kB]
+2025/08/06 04:06:41 apt | Get:23 https://deb.debian.org/debian bookworm-backports/non-free Translation-en [8460 B]
+2025/08/06 04:06:41 apt | Get:24 https://deb.debian.org/debian bookworm-backports/non-free-firmware arm64 Packages [3832 B]
+2025/08/06 04:06:41 apt | Get:25 https://deb.debian.org/debian bookworm-backports/non-free-firmware Translation-en [2860 B]
+2025/08/06 04:06:43 apt | Get:26 https://deb.debian.org/debian-security bookworm-security/main arm64 Packages [268 kB]
+2025/08/06 04:06:43 apt | Get:27 https://deb.debian.org/debian-security bookworm-security/main Translation-en [163 kB]
+2025/08/06 04:06:43 apt | Get:28 https://deb.debian.org/debian-security bookworm-security/contrib arm64 Packages [508 B]
+2025/08/06 04:06:43 apt | Get:29 https://deb.debian.org/debian-security bookworm-security/contrib Translation-en [652 B]
+2025/08/06 04:06:43 apt | Get:30 https://deb.debian.org/debian-security bookworm-security/non-free-firmware Translation-en [472 B]
+2025/08/06 04:06:45 apt | Get:31 https://deb.debian.org/debian bookworm-updates/main arm64 Packages [6936 B]
+2025/08/06 04:06:46 apt | Get:32 https://deb.debian.org/debian bookworm-updates/main Translation-en [5448 B]
+2025/08/06 04:06:46 apt | Fetched 16.5 MB in 12s (1344 kB/s)
+2025/08/06 04:06:51 apt | Reading package lists...
+2025/08/06 04:06:51 apt | Reading package lists...
+2025/08/06 04:06:52 apt | Building dependency tree...
+2025/08/06 04:06:52 apt | Reading state information...
+2025/08/06 04:06:53 apt | The following additional packages will be installed:
+2025/08/06 04:06:53 apt |   bzip2 dkms dpkg-dev gcc gcc-12 libasan8 libatomic1 libcc1-0 libdpkg-perl
+2025/08/06 04:06:53 apt |   libgcc-12-dev libhwasan0 libitm1 liblsan0 libtsan2 libubsan1 make patch
+2025/08/06 04:06:53 apt |   r8125-dkms radxa-system-config-bookworm radxa-system-config-common
+2025/08/06 04:06:53 apt |   radxa-system-config-kernel-cmdline-ttyfiq0 radxa-system-config-r8125-dkms
+2025/08/06 04:06:53 apt | Suggested packages:
+2025/08/06 04:06:53 apt |   bzip2-doc menu debian-keyring gcc-multilib manpages-dev autoconf automake
+2025/08/06 04:06:53 apt |   libtool flex bison gdb gcc-doc gcc-12-doc gcc-12-locales gnupg | sq | sqop
+2025/08/06 04:06:53 apt |   | pgpainless-cli bzr make-doc ed diffutils-doc
+2025/08/06 04:06:53 apt | Recommended packages:
+2025/08/06 04:06:53 apt |   fakeroot linux-headers-generic | linux-headers-686-pae | linux-headers-amd64
+2025/08/06 04:06:53 apt |   | linux-headers build-essential gnupg | sq | sqop | pgpainless-cli
+2025/08/06 04:06:53 apt |   libalgorithm-merge-perl libc6-dev | libc-dev libc6-dev
+2025/08/06 04:06:53 apt |   libfile-fcntllock-perl radxa-desktop-branding task-rk3399
+2025/08/06 04:06:53 apt | The following NEW packages will be installed:
+2025/08/06 04:06:53 apt |   bzip2 dkms dpkg-dev gcc gcc-12 libasan8 libatomic1 libcc1-0 libdpkg-perl
+2025/08/06 04:06:53 apt |   libgcc-12-dev libhwasan0 libitm1 liblsan0 libtsan2 libubsan1 make patch
+2025/08/06 04:06:53 apt |   r8125-dkms radxa-system-config-bookworm radxa-system-config-common
+2025/08/06 04:06:53 apt |   radxa-system-config-kernel-cmdline-ttyfiq0 radxa-system-config-r8125-dkms
+2025/08/06 04:06:53 apt |   task-rock-pi-4a
+2025/08/06 04:06:53 apt | 0 upgraded, 23 newly installed, 0 to remove and 2 not upgraded.
+2025/08/06 04:06:53 apt | Need to get 27.1 MB of archives.
+2025/08/06 04:06:53 apt | After this operation, 104 MB of additional disk space will be used.
+2025/08/06 04:06:53 apt | Get:1 https://deb.debian.org/debian bookworm/main arm64 libcc1-0 arm64 12.2.0-14+deb12u1 [37.7 kB]
+2025/08/06 04:06:53 apt | Get:2 https://deb.debian.org/debian bookworm/main arm64 libitm1 arm64 12.2.0-14+deb12u1 [24.0 kB]
+2025/08/06 04:06:53 apt | Get:3 https://deb.debian.org/debian bookworm/main arm64 libatomic1 arm64 12.2.0-14+deb12u1 [9568 B]
+2025/08/06 04:06:53 apt | Get:4 https://deb.debian.org/debian bookworm/main arm64 libasan8 arm64 12.2.0-14+deb12u1 [2096 kB]
+2025/08/06 04:06:53 apt | Get:5 https://radxa-repo.github.io/bookworm bookworm/main arm64 r8125-dkms all 9.013.02-1-3 [106 kB]
+2025/08/06 04:06:53 apt | Get:6 https://radxa-repo.github.io/bookworm bookworm/main arm64 radxa-system-config-common all 0.6.17 [10.3 kB]
+2025/08/06 04:06:54 apt | Get:7 https://deb.debian.org/debian bookworm/main arm64 liblsan0 arm64 12.2.0-14+deb12u1 [926 kB]
+2025/08/06 04:06:54 apt | Get:8 https://deb.debian.org/debian bookworm/main arm64 libtsan2 arm64 12.2.0-14+deb12u1 [2178 kB]
+2025/08/06 04:06:54 apt | Get:9 https://radxa-repo.github.io/bookworm bookworm/main arm64 radxa-system-config-bookworm all 0.6.17 [11.8 kB]
+2025/08/06 04:06:54 apt | Get:10 https://radxa-repo.github.io/bookworm bookworm/main arm64 radxa-system-config-kernel-cmdline-ttyfiq0 all 0.6.17 [6824 B]
+2025/08/06 04:06:54 apt | Get:11 https://deb.debian.org/debian bookworm/main arm64 libubsan1 arm64 12.2.0-14+deb12u1 [862 kB]
+2025/08/06 04:06:54 apt | Get:12 https://radxa-repo.github.io/bookworm bookworm/main arm64 radxa-system-config-r8125-dkms all 0.6.17 [6820 B]
+2025/08/06 04:06:54 apt | Get:13 https://deb.debian.org/debian bookworm/main arm64 libhwasan0 arm64 12.2.0-14+deb12u1 [999 kB]
+2025/08/06 04:06:54 apt | Get:14 https://radxa-repo.github.io/bookworm bookworm/main arm64 task-rock-pi-4a all 0.4.32 [5292 B]
+2025/08/06 04:06:54 apt | Get:15 https://deb.debian.org/debian bookworm/main arm64 libgcc-12-dev arm64 12.2.0-14+deb12u1 [956 kB]
+2025/08/06 04:06:54 apt | Get:16 https://deb.debian.org/debian bookworm/main arm64 gcc-12 arm64 12.2.0-14+deb12u1 [16.3 MB]
+2025/08/06 04:06:56 apt | Get:17 https://deb.debian.org/debian bookworm/main arm64 gcc arm64 4:12.2.0-3 [5244 B]
+2025/08/06 04:06:56 apt | Get:18 https://deb.debian.org/debian bookworm/main arm64 libdpkg-perl all 1.21.22 [603 kB]
+2025/08/06 04:06:56 apt | Get:19 https://deb.debian.org/debian bookworm/main arm64 bzip2 arm64 1.0.8-5+b1 [48.9 kB]
+2025/08/06 04:06:56 apt | Get:20 https://deb.debian.org/debian bookworm/main arm64 patch arm64 2.7.6-7 [121 kB]
+2025/08/06 04:06:56 apt | Get:21 https://deb.debian.org/debian bookworm/main arm64 make arm64 4.3-4.1 [391 kB]
+2025/08/06 04:06:56 apt | Get:22 https://deb.debian.org/debian bookworm/main arm64 dpkg-dev all 1.21.22 [1353 kB]
+2025/08/06 04:06:56 apt | Get:23 https://deb.debian.org/debian bookworm/main arm64 dkms all 3.0.10-8+deb12u1 [48.7 kB]
+2025/08/06 04:06:59 apt | Fetched 27.1 MB in 3s (8546 kB/s)
+2025/08/06 04:06:59 apt | Selecting previously unselected package libcc1-0:arm64.
+2025/08/06 04:06:59 apt | (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 62042 files and directories currently installed.)
+2025/08/06 04:06:59 apt | Preparing to unpack .../00-libcc1-0_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:06:59 apt | Unpacking libcc1-0:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:06:59 apt | Selecting previously unselected package libitm1:arm64.
+2025/08/06 04:06:59 apt | Preparing to unpack .../01-libitm1_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:06:59 apt | Unpacking libitm1:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:07:00 apt | Selecting previously unselected package libatomic1:arm64.
+2025/08/06 04:07:00 apt | Preparing to unpack .../02-libatomic1_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:07:00 apt | Unpacking libatomic1:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:07:00 apt | Selecting previously unselected package libasan8:arm64.
+2025/08/06 04:07:00 apt | Preparing to unpack .../03-libasan8_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:07:00 apt | Unpacking libasan8:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:07:01 apt | Selecting previously unselected package liblsan0:arm64.
+2025/08/06 04:07:01 apt | Preparing to unpack .../04-liblsan0_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:07:01 apt | Unpacking liblsan0:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:07:01 apt | Selecting previously unselected package libtsan2:arm64.
+2025/08/06 04:07:01 apt | Preparing to unpack .../05-libtsan2_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:07:01 apt | Unpacking libtsan2:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:07:02 apt | Selecting previously unselected package libubsan1:arm64.
+2025/08/06 04:07:02 apt | Preparing to unpack .../06-libubsan1_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:07:02 apt | Unpacking libubsan1:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:07:03 apt | Selecting previously unselected package libhwasan0:arm64.
+2025/08/06 04:07:03 apt | Preparing to unpack .../07-libhwasan0_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:07:03 apt | Unpacking libhwasan0:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:07:03 apt | Selecting previously unselected package libgcc-12-dev:arm64.
+2025/08/06 04:07:03 apt | Preparing to unpack .../08-libgcc-12-dev_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:07:03 apt | Unpacking libgcc-12-dev:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:07:04 apt | Selecting previously unselected package gcc-12.
+2025/08/06 04:07:04 apt | Preparing to unpack .../09-gcc-12_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:07:04 apt | Unpacking gcc-12 (12.2.0-14+deb12u1) ...
+2025/08/06 04:07:07 apt | Selecting previously unselected package gcc.
+2025/08/06 04:07:07 apt | Preparing to unpack .../10-gcc_4%3a12.2.0-3_arm64.deb ...
+2025/08/06 04:07:07 apt | Unpacking gcc (4:12.2.0-3) ...
+2025/08/06 04:07:07 apt | Selecting previously unselected package libdpkg-perl.
+2025/08/06 04:07:07 apt | Preparing to unpack .../11-libdpkg-perl_1.21.22_all.deb ...
+2025/08/06 04:07:07 apt | Unpacking libdpkg-perl (1.21.22) ...
+2025/08/06 04:07:07 apt | Selecting previously unselected package bzip2.
+2025/08/06 04:07:07 apt | Preparing to unpack .../12-bzip2_1.0.8-5+b1_arm64.deb ...
+2025/08/06 04:07:07 apt | Unpacking bzip2 (1.0.8-5+b1) ...
+2025/08/06 04:07:08 apt | Selecting previously unselected package patch.
+2025/08/06 04:07:08 apt | Preparing to unpack .../13-patch_2.7.6-7_arm64.deb ...
+2025/08/06 04:07:08 apt | Unpacking patch (2.7.6-7) ...
+2025/08/06 04:07:08 apt | Selecting previously unselected package make.
+2025/08/06 04:07:08 apt | Preparing to unpack .../14-make_4.3-4.1_arm64.deb ...
+2025/08/06 04:07:08 apt | Unpacking make (4.3-4.1) ...
+2025/08/06 04:07:08 apt | Selecting previously unselected package dpkg-dev.
+2025/08/06 04:07:08 apt | Preparing to unpack .../15-dpkg-dev_1.21.22_all.deb ...
+2025/08/06 04:07:08 apt | Unpacking dpkg-dev (1.21.22) ...
+2025/08/06 04:07:09 apt | Selecting previously unselected package dkms.
+2025/08/06 04:07:09 apt | Preparing to unpack .../16-dkms_3.0.10-8+deb12u1_all.deb ...
+2025/08/06 04:07:11 apt | Unpacking dkms (3.0.10-8+deb12u1) ...
+2025/08/06 04:07:11 apt | Selecting previously unselected package r8125-dkms.
+2025/08/06 04:07:11 apt | Preparing to unpack .../17-r8125-dkms_9.013.02-1-3_all.deb ...
+2025/08/06 04:07:11 apt | Unpacking r8125-dkms (9.013.02-1-3) ...
+2025/08/06 04:07:12 apt | Selecting previously unselected package radxa-system-config-common.
+2025/08/06 04:07:12 apt | Preparing to unpack .../18-radxa-system-config-common_0.6.17_all.deb ...
+2025/08/06 04:07:12 apt | Unpacking radxa-system-config-common (0.6.17) ...
+2025/08/06 04:07:12 apt | Selecting previously unselected package radxa-system-config-bookworm.
+2025/08/06 04:07:12 apt | Preparing to unpack .../19-radxa-system-config-bookworm_0.6.17_all.deb ...
+2025/08/06 04:07:12 apt | Adding 'diversion of /usr/share/desktop-base/kf5-settings/kdeglobals to /usr/share/desktop-base/kf5-settings/kdeglobals.bak by radxa-system-config-bookworm'
+2025/08/06 04:07:12 apt | Unpacking radxa-system-config-bookworm (0.6.17) ...
+2025/08/06 04:07:12 apt | Selecting previously unselected package radxa-system-config-kernel-cmdline-ttyfiq0.
+2025/08/06 04:07:12 apt | Preparing to unpack .../20-radxa-system-config-kernel-cmdline-ttyfiq0_0.6.17_all.deb ...
+2025/08/06 04:07:12 apt | Unpacking radxa-system-config-kernel-cmdline-ttyfiq0 (0.6.17) ...
+2025/08/06 04:07:13 apt | Selecting previously unselected package radxa-system-config-r8125-dkms.
+2025/08/06 04:07:13 apt | Preparing to unpack .../21-radxa-system-config-r8125-dkms_0.6.17_all.deb ...
+2025/08/06 04:07:13 apt | Unpacking radxa-system-config-r8125-dkms (0.6.17) ...
+2025/08/06 04:07:13 apt | Selecting previously unselected package task-rock-pi-4a.
+2025/08/06 04:07:13 apt | Preparing to unpack .../22-task-rock-pi-4a_0.4.32_all.deb ...
+2025/08/06 04:07:13 apt | Unpacking task-rock-pi-4a (0.4.32) ...
+2025/08/06 04:07:13 apt | Setting up radxa-system-config-common (0.6.17) ...
+2025/08/06 04:07:14 apt | Setting up bzip2 (1.0.8-5+b1) ...
+2025/08/06 04:07:14 apt | Setting up make (4.3-4.1) ...
+2025/08/06 04:07:14 apt | Setting up libatomic1:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:07:14 apt | Setting up patch (2.7.6-7) ...
+2025/08/06 04:07:14 apt | Setting up libdpkg-perl (1.21.22) ...
+2025/08/06 04:07:14 apt | Setting up libubsan1:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:07:14 apt | Setting up libhwasan0:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:07:14 apt | Setting up libasan8:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:07:14 apt | Setting up libtsan2:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:07:14 apt | Setting up radxa-system-config-kernel-cmdline-ttyfiq0 (0.6.17) ...
+2025/08/06 04:07:14 apt | P: Checking for EXTLINUX directory... not found.
+2025/08/06 04:07:14 apt | P: Creating EXTLINUX directory... done: /boot/extlinux
+2025/08/06 04:07:14 apt | P: Updating /boot/extlinux/extlinux.conf...
+2025/08/06 04:07:14 apt | Setting up libcc1-0:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:07:14 apt | Setting up liblsan0:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:07:14 apt | Setting up libitm1:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:07:14 apt | Setting up dpkg-dev (1.21.22) ...
+2025/08/06 04:07:14 apt | Setting up libgcc-12-dev:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:07:14 apt | Setting up gcc-12 (12.2.0-14+deb12u1) ...
+2025/08/06 04:07:14 apt | Setting up gcc (4:12.2.0-3) ...
+2025/08/06 04:07:14 apt | Setting up dkms (3.0.10-8+deb12u1) ...
+2025/08/06 04:07:17 apt | Setting up r8125-dkms (9.013.02-1-3) ...
+2025/08/06 04:07:18 apt | Loading new r8125-9.013.02-1 DKMS files...
+2025/08/06 04:07:19 apt | It is likely that 6.1.0-31-amd64 belongs to a chroot's host
+2025/08/06 04:07:19 apt | Building for 
+2025/08/06 04:07:19 apt | Setting up radxa-system-config-r8125-dkms (0.6.17) ...
+2025/08/06 04:07:19 apt | Processing triggers for u-boot-menu (4.2.2) ...
+2025/08/06 04:07:19 apt | P: Checking for EXTLINUX directory... found.
+2025/08/06 04:07:20 apt | Processing triggers for desktop-file-utils (0.26-1) ...
+2025/08/06 04:07:20 apt | Processing triggers for initramfs-tools (0.142+deb12u3) ...
+2025/08/06 04:07:21 apt | Processing triggers for libc-bin (2.36-9+deb12u10) ...
+2025/08/06 04:07:21 apt | Processing triggers for man-db (2.11.2-2) ...
+2025/08/06 04:07:24 apt | Setting up radxa-system-config-bookworm (0.6.17) ...
+2025/08/06 04:07:24 apt | Processing triggers for initramfs-tools (0.142+deb12u3) ...
+2025/08/06 04:07:25 apt | Setting up task-rock-pi-4a (0.4.32) ...
+2025/08/06 04:07:26 ==== Add rockchip-bookworm Repo ====
+2025/08/06 04:07:26 ==== Installl keyring from package ====
+2025/08/06 04:07:26 ==== Add repo ====
+2025/08/06 04:07:26 set -e... |   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+2025/08/06 04:07:26 set -e... |                                  Dload  Upload   Total   Spent    Left  Speed
+2025/08/06 04:07:27 set -e... |   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  2342  100  2342    0     0   3650      0 --:--:-- --:--:-- --:--:--  3694
+2025/08/06 04:07:27 ==== Install task-rock-pi-4a with vendor packages ====
+2025/08/06 04:07:27 dpkg --remove --force-depends task-rock-... | (Reading database ... 62877 files and directories currently installed.)
+2025/08/06 04:07:27 dpkg --remove --force-depends task-rock-... | Removing task-rock-pi-4a (0.4.32) ...
+2025/08/06 04:07:28 dpkg --remove --force-depends task-rock-... | Hit:1 https://deb.debian.org/debian bookworm InRelease
+2025/08/06 04:07:28 dpkg --remove --force-depends task-rock-... | Hit:2 https://deb.debian.org/debian bookworm-backports InRelease
+2025/08/06 04:07:28 dpkg --remove --force-depends task-rock-... | Hit:3 https://deb.debian.org/debian-security bookworm-security InRelease
+2025/08/06 04:07:28 dpkg --remove --force-depends task-rock-... | Hit:4 https://deb.debian.org/debian bookworm-updates InRelease
+2025/08/06 04:07:28 dpkg --remove --force-depends task-rock-... | Get:5 https://radxa-repo.github.io/bookworm rockchip-bookworm InRelease [14.8 kB]
+2025/08/06 04:07:29 dpkg --remove --force-depends task-rock-... | Hit:6 https://radxa-repo.github.io/bookworm bookworm InRelease
+2025/08/06 04:07:29 dpkg --remove --force-depends task-rock-... | Hit:7 https://download.vscodium.com/debs vscodium InRelease
+2025/08/06 04:07:38 dpkg --remove --force-depends task-rock-... | Get:8 https://radxa-repo.github.io/bookworm rockchip-bookworm/main all Packages [387 B]
+2025/08/06 04:07:38 dpkg --remove --force-depends task-rock-... | Get:9 https://radxa-repo.github.io/bookworm rockchip-bookworm/main arm64 Packages [387 B]
+2025/08/06 04:07:40 dpkg --remove --force-depends task-rock-... | Fetched 15.6 kB in 12s (1330 B/s)
+2025/08/06 04:07:44 dpkg --remove --force-depends task-rock-... | Reading package lists...
+2025/08/06 04:07:45 dpkg --remove --force-depends task-rock-... | Reading package lists...
+2025/08/06 04:07:45 dpkg --remove --force-depends task-rock-... | Building dependency tree...
+2025/08/06 04:07:45 dpkg --remove --force-depends task-rock-... | Reading state information...
+2025/08/06 04:07:46 dpkg --remove --force-depends task-rock-... | Recommended packages:
+2025/08/06 04:07:46 dpkg --remove --force-depends task-rock-... |   task-rk3399
+2025/08/06 04:07:46 dpkg --remove --force-depends task-rock-... | The following NEW packages will be installed:
+2025/08/06 04:07:46 dpkg --remove --force-depends task-rock-... |   task-rock-pi-4a
+2025/08/06 04:07:46 dpkg --remove --force-depends task-rock-... | 0 upgraded, 1 newly installed, 0 to remove and 2 not upgraded.
+2025/08/06 04:07:46 dpkg --remove --force-depends task-rock-... | Need to get 5292 B of archives.
+2025/08/06 04:07:46 dpkg --remove --force-depends task-rock-... | After this operation, 12.3 kB of additional disk space will be used.
+2025/08/06 04:07:46 dpkg --remove --force-depends task-rock-... | Get:1 https://radxa-repo.github.io/bookworm bookworm/main arm64 task-rock-pi-4a all 0.4.32 [5292 B]
+2025/08/06 04:07:49 dpkg --remove --force-depends task-rock-... | dpkg-preconfigure: unable to re-open stdin: No such file or directory
+2025/08/06 04:07:49 dpkg --remove --force-depends task-rock-... | Fetched 5292 B in 0s (13.4 kB/s)
+2025/08/06 04:07:49 dpkg --remove --force-depends task-rock-... | Selecting previously unselected package task-rock-pi-4a.
+2025/08/06 04:07:49 dpkg --remove --force-depends task-rock-... | (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 62874 files and directories currently installed.)
+2025/08/06 04:07:49 dpkg --remove --force-depends task-rock-... | Preparing to unpack .../task-rock-pi-4a_0.4.32_all.deb ...
+2025/08/06 04:07:49 dpkg --remove --force-depends task-rock-... | Unpacking task-rock-pi-4a (0.4.32) ...
+2025/08/06 04:07:49 dpkg --remove --force-depends task-rock-... | Setting up task-rock-pi-4a (0.4.32) ...
+2025/08/06 04:07:50 ==== Upgrade stale rootfs ====
+2025/08/06 04:07:51 set -e... | Hit:1 https://download.vscodium.com/debs vscodium InRelease
+2025/08/06 04:07:51 set -e... | Hit:2 https://deb.debian.org/debian bookworm InRelease
+2025/08/06 04:07:51 set -e... | Hit:3 https://deb.debian.org/debian bookworm-backports InRelease
+2025/08/06 04:07:51 set -e... | Hit:4 https://deb.debian.org/debian-security bookworm-security InRelease
+2025/08/06 04:07:51 set -e... | Hit:5 https://radxa-repo.github.io/bookworm rockchip-bookworm InRelease
+2025/08/06 04:07:51 set -e... | Hit:6 https://deb.debian.org/debian bookworm-updates InRelease
+2025/08/06 04:07:51 set -e... | Hit:7 https://radxa-repo.github.io/bookworm bookworm InRelease
+2025/08/06 04:08:07 set -e... | Reading package lists...
+2025/08/06 04:08:08 set -e... | Reading package lists...
+2025/08/06 04:08:09 set -e... | Building dependency tree...
+2025/08/06 04:08:09 set -e... | Reading state information...
+2025/08/06 04:08:09 set -e... | Calculating upgrade...
+2025/08/06 04:08:10 set -e... | The following packages will be upgraded:
+2025/08/06 04:08:10 set -e... |   libgnutls30 radxa-archive-keyring
+2025/08/06 04:08:10 set -e... | 2 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+2025/08/06 04:08:10 set -e... | Need to get 1320 kB of archives.
+2025/08/06 04:08:10 set -e... | After this operation, 2048 B disk space will be freed.
+2025/08/06 04:08:10 set -e... | Get:1 https://deb.debian.org/debian-security bookworm-security/main arm64 libgnutls30 arm64 3.7.9-2+deb12u5 [1314 kB]
+2025/08/06 04:08:10 set -e... | Get:2 https://radxa-repo.github.io/bookworm bookworm/main arm64 radxa-archive-keyring all 0.2.0 [6740 B]
+2025/08/06 04:08:12 set -e... | apt-listchanges: Reading changelogs...
+2025/08/06 04:08:13 set -e... | dpkg-preconfigure: unable to re-open stdin: No such file or directory
+2025/08/06 04:08:13 set -e... | Fetched 1320 kB in 1s (2002 kB/s)
+2025/08/06 04:08:14 set -e... | (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 62877 files and directories currently installed.)
+2025/08/06 04:08:14 set -e... | Preparing to unpack .../libgnutls30_3.7.9-2+deb12u5_arm64.deb ...
+2025/08/06 04:08:14 set -e... | Unpacking libgnutls30:arm64 (3.7.9-2+deb12u5) over (3.7.9-2+deb12u4) ...
+2025/08/06 04:08:14 set -e... | Setting up libgnutls30:arm64 (3.7.9-2+deb12u5) ...
+2025/08/06 04:08:15 set -e... | (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 62877 files and directories currently installed.)
+2025/08/06 04:08:15 set -e... | Preparing to unpack .../radxa-archive-keyring_0.2.0_all.deb ...
+2025/08/06 04:08:15 set -e... | Unpacking radxa-archive-keyring (0.2.0) over (0.2.0) ...
+2025/08/06 04:08:15 set -e... | Setting up radxa-archive-keyring (0.2.0) ...
+2025/08/06 04:08:15 set -e... | Processing triggers for libc-bin (2.36-9+deb12u10) ...
+2025/08/06 04:08:16 set -e... | Reading package lists...
+2025/08/06 04:08:17 set -e... | Building dependency tree...
+2025/08/06 04:08:17 set -e... | Reading state information...
+2025/08/06 04:08:18 set -e... | Calculating upgrade...
+2025/08/06 04:08:18 set -e... | 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+2025/08/06 04:08:19 set -e... | Reading package lists...
+2025/08/06 04:08:19 set -e... | Building dependency tree...
+2025/08/06 04:08:19 set -e... | Reading state information...
+2025/08/06 04:08:20 set -e... | 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+2025/08/06 04:08:20 ==== Install Radxa firmware ====
+2025/08/06 04:08:21 apt | Hit:1 https://deb.debian.org/debian bookworm InRelease
+2025/08/06 04:08:21 apt | Hit:2 https://deb.debian.org/debian bookworm-backports InRelease
+2025/08/06 04:08:21 apt | Hit:3 https://deb.debian.org/debian-security bookworm-security InRelease
+2025/08/06 04:08:21 apt | Hit:4 https://deb.debian.org/debian bookworm-updates InRelease
+2025/08/06 04:08:21 apt | Hit:5 https://radxa-repo.github.io/bookworm rockchip-bookworm InRelease
+2025/08/06 04:08:21 apt | Hit:6 https://radxa-repo.github.io/bookworm bookworm InRelease
+2025/08/06 04:08:21 apt | Hit:7 https://download.vscodium.com/debs vscodium InRelease
+2025/08/06 04:08:37 apt | Reading package lists...
+2025/08/06 04:08:37 apt | Reading package lists...
+2025/08/06 04:08:38 apt | Building dependency tree...
+2025/08/06 04:08:38 apt | Reading state information...
+2025/08/06 04:08:39 apt | The following additional packages will be installed:
+2025/08/06 04:08:39 apt |   u-boot-latest
+2025/08/06 04:08:39 apt | The following NEW packages will be installed:
+2025/08/06 04:08:39 apt |   u-boot-latest u-boot-rock-pi-4a
+2025/08/06 04:08:39 apt | 0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+2025/08/06 04:08:39 apt | Need to get 7082 kB of archives.
+2025/08/06 04:08:39 apt | After this operation, 57.2 MB of additional disk space will be used.
+2025/08/06 04:08:39 apt | Get:1 https://radxa-repo.github.io/bookworm bookworm/main arm64 u-boot-latest arm64 2023.10-12-cc60ff40 [7081 kB]
+2025/08/06 04:08:40 apt | Get:2 https://radxa-repo.github.io/bookworm bookworm/main arm64 u-boot-rock-pi-4a all 2023.10-12-b4f0ad0 [1120 B]
+2025/08/06 04:08:43 apt | Fetched 7082 kB in 1s (4911 kB/s)
+2025/08/06 04:08:43 apt | Selecting previously unselected package u-boot-latest.
+2025/08/06 04:08:43 apt | (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 62876 files and directories currently installed.)
+2025/08/06 04:08:43 apt | Preparing to unpack .../u-boot-latest_2023.10-12-cc60ff40_arm64.deb ...
+2025/08/06 04:08:43 apt | Unpacking u-boot-latest (2023.10-12-cc60ff40) ...
+2025/08/06 04:08:45 apt | Selecting previously unselected package u-boot-rock-pi-4a.
+2025/08/06 04:08:45 apt | Preparing to unpack .../u-boot-rock-pi-4a_2023.10-12-b4f0ad0_all.deb ...
+2025/08/06 04:08:45 apt | Unpacking u-boot-rock-pi-4a (2023.10-12-b4f0ad0) ...
+2025/08/06 04:08:46 apt | Setting up u-boot-latest (2023.10-12-cc60ff40) ...
+2025/08/06 04:08:46 apt | Setting up u-boot-rock-pi-4a (2023.10-12-b4f0ad0) ...
+2025/08/06 04:08:47 ==== Apply to disk ====
+2025/08/06 04:08:47 set -e... | Writting to /dev/vdb
+2025/08/06 04:08:47 set -e... | 431+1 records in
+2025/08/06 04:08:47 set -e... | 431+1 records out
+2025/08/06 04:08:47 set -e... | 221180 bytes (221 kB, 216 KiB) copied, 0.00470745 s, 47.0 MB/s
+2025/08/06 04:08:47 set -e... | 2048+0 records in
+2025/08/06 04:08:47 set -e... | 2048+0 records out
+2025/08/06 04:08:47 set -e... | 1048576 bytes (1.0 MB, 1.0 MiB) copied, 0.0210535 s, 49.8 MB/s
+2025/08/06 04:08:47 set -e... | 2048+0 records in
+2025/08/06 04:08:47 set -e... | 2048+0 records out
+2025/08/06 04:08:47 set -e... | 1048576 bytes (1.0 MB, 1.0 MiB) copied, 0.020826 s, 50.3 MB/s
+2025/08/06 04:08:47 ==== Install Radxa kernel header ====
+2025/08/06 04:08:48 apt | Hit:1 https://deb.debian.org/debian bookworm InRelease
+2025/08/06 04:08:48 apt | Hit:2 https://download.vscodium.com/debs vscodium InRelease
+2025/08/06 04:08:48 apt | Hit:3 https://deb.debian.org/debian bookworm-backports InRelease
+2025/08/06 04:08:48 apt | Hit:4 https://deb.debian.org/debian-security bookworm-security InRelease
+2025/08/06 04:08:48 apt | Hit:5 https://deb.debian.org/debian bookworm-updates InRelease
+2025/08/06 04:08:48 apt | Hit:6 https://radxa-repo.github.io/bookworm rockchip-bookworm InRelease
+2025/08/06 04:08:48 apt | Hit:7 https://radxa-repo.github.io/bookworm bookworm InRelease
+2025/08/06 04:09:04 apt | Reading package lists...
+2025/08/06 04:09:05 apt | Reading package lists...
+2025/08/06 04:09:05 apt | Building dependency tree...
+2025/08/06 04:09:05 apt | Reading state information...
+2025/08/06 04:09:06 apt | The following additional packages will be installed:
+2025/08/06 04:09:06 apt |   linux-headers-6.1.115-3-rk2501
+2025/08/06 04:09:06 apt | The following NEW packages will be installed:
+2025/08/06 04:09:06 apt |   linux-headers-6.1.115-3-rk2501 linux-headers-rock-pi-4a
+2025/08/06 04:09:07 apt | 0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+2025/08/06 04:09:07 apt | Need to get 8555 kB of archives.
+2025/08/06 04:09:07 apt | After this operation, 53.1 MB of additional disk space will be used.
+2025/08/06 04:09:07 apt | Get:1 https://radxa-repo.github.io/bookworm bookworm/main arm64 linux-headers-6.1.115-3-rk2501 arm64 6.1.115-3 [8553 kB]
+2025/08/06 04:09:08 apt | Get:2 https://radxa-repo.github.io/bookworm bookworm/main arm64 linux-headers-rock-pi-4a all 6.1.115-3 [2040 B]
+2025/08/06 04:09:10 apt | Fetched 8555 kB in 2s (5612 kB/s)
+2025/08/06 04:09:11 apt | Selecting previously unselected package linux-headers-6.1.115-3-rk2501.
+2025/08/06 04:09:11 apt | (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 63032 files and directories currently installed.)
+2025/08/06 04:09:11 apt | Preparing to unpack .../linux-headers-6.1.115-3-rk2501_6.1.115-3_arm64.deb ...
+2025/08/06 04:09:11 apt | Unpacking linux-headers-6.1.115-3-rk2501 (6.1.115-3) ...
+2025/08/06 04:09:14 apt | Selecting previously unselected package linux-headers-rock-pi-4a.
+2025/08/06 04:09:14 apt | Preparing to unpack .../linux-headers-rock-pi-4a_6.1.115-3_all.deb ...
+2025/08/06 04:09:14 apt | Unpacking linux-headers-rock-pi-4a (6.1.115-3) ...
+2025/08/06 04:09:14 apt | Setting up linux-headers-6.1.115-3-rk2501 (6.1.115-3) ...
+2025/08/06 04:09:14 apt | Setting up linux-headers-rock-pi-4a (6.1.115-3) ...
+2025/08/06 04:09:15 ==== Install Radxa kernel ====
+2025/08/06 04:09:16 apt | Hit:1 https://radxa-repo.github.io/bookworm rockchip-bookworm InRelease
+2025/08/06 04:09:16 apt | Hit:2 https://deb.debian.org/debian bookworm InRelease
+2025/08/06 04:09:16 apt | Hit:3 https://deb.debian.org/debian bookworm-backports InRelease
+2025/08/06 04:09:16 apt | Hit:4 https://deb.debian.org/debian-security bookworm-security InRelease
+2025/08/06 04:09:16 apt | Hit:5 https://radxa-repo.github.io/bookworm bookworm InRelease
+2025/08/06 04:09:16 apt | Hit:6 https://download.vscodium.com/debs vscodium InRelease
+2025/08/06 04:09:16 apt | Hit:7 https://deb.debian.org/debian bookworm-updates InRelease
+2025/08/06 04:09:32 apt | Reading package lists...
+2025/08/06 04:09:33 apt | Reading package lists...
+2025/08/06 04:09:33 apt | Building dependency tree...
+2025/08/06 04:09:33 apt | Reading state information...
+2025/08/06 04:09:34 apt | The following additional packages will be installed:
+2025/08/06 04:09:34 apt |   linux-image-6.1.115-3-rk2501 radxa-overlays-dkms
+2025/08/06 04:09:34 apt | The following NEW packages will be installed:
+2025/08/06 04:09:34 apt |   linux-image-6.1.115-3-rk2501 linux-image-rock-pi-4a radxa-overlays-dkms
+2025/08/06 04:09:35 apt | 0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+2025/08/06 04:09:35 apt | Need to get 28.0 MB of archives.
+2025/08/06 04:09:35 apt | After this operation, 109 MB of additional disk space will be used.
+2025/08/06 04:09:35 apt | Get:1 https://radxa-repo.github.io/bookworm bookworm/main arm64 linux-image-6.1.115-3-rk2501 arm64 6.1.115-3 [27.9 MB]
+2025/08/06 04:09:38 apt | Get:2 https://radxa-repo.github.io/bookworm bookworm/main arm64 radxa-overlays-dkms all 0.1.28 [78.5 kB]
+2025/08/06 04:09:38 apt | Get:3 https://radxa-repo.github.io/bookworm bookworm/main arm64 linux-image-rock-pi-4a all 6.1.115-3 [2052 B]
+2025/08/06 04:09:41 apt | Fetched 28.0 MB in 4s (7366 kB/s)
+2025/08/06 04:09:41 apt | Selecting previously unselected package linux-image-6.1.115-3-rk2501.
+2025/08/06 04:09:41 apt | (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 73699 files and directories currently installed.)
+2025/08/06 04:09:41 apt | Preparing to unpack .../linux-image-6.1.115-3-rk2501_6.1.115-3_arm64.deb ...
+2025/08/06 04:09:41 apt | Unpacking linux-image-6.1.115-3-rk2501 (6.1.115-3) ...
+2025/08/06 04:09:44 apt | Selecting previously unselected package radxa-overlays-dkms.
+2025/08/06 04:09:44 apt | Preparing to unpack .../radxa-overlays-dkms_0.1.28_all.deb ...
+2025/08/06 04:09:44 apt | Unpacking radxa-overlays-dkms (0.1.28) ...
+2025/08/06 04:09:45 apt | Selecting previously unselected package linux-image-rock-pi-4a.
+2025/08/06 04:09:45 apt | Preparing to unpack .../linux-image-rock-pi-4a_6.1.115-3_all.deb ...
+2025/08/06 04:09:45 apt | Unpacking linux-image-rock-pi-4a (6.1.115-3) ...
+2025/08/06 04:09:45 apt | Setting up linux-image-6.1.115-3-rk2501 (6.1.115-3) ...
+2025/08/06 04:09:45 apt | dkms: running auto installation service for kernel 6.1.115-3-rk2501.
+2025/08/06 04:09:47 apt | Sign command: /lib/modules/6.1.115-3-rk2501/build/scripts/sign-file
+2025/08/06 04:09:47 apt | Binary /lib/modules/6.1.115-3-rk2501/build/scripts/sign-file not found, modules won't be signed
+2025/08/06 04:09:48 apt | 
+2025/08/06 04:09:48 apt | Building module:
+2025/08/06 04:09:49 apt | Cleaning build area...
+2025/08/06 04:10:35 apt | make -j4 KERNELRELEASE=6.1.115-3-rk2501 -C /lib/modules/6.1.115-3-rk2501/build M=/var/lib/dkms/r8125/9.013.02-1/build..................
+2025/08/06 04:10:37 apt | Cleaning build area...
+2025/08/06 04:10:37 apt | 
+2025/08/06 04:10:37 apt | r8125.ko.xz:
+2025/08/06 04:10:37 apt | Running module version sanity check.
+2025/08/06 04:10:37 apt |  - Original module
+2025/08/06 04:10:37 apt |    - No original module exists within this kernel
+2025/08/06 04:10:37 apt |  - Installation
+2025/08/06 04:10:37 apt |    - Installing to /lib/modules/6.1.115-3-rk2501/updates/dkms/
+2025/08/06 04:10:42 apt | depmod....
+2025/08/06 04:10:42 apt | dkms: autoinstall for kernel: 6.1.115-3-rk2501.
+2025/08/06 04:10:42 apt | update-initramfs: Generating /boot/initrd.img-6.1.115-3-rk2501
+2025/08/06 04:12:42 apt | I: The initramfs will attempt to resume from /dev/vda
+2025/08/06 04:12:42 apt | I: Set the RESUME variable to override this.
+2025/08/06 04:13:06 apt | Decompressing /boot/vmlinuz-6.1.115-3-rk2501 ...
+2025/08/06 04:13:07 apt | Rebuilding overlay data folder for '6.1.115-3-rk2501'...
+2025/08/06 04:13:08 apt | Building list of compatible overlays...
+2025/08/06 04:13:08 apt | Installing compatible overlays...
+2025/08/06 04:13:08 apt | Reenable previously enabled overlays...
+2025/08/06 04:13:08 apt | Commiting changes...
+2025/08/06 04:13:08 apt | Overlay data folder has been successfully rebuilt.
+2025/08/06 04:13:08 apt | P: Checking for EXTLINUX directory... found.
+2025/08/06 04:13:09 apt | P: Writing config for vmlinuz-6.1.115-3-rk2501...
+2025/08/06 04:13:09 apt | P: Updating /boot/extlinux/extlinux.conf...
+2025/08/06 04:13:09 apt | Setting up radxa-overlays-dkms (0.1.28) ...
+2025/08/06 04:13:10 apt | Loading new radxa-overlays-0.1.28 DKMS files...
+2025/08/06 04:13:11 apt | It is likely that 6.1.0-31-amd64 belongs to a chroot's host
+2025/08/06 04:13:11 apt | Building for 6.1.115-3-rk2501
+2025/08/06 04:13:12 apt | Building initial module for 6.1.115-3-rk2501
+2025/08/06 04:15:05 apt | Done.
+2025/08/06 04:15:09 apt | 
+2025/08/06 04:15:09 apt | radxa-overlays.ko.xz:
+2025/08/06 04:15:09 apt | Running module version sanity check.
+2025/08/06 04:15:09 apt |  - Original module
+2025/08/06 04:15:09 apt |    - No original module exists within this kernel
+2025/08/06 04:15:09 apt |  - Installation
+2025/08/06 04:15:09 apt |    - Installing to /lib/modules/6.1.115-3-rk2501/updates/dkms/
+2025/08/06 04:15:10 apt | 
+2025/08/06 04:15:10 apt | Running the post_install script:
+2025/08/06 04:15:10 apt | Kernel '6.1.115-3-rk2501' does not support 'allwinner'. Skip.
+2025/08/06 04:15:10 apt | Kernel '6.1.115-3-rk2501' does not support 'amlogic'. Skip.
+2025/08/06 04:15:10 apt | Linking '/var/lib/dkms/radxa-overlays/0.1.28/6.1.115-3-rk2501/aarch64/module/arch/arm64/boot/dts/rockchip/overlays' to '/usr/lib/linux-image-6.1.115-3-rk2501/rockchip/overlays'...
+2025/08/06 04:15:10 apt | Rebuilding overlay data folder for '6.1.115-3-rk2501'...
+2025/08/06 04:15:10 apt | Removing managed overlays...
+2025/08/06 04:15:10 apt | Building list of compatible overlays...
+2025/08/06 04:15:11 apt | Installing compatible overlays...
+2025/08/06 04:15:38 apt | Reenable previously enabled overlays...
+2025/08/06 04:15:38 apt | Commiting changes...
+2025/08/06 04:15:38 apt | Overlay data folder has been successfully rebuilt.
+2025/08/06 04:15:43 apt | depmod....
+2025/08/06 04:15:43 apt | Setting up linux-image-rock-pi-4a (6.1.115-3) ...
+2025/08/06 04:15:44 ==== Product specific setup ====
+2025/08/06 04:15:45 ==== Clean up rootfs ====
+2025/08/06 04:15:45 ==== Clean up rootfs ====
+2025/08/06 04:15:45 apt clean... | 
+2025/08/06 04:15:45 apt clean... | WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+2025/08/06 04:15:45 apt clean... | 
+2025/08/06 04:15:45 ==== Clean up swap device ====
+2025/08/06 04:15:45 ==== Workaround cloud-initramfs-growroot bug ====
+2025/08/06 04:15:45 ==== Rebuild initramfs to not waiting for (now missing) suspend/resume device ====
+2025/08/06 04:15:46 set -e... | update-initramfs: Generating /boot/initrd.img-6.1.115-3-rk2501
+2025/08/06 04:18:09 ==== Recipe done ====
+Partition 3 is root partition.
+e2fsck 1.47.0 (5-Feb-2023)
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+rootfs: 86810/372416 files (0.1% non-contiguous), 904670/1487867 blocks
+1059716 of 1487867 blocks are in use.
+e2fsck 1.47.0 (5-Feb-2023)
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+rootfs: 86810/372416 files (0.1% non-contiguous), 904670/1487867 blocks
+resize2fs 1.47.0 (5-Feb-2023)
+Resizing the filesystem on /dev/mapper/loop14p3 to 1059716 (4k) blocks.
+The filesystem on /dev/mapper/loop14p3 is now 1059716 (4k) blocks long.
+
+Root filesystem has been shrinked to 1059716 blocks.
+Root partition has been shrinked to 4688723968.
+Caution: invalid backup GPT header, but valid main header; regenerating
+backup header from main header.
+
+Warning! Error 25 reading partition table for CRC check!
+Warning! One or more CRCs don't match. You should repair the disk!
+Main header: OK
+Backup header: ERROR
+Main partition table: OK
+Backup partition table: ERROR
+
+Image shrunked from 6442450944 to 4688741376.
+rbuild is finished.
+Execution started at 2025-08-05T2106-0700
+Total execution time: 00:18:37
+Build success
+################################################################################################################################
+ Building for: rock-pi-4c cli - Tue Aug  5 09:24:37 PM PDT 2025
+################################################################################################################################
+latest: Pulling from godebos/debos
+Digest: sha256:6786ba076bc303a6327d65817b4127712ad11b7bca6a4838392207388d2ff878
+Status: Image is up to date for godebos/debos:latest
+docker.io/godebos/debos:latest
+Using debian_bookworm_cli.tar rootfs.
+2025/08/06 04:24:42 ==== Set up swap ====
+2025/08/06 04:24:43 ==== Enable swap device ====
+2025/08/06 04:24:43 set -e... | mkswap: /dev/vda: warning: wiping old swap signature.
+2025/08/06 04:24:43 set -e... | Setting up swapspace version 1, size = 4 GiB (4294963200 bytes)
+2025/08/06 04:24:43 set -e... | no label, UUID=5b1276ca-a80d-4762-9b0e-1d75b12dcfa3
+2025/08/06 04:24:43 ==== Set up on-disk layout ====
+2025/08/06 04:24:43 Formatting partition 1 | mkfs.fat: Warning: lowercase labels might not work properly on some systems
+2025/08/06 04:24:43 Formatting partition 1 | WARNING: Number of clusters for 32 bit FAT is less then suggested minimum.
+2025/08/06 04:24:43 Formatting partition 1 | mkfs.fat 4.2 (2021-01-31)
+2025/08/06 04:24:44 Formatting partition 2 | mkfs.fat: Warning: lowercase labels might not work properly on some systems
+2025/08/06 04:24:44 Formatting partition 2 | mkfs.fat 4.2 (2021-01-31)
+2025/08/06 04:24:44 Formatting partition 3 | mke2fs 1.47.0 (5-Feb-2023)
+2025/08/06 04:24:44 Formatting partition 3 | Discarding device blocks:       0/1487867               done                            
+2025/08/06 04:24:44 Formatting partition 3 | Creating filesystem with 1487867 4k blocks and 372416 inodes
+2025/08/06 04:24:44 Formatting partition 3 | Filesystem UUID: b9fc79bc-ac38-4354-b73c-2a3404bee5de
+2025/08/06 04:24:44 Formatting partition 3 | Superblock backups stored on blocks: 
+2025/08/06 04:24:44 Formatting partition 3 | 	32768, 98304, 163840, 229376, 294912, 819200, 884736
+2025/08/06 04:24:44 Formatting partition 3 | 
+2025/08/06 04:24:44 Formatting partition 3 | Allocating group tables:  0/46     done                            
+2025/08/06 04:24:44 Formatting partition 3 | Writing inode tables:  0/46     done                            
+2025/08/06 04:24:44 Formatting partition 3 | Creating journal (16384 blocks): done
+2025/08/06 04:24:44 Formatting partition 3 | Writing superblocks and filesystem accounting information:  0/46     done
+2025/08/06 04:24:44 Formatting partition 3 | 
+2025/08/06 04:24:45 ==== Unpack rootfs ====
+2025/08/06 04:24:53 ==== Deploying filesystem onto image ====
+2025/08/06 04:24:55 Setting up /etc/fstab
+2025/08/06 04:24:55 ==== Install task-rock-pi-4c package ====
+2025/08/06 04:24:56 apt | Get:1 https://radxa-repo.github.io/bookworm bookworm InRelease [14.8 kB]
+2025/08/06 04:24:56 apt | Get:2 https://deb.debian.org/debian bookworm InRelease [151 kB]
+2025/08/06 04:24:56 apt | Get:3 https://deb.debian.org/debian bookworm-backports InRelease [59.4 kB]
+2025/08/06 04:24:56 apt | Get:4 https://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+2025/08/06 04:24:56 apt | Get:5 https://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+2025/08/06 04:24:57 apt | Get:6 https://radxa-repo.github.io/bookworm bookworm/main arm64 Packages [50.9 kB]
+2025/08/06 04:24:57 apt | Get:7 https://radxa-repo.github.io/bookworm bookworm/main all Packages [38.0 kB]
+2025/08/06 04:24:59 apt | Get:8 https://deb.debian.org/debian bookworm/main arm64 Packages [8693 kB]
+2025/08/06 04:25:00 apt | Get:9 https://deb.debian.org/debian bookworm/main Translation-en [6109 kB]
+2025/08/06 04:25:00 apt | Get:10 https://deb.debian.org/debian bookworm/contrib arm64 Packages [45.7 kB]
+2025/08/06 04:25:00 apt | Get:11 https://deb.debian.org/debian bookworm/contrib Translation-en [48.4 kB]
+2025/08/06 04:25:00 apt | Get:12 https://deb.debian.org/debian bookworm/non-free arm64 Packages [75.8 kB]
+2025/08/06 04:25:00 apt | Get:13 https://deb.debian.org/debian bookworm/non-free Translation-en [68.1 kB]
+2025/08/06 04:25:00 apt | Get:14 https://deb.debian.org/debian bookworm/non-free-firmware arm64 Packages [5832 B]
+2025/08/06 04:25:01 apt | Get:15 https://deb.debian.org/debian bookworm/non-free-firmware Translation-en [20.9 kB]
+2025/08/06 04:25:01 apt | Get:16 https://deb.debian.org/debian bookworm-backports/main arm64 Packages [303 kB]
+2025/08/06 04:25:01 apt | Get:17 https://deb.debian.org/debian bookworm-backports/main Translation-en [257 kB]
+2025/08/06 04:25:01 apt | Get:18 https://deb.debian.org/debian bookworm-backports/contrib arm64 Packages [5176 B]
+2025/08/06 04:25:01 apt | Get:19 https://deb.debian.org/debian bookworm-backports/contrib Translation-en [5864 B]
+2025/08/06 04:25:01 apt | Get:20 https://deb.debian.org/debian bookworm-backports/non-free arm64 Packages [12.6 kB]
+2025/08/06 04:25:01 apt | Get:21 https://deb.debian.org/debian bookworm-backports/non-free Translation-en [8460 B]
+2025/08/06 04:25:01 apt | Get:22 https://deb.debian.org/debian bookworm-backports/non-free-firmware arm64 Packages [3832 B]
+2025/08/06 04:25:02 apt | Get:23 https://deb.debian.org/debian bookworm-backports/non-free-firmware Translation-en [2860 B]
+2025/08/06 04:25:04 apt | Get:24 https://deb.debian.org/debian-security bookworm-security/main arm64 Packages [268 kB]
+2025/08/06 04:25:04 apt | Get:25 https://deb.debian.org/debian-security bookworm-security/main Translation-en [163 kB]
+2025/08/06 04:25:04 apt | Get:26 https://deb.debian.org/debian-security bookworm-security/contrib arm64 Packages [508 B]
+2025/08/06 04:25:04 apt | Get:27 https://deb.debian.org/debian-security bookworm-security/contrib Translation-en [652 B]
+2025/08/06 04:25:04 apt | Get:28 https://deb.debian.org/debian-security bookworm-security/non-free-firmware Translation-en [472 B]
+2025/08/06 04:25:06 apt | Get:29 https://deb.debian.org/debian bookworm-updates/main arm64 Packages [6936 B]
+2025/08/06 04:25:06 apt | Get:30 https://deb.debian.org/debian bookworm-updates/main Translation-en [5448 B]
+2025/08/06 04:25:07 apt | Fetched 16.5 MB in 12s (1359 kB/s)
+2025/08/06 04:25:12 apt | Reading package lists...
+2025/08/06 04:25:13 apt | Reading package lists...
+2025/08/06 04:25:13 apt | Building dependency tree...
+2025/08/06 04:25:13 apt | Reading state information...
+2025/08/06 04:25:14 apt | The following additional packages will be installed:
+2025/08/06 04:25:14 apt |   bzip2 cpp cpp-12 dkms dpkg-dev gcc gcc-12 libasan8 libatomic1 libcc1-0
+2025/08/06 04:25:14 apt |   libdpkg-perl libgcc-12-dev libhwasan0 libisl23 libitm1 liblsan0 libmpc3
+2025/08/06 04:25:14 apt |   libmpfr6 libtsan2 libubsan1 make patch r8125-dkms
+2025/08/06 04:25:14 apt |   radxa-system-config-bookworm radxa-system-config-common
+2025/08/06 04:25:14 apt |   radxa-system-config-kernel-cmdline-ttyfiq0 radxa-system-config-r8125-dkms
+2025/08/06 04:25:14 apt | Suggested packages:
+2025/08/06 04:25:14 apt |   bzip2-doc cpp-doc gcc-12-locales cpp-12-doc menu debian-keyring gcc-multilib
+2025/08/06 04:25:14 apt |   manpages-dev autoconf automake libtool flex bison gdb gcc-doc gcc-12-doc
+2025/08/06 04:25:14 apt |   gnupg | sq | sqop | pgpainless-cli git bzr make-doc ed diffutils-doc
+2025/08/06 04:25:14 apt | Recommended packages:
+2025/08/06 04:25:14 apt |   fakeroot linux-headers-generic | linux-headers-686-pae | linux-headers-amd64
+2025/08/06 04:25:14 apt |   | linux-headers build-essential gnupg | sq | sqop | pgpainless-cli
+2025/08/06 04:25:14 apt |   libalgorithm-merge-perl libc6-dev | libc-dev libc6-dev
+2025/08/06 04:25:14 apt |   libfile-fcntllock-perl liblocale-gettext-perl radxa-desktop-branding
+2025/08/06 04:25:14 apt |   task-rk3399
+2025/08/06 04:25:14 apt | The following NEW packages will be installed:
+2025/08/06 04:25:14 apt |   bzip2 cpp cpp-12 dkms dpkg-dev gcc gcc-12 libasan8 libatomic1 libcc1-0
+2025/08/06 04:25:14 apt |   libdpkg-perl libgcc-12-dev libhwasan0 libisl23 libitm1 liblsan0 libmpc3
+2025/08/06 04:25:14 apt |   libmpfr6 libtsan2 libubsan1 make patch r8125-dkms
+2025/08/06 04:25:14 apt |   radxa-system-config-bookworm radxa-system-config-common
+2025/08/06 04:25:14 apt |   radxa-system-config-kernel-cmdline-ttyfiq0 radxa-system-config-r8125-dkms
+2025/08/06 04:25:14 apt |   task-rock-pi-4c
+2025/08/06 04:25:14 apt | 0 upgraded, 28 newly installed, 0 to remove and 2 not upgraded.
+2025/08/06 04:25:14 apt | Need to get 36.6 MB of archives.
+2025/08/06 04:25:14 apt | After this operation, 137 MB of additional disk space will be used.
+2025/08/06 04:25:14 apt | Get:1 https://deb.debian.org/debian bookworm/main arm64 libisl23 arm64 0.25-1.1 [610 kB]
+2025/08/06 04:25:14 apt | Get:2 https://radxa-repo.github.io/bookworm bookworm/main arm64 r8125-dkms all 9.013.02-1-3 [106 kB]
+2025/08/06 04:25:14 apt | Get:3 https://deb.debian.org/debian bookworm/main arm64 libmpfr6 arm64 4.2.0-1 [600 kB]
+2025/08/06 04:25:15 apt | Get:4 https://deb.debian.org/debian bookworm/main arm64 libmpc3 arm64 1.3.1-1 [49.2 kB]
+2025/08/06 04:25:15 apt | Get:5 https://deb.debian.org/debian bookworm/main arm64 cpp-12 arm64 12.2.0-14+deb12u1 [8228 kB]
+2025/08/06 04:25:15 apt | Get:6 https://radxa-repo.github.io/bookworm bookworm/main arm64 radxa-system-config-common all 0.6.17 [10.3 kB]
+2025/08/06 04:25:15 apt | Get:7 https://radxa-repo.github.io/bookworm bookworm/main arm64 radxa-system-config-bookworm all 0.6.17 [11.8 kB]
+2025/08/06 04:25:15 apt | Get:8 https://radxa-repo.github.io/bookworm bookworm/main arm64 radxa-system-config-kernel-cmdline-ttyfiq0 all 0.6.17 [6824 B]
+2025/08/06 04:25:15 apt | Get:9 https://radxa-repo.github.io/bookworm bookworm/main arm64 radxa-system-config-r8125-dkms all 0.6.17 [6820 B]
+2025/08/06 04:25:15 apt | Get:10 https://radxa-repo.github.io/bookworm bookworm/main arm64 task-rock-pi-4c all 0.4.32 [5288 B]
+2025/08/06 04:25:15 apt | Get:11 https://deb.debian.org/debian bookworm/main arm64 cpp arm64 4:12.2.0-3 [6832 B]
+2025/08/06 04:25:15 apt | Get:12 https://deb.debian.org/debian bookworm/main arm64 libcc1-0 arm64 12.2.0-14+deb12u1 [37.7 kB]
+2025/08/06 04:25:15 apt | Get:13 https://deb.debian.org/debian bookworm/main arm64 libitm1 arm64 12.2.0-14+deb12u1 [24.0 kB]
+2025/08/06 04:25:15 apt | Get:14 https://deb.debian.org/debian bookworm/main arm64 libatomic1 arm64 12.2.0-14+deb12u1 [9568 B]
+2025/08/06 04:25:15 apt | Get:15 https://deb.debian.org/debian bookworm/main arm64 libasan8 arm64 12.2.0-14+deb12u1 [2096 kB]
+2025/08/06 04:25:16 apt | Get:16 https://deb.debian.org/debian bookworm/main arm64 liblsan0 arm64 12.2.0-14+deb12u1 [926 kB]
+2025/08/06 04:25:16 apt | Get:17 https://deb.debian.org/debian bookworm/main arm64 libtsan2 arm64 12.2.0-14+deb12u1 [2178 kB]
+2025/08/06 04:25:16 apt | Get:18 https://deb.debian.org/debian bookworm/main arm64 libubsan1 arm64 12.2.0-14+deb12u1 [862 kB]
+2025/08/06 04:25:16 apt | Get:19 https://deb.debian.org/debian bookworm/main arm64 libhwasan0 arm64 12.2.0-14+deb12u1 [999 kB]
+2025/08/06 04:25:16 apt | Get:20 https://deb.debian.org/debian bookworm/main arm64 libgcc-12-dev arm64 12.2.0-14+deb12u1 [956 kB]
+2025/08/06 04:25:16 apt | Get:21 https://deb.debian.org/debian bookworm/main arm64 gcc-12 arm64 12.2.0-14+deb12u1 [16.3 MB]
+2025/08/06 04:25:18 apt | Get:22 https://deb.debian.org/debian bookworm/main arm64 gcc arm64 4:12.2.0-3 [5244 B]
+2025/08/06 04:25:18 apt | Get:23 https://deb.debian.org/debian bookworm/main arm64 libdpkg-perl all 1.21.22 [603 kB]
+2025/08/06 04:25:18 apt | Get:24 https://deb.debian.org/debian bookworm/main arm64 bzip2 arm64 1.0.8-5+b1 [48.9 kB]
+2025/08/06 04:25:18 apt | Get:25 https://deb.debian.org/debian bookworm/main arm64 patch arm64 2.7.6-7 [121 kB]
+2025/08/06 04:25:18 apt | Get:26 https://deb.debian.org/debian bookworm/main arm64 make arm64 4.3-4.1 [391 kB]
+2025/08/06 04:25:18 apt | Get:27 https://deb.debian.org/debian bookworm/main arm64 dpkg-dev all 1.21.22 [1353 kB]
+2025/08/06 04:25:18 apt | Get:28 https://deb.debian.org/debian bookworm/main arm64 dkms all 3.0.10-8+deb12u1 [48.7 kB]
+2025/08/06 04:25:20 apt | Fetched 36.6 MB in 4s (9035 kB/s)
+2025/08/06 04:25:21 apt | Selecting previously unselected package libisl23:arm64.
+2025/08/06 04:25:21 apt | (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 27375 files and directories currently installed.)
+2025/08/06 04:25:21 apt | Preparing to unpack .../00-libisl23_0.25-1.1_arm64.deb ...
+2025/08/06 04:25:21 apt | Unpacking libisl23:arm64 (0.25-1.1) ...
+2025/08/06 04:25:21 apt | Selecting previously unselected package libmpfr6:arm64.
+2025/08/06 04:25:21 apt | Preparing to unpack .../01-libmpfr6_4.2.0-1_arm64.deb ...
+2025/08/06 04:25:21 apt | Unpacking libmpfr6:arm64 (4.2.0-1) ...
+2025/08/06 04:25:21 apt | Selecting previously unselected package libmpc3:arm64.
+2025/08/06 04:25:21 apt | Preparing to unpack .../02-libmpc3_1.3.1-1_arm64.deb ...
+2025/08/06 04:25:21 apt | Unpacking libmpc3:arm64 (1.3.1-1) ...
+2025/08/06 04:25:22 apt | Selecting previously unselected package cpp-12.
+2025/08/06 04:25:22 apt | Preparing to unpack .../03-cpp-12_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:25:22 apt | Unpacking cpp-12 (12.2.0-14+deb12u1) ...
+2025/08/06 04:25:24 apt | Selecting previously unselected package cpp.
+2025/08/06 04:25:24 apt | Preparing to unpack .../04-cpp_4%3a12.2.0-3_arm64.deb ...
+2025/08/06 04:25:24 apt | Unpacking cpp (4:12.2.0-3) ...
+2025/08/06 04:25:24 apt | Selecting previously unselected package libcc1-0:arm64.
+2025/08/06 04:25:24 apt | Preparing to unpack .../05-libcc1-0_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:25:24 apt | Unpacking libcc1-0:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:25:25 apt | Selecting previously unselected package libitm1:arm64.
+2025/08/06 04:25:25 apt | Preparing to unpack .../06-libitm1_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:25:25 apt | Unpacking libitm1:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:25:25 apt | Selecting previously unselected package libatomic1:arm64.
+2025/08/06 04:25:25 apt | Preparing to unpack .../07-libatomic1_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:25:25 apt | Unpacking libatomic1:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:25:25 apt | Selecting previously unselected package libasan8:arm64.
+2025/08/06 04:25:25 apt | Preparing to unpack .../08-libasan8_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:25:25 apt | Unpacking libasan8:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:25:26 apt | Selecting previously unselected package liblsan0:arm64.
+2025/08/06 04:25:26 apt | Preparing to unpack .../09-liblsan0_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:25:26 apt | Unpacking liblsan0:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:25:27 apt | Selecting previously unselected package libtsan2:arm64.
+2025/08/06 04:25:27 apt | Preparing to unpack .../10-libtsan2_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:25:27 apt | Unpacking libtsan2:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:25:28 apt | Selecting previously unselected package libubsan1:arm64.
+2025/08/06 04:25:28 apt | Preparing to unpack .../11-libubsan1_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:25:28 apt | Unpacking libubsan1:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:25:28 apt | Selecting previously unselected package libhwasan0:arm64.
+2025/08/06 04:25:28 apt | Preparing to unpack .../12-libhwasan0_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:25:28 apt | Unpacking libhwasan0:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:25:29 apt | Selecting previously unselected package libgcc-12-dev:arm64.
+2025/08/06 04:25:29 apt | Preparing to unpack .../13-libgcc-12-dev_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:25:29 apt | Unpacking libgcc-12-dev:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:25:29 apt | Selecting previously unselected package gcc-12.
+2025/08/06 04:25:29 apt | Preparing to unpack .../14-gcc-12_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:25:29 apt | Unpacking gcc-12 (12.2.0-14+deb12u1) ...
+2025/08/06 04:25:32 apt | Selecting previously unselected package gcc.
+2025/08/06 04:25:32 apt | Preparing to unpack .../15-gcc_4%3a12.2.0-3_arm64.deb ...
+2025/08/06 04:25:32 apt | Unpacking gcc (4:12.2.0-3) ...
+2025/08/06 04:25:32 apt | Selecting previously unselected package libdpkg-perl.
+2025/08/06 04:25:32 apt | Preparing to unpack .../16-libdpkg-perl_1.21.22_all.deb ...
+2025/08/06 04:25:32 apt | Unpacking libdpkg-perl (1.21.22) ...
+2025/08/06 04:25:33 apt | Selecting previously unselected package bzip2.
+2025/08/06 04:25:33 apt | Preparing to unpack .../17-bzip2_1.0.8-5+b1_arm64.deb ...
+2025/08/06 04:25:33 apt | Unpacking bzip2 (1.0.8-5+b1) ...
+2025/08/06 04:25:33 apt | Selecting previously unselected package patch.
+2025/08/06 04:25:33 apt | Preparing to unpack .../18-patch_2.7.6-7_arm64.deb ...
+2025/08/06 04:25:33 apt | Unpacking patch (2.7.6-7) ...
+2025/08/06 04:25:33 apt | Selecting previously unselected package make.
+2025/08/06 04:25:33 apt | Preparing to unpack .../19-make_4.3-4.1_arm64.deb ...
+2025/08/06 04:25:33 apt | Unpacking make (4.3-4.1) ...
+2025/08/06 04:25:34 apt | Selecting previously unselected package dpkg-dev.
+2025/08/06 04:25:34 apt | Preparing to unpack .../20-dpkg-dev_1.21.22_all.deb ...
+2025/08/06 04:25:34 apt | Unpacking dpkg-dev (1.21.22) ...
+2025/08/06 04:25:34 apt | Selecting previously unselected package dkms.
+2025/08/06 04:25:34 apt | Preparing to unpack .../21-dkms_3.0.10-8+deb12u1_all.deb ...
+2025/08/06 04:25:36 apt | Unpacking dkms (3.0.10-8+deb12u1) ...
+2025/08/06 04:25:37 apt | Selecting previously unselected package r8125-dkms.
+2025/08/06 04:25:37 apt | Preparing to unpack .../22-r8125-dkms_9.013.02-1-3_all.deb ...
+2025/08/06 04:25:37 apt | Unpacking r8125-dkms (9.013.02-1-3) ...
+2025/08/06 04:25:37 apt | Selecting previously unselected package radxa-system-config-common.
+2025/08/06 04:25:37 apt | Preparing to unpack .../23-radxa-system-config-common_0.6.17_all.deb ...
+2025/08/06 04:25:37 apt | Unpacking radxa-system-config-common (0.6.17) ...
+2025/08/06 04:25:37 apt | Selecting previously unselected package radxa-system-config-bookworm.
+2025/08/06 04:25:37 apt | Preparing to unpack .../24-radxa-system-config-bookworm_0.6.17_all.deb ...
+2025/08/06 04:25:37 apt | Adding 'diversion of /usr/share/desktop-base/kf5-settings/kdeglobals to /usr/share/desktop-base/kf5-settings/kdeglobals.bak by radxa-system-config-bookworm'
+2025/08/06 04:25:37 apt | Unpacking radxa-system-config-bookworm (0.6.17) ...
+2025/08/06 04:25:38 apt | Selecting previously unselected package radxa-system-config-kernel-cmdline-ttyfiq0.
+2025/08/06 04:25:38 apt | Preparing to unpack .../25-radxa-system-config-kernel-cmdline-ttyfiq0_0.6.17_all.deb ...
+2025/08/06 04:25:38 apt | Unpacking radxa-system-config-kernel-cmdline-ttyfiq0 (0.6.17) ...
+2025/08/06 04:25:38 apt | Selecting previously unselected package radxa-system-config-r8125-dkms.
+2025/08/06 04:25:38 apt | Preparing to unpack .../26-radxa-system-config-r8125-dkms_0.6.17_all.deb ...
+2025/08/06 04:25:38 apt | Unpacking radxa-system-config-r8125-dkms (0.6.17) ...
+2025/08/06 04:25:38 apt | Selecting previously unselected package task-rock-pi-4c.
+2025/08/06 04:25:38 apt | Preparing to unpack .../27-task-rock-pi-4c_0.4.32_all.deb ...
+2025/08/06 04:25:38 apt | Unpacking task-rock-pi-4c (0.4.32) ...
+2025/08/06 04:25:38 apt | Setting up radxa-system-config-common (0.6.17) ...
+2025/08/06 04:25:39 apt | Setting up bzip2 (1.0.8-5+b1) ...
+2025/08/06 04:25:39 apt | Setting up make (4.3-4.1) ...
+2025/08/06 04:25:39 apt | Setting up libmpfr6:arm64 (4.2.0-1) ...
+2025/08/06 04:25:39 apt | Setting up libmpc3:arm64 (1.3.1-1) ...
+2025/08/06 04:25:39 apt | Setting up libatomic1:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:25:39 apt | Setting up patch (2.7.6-7) ...
+2025/08/06 04:25:39 apt | Setting up libdpkg-perl (1.21.22) ...
+2025/08/06 04:25:39 apt | Setting up libubsan1:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:25:39 apt | Setting up libhwasan0:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:25:39 apt | Setting up libasan8:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:25:39 apt | Setting up libtsan2:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:25:39 apt | Setting up libisl23:arm64 (0.25-1.1) ...
+2025/08/06 04:25:39 apt | Setting up radxa-system-config-kernel-cmdline-ttyfiq0 (0.6.17) ...
+2025/08/06 04:25:39 apt | P: Checking for EXTLINUX directory... not found.
+2025/08/06 04:25:39 apt | P: Creating EXTLINUX directory... done: /boot/extlinux
+2025/08/06 04:25:39 apt | P: Updating /boot/extlinux/extlinux.conf...
+2025/08/06 04:25:39 apt | Setting up libcc1-0:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:25:39 apt | Setting up liblsan0:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:25:39 apt | Setting up libitm1:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:25:39 apt | Setting up cpp-12 (12.2.0-14+deb12u1) ...
+2025/08/06 04:25:39 apt | Setting up dpkg-dev (1.21.22) ...
+2025/08/06 04:25:39 apt | Setting up libgcc-12-dev:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:25:39 apt | Setting up cpp (4:12.2.0-3) ...
+2025/08/06 04:25:40 apt | Setting up gcc-12 (12.2.0-14+deb12u1) ...
+2025/08/06 04:25:40 apt | Setting up gcc (4:12.2.0-3) ...
+2025/08/06 04:25:40 apt | Setting up dkms (3.0.10-8+deb12u1) ...
+2025/08/06 04:25:42 apt | Setting up r8125-dkms (9.013.02-1-3) ...
+2025/08/06 04:25:43 apt | Loading new r8125-9.013.02-1 DKMS files...
+2025/08/06 04:25:44 apt | It is likely that 6.1.0-31-amd64 belongs to a chroot's host
+2025/08/06 04:25:44 apt | Building for 
+2025/08/06 04:25:44 apt | Setting up radxa-system-config-r8125-dkms (0.6.17) ...
+2025/08/06 04:25:44 apt | Processing triggers for u-boot-menu (4.2.2) ...
+2025/08/06 04:25:45 apt | P: Checking for EXTLINUX directory... found.
+2025/08/06 04:25:45 apt | Processing triggers for initramfs-tools (0.142+deb12u3) ...
+2025/08/06 04:25:46 apt | Processing triggers for libc-bin (2.36-9+deb12u10) ...
+2025/08/06 04:25:46 apt | Processing triggers for man-db (2.11.2-2) ...
+2025/08/06 04:25:48 apt | Setting up radxa-system-config-bookworm (0.6.17) ...
+2025/08/06 04:25:48 apt | Processing triggers for initramfs-tools (0.142+deb12u3) ...
+2025/08/06 04:25:49 apt | Setting up task-rock-pi-4c (0.4.32) ...
+2025/08/06 04:25:50 ==== Add rockchip-bookworm Repo ====
+2025/08/06 04:25:50 ==== Installl keyring from package ====
+2025/08/06 04:25:50 ==== Add repo ====
+2025/08/06 04:25:51 set -e... |   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+2025/08/06 04:25:51 set -e... |                                  Dload  Upload   Total   Spent    Left  Speed
+2025/08/06 04:25:51 set -e... |   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  2342  100  2342    0     0   3643      0 --:--:-- --:--:-- --:--:--  3682
+2025/08/06 04:25:51 ==== Upgrade stale rootfs ====
+2025/08/06 04:25:52 set -e... | Hit:1 https://deb.debian.org/debian bookworm InRelease
+2025/08/06 04:25:52 set -e... | Hit:2 https://deb.debian.org/debian bookworm-backports InRelease
+2025/08/06 04:25:52 set -e... | Hit:3 https://deb.debian.org/debian-security bookworm-security InRelease
+2025/08/06 04:25:52 set -e... | Hit:4 https://deb.debian.org/debian bookworm-updates InRelease
+2025/08/06 04:25:52 set -e... | Get:5 https://radxa-repo.github.io/bookworm rockchip-bookworm InRelease [14.8 kB]
+2025/08/06 04:25:52 set -e... | Hit:6 https://radxa-repo.github.io/bookworm bookworm InRelease
+2025/08/06 04:26:02 set -e... | Get:7 https://radxa-repo.github.io/bookworm rockchip-bookworm/main all Packages [387 B]
+2025/08/06 04:26:02 set -e... | Get:8 https://radxa-repo.github.io/bookworm rockchip-bookworm/main arm64 Packages [387 B]
+2025/08/06 04:26:03 set -e... | Fetched 15.6 kB in 11s (1423 B/s)
+2025/08/06 04:26:07 set -e... | Reading package lists...
+2025/08/06 04:26:08 set -e... | Reading package lists...
+2025/08/06 04:26:09 set -e... | Building dependency tree...
+2025/08/06 04:26:09 set -e... | Reading state information...
+2025/08/06 04:26:09 set -e... | Calculating upgrade...
+2025/08/06 04:26:10 set -e... | The following packages will be upgraded:
+2025/08/06 04:26:10 set -e... |   libgnutls30 radxa-archive-keyring
+2025/08/06 04:26:10 set -e... | 2 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+2025/08/06 04:26:10 set -e... | Need to get 1320 kB of archives.
+2025/08/06 04:26:10 set -e... | After this operation, 2048 B disk space will be freed.
+2025/08/06 04:26:10 set -e... | Get:1 https://deb.debian.org/debian-security bookworm-security/main arm64 libgnutls30 arm64 3.7.9-2+deb12u5 [1314 kB]
+2025/08/06 04:26:10 set -e... | Get:2 https://radxa-repo.github.io/bookworm bookworm/main arm64 radxa-archive-keyring all 0.2.0 [6740 B]
+2025/08/06 04:26:12 set -e... | apt-listchanges: Reading changelogs...
+2025/08/06 04:26:13 set -e... | dpkg-preconfigure: unable to re-open stdin: No such file or directory
+2025/08/06 04:26:13 set -e... | Fetched 1320 kB in 1s (2137 kB/s)
+2025/08/06 04:26:13 set -e... | (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 28253 files and directories currently installed.)
+2025/08/06 04:26:13 set -e... | Preparing to unpack .../libgnutls30_3.7.9-2+deb12u5_arm64.deb ...
+2025/08/06 04:26:13 set -e... | Unpacking libgnutls30:arm64 (3.7.9-2+deb12u5) over (3.7.9-2+deb12u4) ...
+2025/08/06 04:26:14 set -e... | Setting up libgnutls30:arm64 (3.7.9-2+deb12u5) ...
+2025/08/06 04:26:14 set -e... | (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 28253 files and directories currently installed.)
+2025/08/06 04:26:14 set -e... | Preparing to unpack .../radxa-archive-keyring_0.2.0_all.deb ...
+2025/08/06 04:26:14 set -e... | Unpacking radxa-archive-keyring (0.2.0) over (0.2.0) ...
+2025/08/06 04:26:14 set -e... | Setting up radxa-archive-keyring (0.2.0) ...
+2025/08/06 04:26:14 set -e... | Processing triggers for libc-bin (2.36-9+deb12u10) ...
+2025/08/06 04:26:16 set -e... | Reading package lists...
+2025/08/06 04:26:16 set -e... | Building dependency tree...
+2025/08/06 04:26:16 set -e... | Reading state information...
+2025/08/06 04:26:17 set -e... | Calculating upgrade...
+2025/08/06 04:26:17 set -e... | 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+2025/08/06 04:26:18 set -e... | Reading package lists...
+2025/08/06 04:26:18 set -e... | Building dependency tree...
+2025/08/06 04:26:18 set -e... | Reading state information...
+2025/08/06 04:26:19 set -e... | 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+2025/08/06 04:26:19 ==== Install Radxa firmware ====
+2025/08/06 04:26:20 apt | Hit:1 https://deb.debian.org/debian bookworm InRelease
+2025/08/06 04:26:20 apt | Hit:2 https://deb.debian.org/debian bookworm-backports InRelease
+2025/08/06 04:26:20 apt | Hit:3 https://deb.debian.org/debian-security bookworm-security InRelease
+2025/08/06 04:26:20 apt | Hit:4 https://deb.debian.org/debian bookworm-updates InRelease
+2025/08/06 04:26:20 apt | Hit:5 https://radxa-repo.github.io/bookworm rockchip-bookworm InRelease
+2025/08/06 04:26:20 apt | Hit:6 https://radxa-repo.github.io/bookworm bookworm InRelease
+2025/08/06 04:26:35 apt | Reading package lists...
+2025/08/06 04:26:36 apt | Reading package lists...
+2025/08/06 04:26:36 apt | Building dependency tree...
+2025/08/06 04:26:36 apt | Reading state information...
+2025/08/06 04:26:37 apt | The following additional packages will be installed:
+2025/08/06 04:26:37 apt |   u-boot-latest
+2025/08/06 04:26:37 apt | The following NEW packages will be installed:
+2025/08/06 04:26:37 apt |   u-boot-latest u-boot-rock-pi-4c
+2025/08/06 04:26:38 apt | 0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+2025/08/06 04:26:38 apt | Need to get 7082 kB of archives.
+2025/08/06 04:26:38 apt | After this operation, 57.2 MB of additional disk space will be used.
+2025/08/06 04:26:38 apt | Get:1 https://radxa-repo.github.io/bookworm bookworm/main arm64 u-boot-latest arm64 2023.10-12-cc60ff40 [7081 kB]
+2025/08/06 04:26:38 apt | Get:2 https://radxa-repo.github.io/bookworm bookworm/main arm64 u-boot-rock-pi-4c all 2023.10-12-b4f0ad0 [1120 B]
+2025/08/06 04:26:41 apt | Fetched 7082 kB in 1s (4881 kB/s)
+2025/08/06 04:26:41 apt | Selecting previously unselected package u-boot-latest.
+2025/08/06 04:26:41 apt | (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 28252 files and directories currently installed.)
+2025/08/06 04:26:41 apt | Preparing to unpack .../u-boot-latest_2023.10-12-cc60ff40_arm64.deb ...
+2025/08/06 04:26:41 apt | Unpacking u-boot-latest (2023.10-12-cc60ff40) ...
+2025/08/06 04:26:43 apt | Selecting previously unselected package u-boot-rock-pi-4c.
+2025/08/06 04:26:43 apt | Preparing to unpack .../u-boot-rock-pi-4c_2023.10-12-b4f0ad0_all.deb ...
+2025/08/06 04:26:43 apt | Unpacking u-boot-rock-pi-4c (2023.10-12-b4f0ad0) ...
+2025/08/06 04:26:43 apt | Setting up u-boot-latest (2023.10-12-cc60ff40) ...
+2025/08/06 04:26:43 apt | Setting up u-boot-rock-pi-4c (2023.10-12-b4f0ad0) ...
+2025/08/06 04:26:44 ==== Apply to disk ====
+2025/08/06 04:26:45 set -e... | Writting to /dev/vdb
+2025/08/06 04:26:45 set -e... | 431+1 records in
+2025/08/06 04:26:45 set -e... | 431+1 records out
+2025/08/06 04:26:45 set -e... | 221180 bytes (221 kB, 216 KiB) copied, 0.00484843 s, 45.6 MB/s
+2025/08/06 04:26:45 set -e... | 2048+0 records in
+2025/08/06 04:26:45 set -e... | 2048+0 records out
+2025/08/06 04:26:45 set -e... | 1048576 bytes (1.0 MB, 1.0 MiB) copied, 0.0227158 s, 46.2 MB/s
+2025/08/06 04:26:45 set -e... | 2048+0 records in
+2025/08/06 04:26:45 set -e... | 2048+0 records out
+2025/08/06 04:26:45 set -e... | 1048576 bytes (1.0 MB, 1.0 MiB) copied, 0.0228062 s, 46.0 MB/s
+2025/08/06 04:26:45 ==== Install Radxa kernel header ====
+2025/08/06 04:26:46 apt | Hit:1 https://deb.debian.org/debian bookworm InRelease
+2025/08/06 04:26:46 apt | Hit:2 https://deb.debian.org/debian bookworm-backports InRelease
+2025/08/06 04:26:46 apt | Hit:3 https://deb.debian.org/debian-security bookworm-security InRelease
+2025/08/06 04:26:46 apt | Hit:4 https://deb.debian.org/debian bookworm-updates InRelease
+2025/08/06 04:26:46 apt | Hit:5 https://radxa-repo.github.io/bookworm rockchip-bookworm InRelease
+2025/08/06 04:26:46 apt | Hit:6 https://radxa-repo.github.io/bookworm bookworm InRelease
+2025/08/06 04:27:01 apt | Reading package lists...
+2025/08/06 04:27:02 apt | Reading package lists...
+2025/08/06 04:27:03 apt | Building dependency tree...
+2025/08/06 04:27:03 apt | Reading state information...
+2025/08/06 04:27:03 apt | The following additional packages will be installed:
+2025/08/06 04:27:03 apt |   linux-headers-6.1.115-3-rk2501
+2025/08/06 04:27:03 apt | The following NEW packages will be installed:
+2025/08/06 04:27:03 apt |   linux-headers-6.1.115-3-rk2501 linux-headers-rock-pi-4c
+2025/08/06 04:27:04 apt | 0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+2025/08/06 04:27:04 apt | Need to get 8555 kB of archives.
+2025/08/06 04:27:04 apt | After this operation, 53.1 MB of additional disk space will be used.
+2025/08/06 04:27:04 apt | Get:1 https://radxa-repo.github.io/bookworm bookworm/main arm64 linux-headers-6.1.115-3-rk2501 arm64 6.1.115-3 [8553 kB]
+2025/08/06 04:27:05 apt | Get:2 https://radxa-repo.github.io/bookworm bookworm/main arm64 linux-headers-rock-pi-4c all 6.1.115-3 [2040 B]
+2025/08/06 04:27:07 apt | Fetched 8555 kB in 2s (5226 kB/s)
+2025/08/06 04:27:08 apt | Selecting previously unselected package linux-headers-6.1.115-3-rk2501.
+2025/08/06 04:27:08 apt | (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 28408 files and directories currently installed.)
+2025/08/06 04:27:08 apt | Preparing to unpack .../linux-headers-6.1.115-3-rk2501_6.1.115-3_arm64.deb ...
+2025/08/06 04:27:08 apt | Unpacking linux-headers-6.1.115-3-rk2501 (6.1.115-3) ...
+2025/08/06 04:27:11 apt | Selecting previously unselected package linux-headers-rock-pi-4c.
+2025/08/06 04:27:11 apt | Preparing to unpack .../linux-headers-rock-pi-4c_6.1.115-3_all.deb ...
+2025/08/06 04:27:11 apt | Unpacking linux-headers-rock-pi-4c (6.1.115-3) ...
+2025/08/06 04:27:11 apt | Setting up linux-headers-6.1.115-3-rk2501 (6.1.115-3) ...
+2025/08/06 04:27:11 apt | Setting up linux-headers-rock-pi-4c (6.1.115-3) ...
+2025/08/06 04:27:12 ==== Install Radxa kernel ====
+2025/08/06 04:27:13 apt | Hit:1 https://radxa-repo.github.io/bookworm rockchip-bookworm InRelease
+2025/08/06 04:27:13 apt | Hit:2 https://deb.debian.org/debian bookworm InRelease
+2025/08/06 04:27:13 apt | Hit:3 https://radxa-repo.github.io/bookworm bookworm InRelease
+2025/08/06 04:27:13 apt | Hit:4 https://deb.debian.org/debian bookworm-backports InRelease
+2025/08/06 04:27:13 apt | Hit:5 https://deb.debian.org/debian-security bookworm-security InRelease
+2025/08/06 04:27:13 apt | Hit:6 https://deb.debian.org/debian bookworm-updates InRelease
+2025/08/06 04:27:29 apt | Reading package lists...
+2025/08/06 04:27:29 apt | Reading package lists...
+2025/08/06 04:27:30 apt | Building dependency tree...
+2025/08/06 04:27:30 apt | Reading state information...
+2025/08/06 04:27:30 apt | The following additional packages will be installed:
+2025/08/06 04:27:30 apt |   linux-image-6.1.115-3-rk2501 radxa-overlays-dkms
+2025/08/06 04:27:30 apt | The following NEW packages will be installed:
+2025/08/06 04:27:30 apt |   linux-image-6.1.115-3-rk2501 linux-image-rock-pi-4c radxa-overlays-dkms
+2025/08/06 04:27:31 apt | 0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+2025/08/06 04:27:31 apt | Need to get 28.0 MB of archives.
+2025/08/06 04:27:31 apt | After this operation, 109 MB of additional disk space will be used.
+2025/08/06 04:27:31 apt | Get:1 https://radxa-repo.github.io/bookworm bookworm/main arm64 linux-image-6.1.115-3-rk2501 arm64 6.1.115-3 [27.9 MB]
+2025/08/06 04:27:34 apt | Get:2 https://radxa-repo.github.io/bookworm bookworm/main arm64 radxa-overlays-dkms all 0.1.28 [78.5 kB]
+2025/08/06 04:27:34 apt | Get:3 https://radxa-repo.github.io/bookworm bookworm/main arm64 linux-image-rock-pi-4c all 6.1.115-3 [2048 B]
+2025/08/06 04:27:37 apt | Fetched 28.0 MB in 4s (7589 kB/s)
+2025/08/06 04:27:37 apt | Selecting previously unselected package linux-image-6.1.115-3-rk2501.
+2025/08/06 04:27:37 apt | (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 39075 files and directories currently installed.)
+2025/08/06 04:27:37 apt | Preparing to unpack .../linux-image-6.1.115-3-rk2501_6.1.115-3_arm64.deb ...
+2025/08/06 04:27:37 apt | Unpacking linux-image-6.1.115-3-rk2501 (6.1.115-3) ...
+2025/08/06 04:27:40 apt | Selecting previously unselected package radxa-overlays-dkms.
+2025/08/06 04:27:40 apt | Preparing to unpack .../radxa-overlays-dkms_0.1.28_all.deb ...
+2025/08/06 04:27:40 apt | Unpacking radxa-overlays-dkms (0.1.28) ...
+2025/08/06 04:27:41 apt | Selecting previously unselected package linux-image-rock-pi-4c.
+2025/08/06 04:27:41 apt | Preparing to unpack .../linux-image-rock-pi-4c_6.1.115-3_all.deb ...
+2025/08/06 04:27:41 apt | Unpacking linux-image-rock-pi-4c (6.1.115-3) ...
+2025/08/06 04:27:41 apt | Setting up linux-image-6.1.115-3-rk2501 (6.1.115-3) ...
+2025/08/06 04:27:41 apt | dkms: running auto installation service for kernel 6.1.115-3-rk2501.
+2025/08/06 04:27:42 apt | Sign command: /lib/modules/6.1.115-3-rk2501/build/scripts/sign-file
+2025/08/06 04:27:42 apt | Binary /lib/modules/6.1.115-3-rk2501/build/scripts/sign-file not found, modules won't be signed
+2025/08/06 04:27:43 apt | 
+2025/08/06 04:27:43 apt | Building module:
+2025/08/06 04:27:45 apt | Cleaning build area...
+2025/08/06 04:28:31 apt | make -j4 KERNELRELEASE=6.1.115-3-rk2501 -C /lib/modules/6.1.115-3-rk2501/build M=/var/lib/dkms/r8125/9.013.02-1/build..................
+2025/08/06 04:28:33 apt | Cleaning build area...
+2025/08/06 04:28:33 apt | 
+2025/08/06 04:28:33 apt | r8125.ko.xz:
+2025/08/06 04:28:33 apt | Running module version sanity check.
+2025/08/06 04:28:34 apt |  - Original module
+2025/08/06 04:28:34 apt |    - No original module exists within this kernel
+2025/08/06 04:28:34 apt |  - Installation
+2025/08/06 04:28:34 apt |    - Installing to /lib/modules/6.1.115-3-rk2501/updates/dkms/
+2025/08/06 04:28:38 apt | depmod....
+2025/08/06 04:28:38 apt | dkms: autoinstall for kernel: 6.1.115-3-rk2501.
+2025/08/06 04:28:38 apt | update-initramfs: Generating /boot/initrd.img-6.1.115-3-rk2501
+2025/08/06 04:30:05 apt | I: The initramfs will attempt to resume from /dev/vda
+2025/08/06 04:30:05 apt | I: Set the RESUME variable to override this.
+2025/08/06 04:30:27 apt | Decompressing /boot/vmlinuz-6.1.115-3-rk2501 ...
+2025/08/06 04:30:28 apt | Rebuilding overlay data folder for '6.1.115-3-rk2501'...
+2025/08/06 04:30:28 apt | Building list of compatible overlays...
+2025/08/06 04:30:29 apt | Installing compatible overlays...
+2025/08/06 04:30:29 apt | Reenable previously enabled overlays...
+2025/08/06 04:30:29 apt | Commiting changes...
+2025/08/06 04:30:29 apt | Overlay data folder has been successfully rebuilt.
+2025/08/06 04:30:29 apt | P: Checking for EXTLINUX directory... found.
+2025/08/06 04:30:29 apt | P: Writing config for vmlinuz-6.1.115-3-rk2501...
+2025/08/06 04:30:30 apt | P: Updating /boot/extlinux/extlinux.conf...
+2025/08/06 04:30:30 apt | Setting up radxa-overlays-dkms (0.1.28) ...
+2025/08/06 04:30:30 apt | Loading new radxa-overlays-0.1.28 DKMS files...
+2025/08/06 04:30:32 apt | It is likely that 6.1.0-31-amd64 belongs to a chroot's host
+2025/08/06 04:30:32 apt | Building for 6.1.115-3-rk2501
+2025/08/06 04:30:33 apt | Building initial module for 6.1.115-3-rk2501
+2025/08/06 04:32:26 apt | Done.
+2025/08/06 04:32:30 apt | 
+2025/08/06 04:32:30 apt | radxa-overlays.ko.xz:
+2025/08/06 04:32:30 apt | Running module version sanity check.
+2025/08/06 04:32:30 apt |  - Original module
+2025/08/06 04:32:30 apt |    - No original module exists within this kernel
+2025/08/06 04:32:30 apt |  - Installation
+2025/08/06 04:32:30 apt |    - Installing to /lib/modules/6.1.115-3-rk2501/updates/dkms/
+2025/08/06 04:32:30 apt | 
+2025/08/06 04:32:30 apt | Running the post_install script:
+2025/08/06 04:32:30 apt | Kernel '6.1.115-3-rk2501' does not support 'allwinner'. Skip.
+2025/08/06 04:32:31 apt | Kernel '6.1.115-3-rk2501' does not support 'amlogic'. Skip.
+2025/08/06 04:32:31 apt | Linking '/var/lib/dkms/radxa-overlays/0.1.28/6.1.115-3-rk2501/aarch64/module/arch/arm64/boot/dts/rockchip/overlays' to '/usr/lib/linux-image-6.1.115-3-rk2501/rockchip/overlays'...
+2025/08/06 04:32:31 apt | Rebuilding overlay data folder for '6.1.115-3-rk2501'...
+2025/08/06 04:32:31 apt | Removing managed overlays...
+2025/08/06 04:32:31 apt | Building list of compatible overlays...
+2025/08/06 04:32:32 apt | Installing compatible overlays...
+2025/08/06 04:32:59 apt | Reenable previously enabled overlays...
+2025/08/06 04:32:59 apt | Commiting changes...
+2025/08/06 04:32:59 apt | Overlay data folder has been successfully rebuilt.
+2025/08/06 04:33:03 apt | depmod....
+2025/08/06 04:33:03 apt | Setting up linux-image-rock-pi-4c (6.1.115-3) ...
+2025/08/06 04:33:04 ==== Product specific setup ====
+2025/08/06 04:33:05 ==== Clean up rootfs ====
+2025/08/06 04:33:05 ==== Clean up rootfs ====
+2025/08/06 04:33:05 apt clean... | 
+2025/08/06 04:33:05 apt clean... | WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+2025/08/06 04:33:05 apt clean... | 
+2025/08/06 04:33:05 ==== Clean up swap device ====
+2025/08/06 04:33:06 ==== Workaround cloud-initramfs-growroot bug ====
+2025/08/06 04:33:06 ==== Rebuild initramfs to not waiting for (now missing) suspend/resume device ====
+2025/08/06 04:33:06 set -e... | update-initramfs: Generating /boot/initrd.img-6.1.115-3-rk2501
+2025/08/06 04:34:56 ==== Recipe done ====
+Partition 3 is root partition.
+e2fsck 1.47.0 (5-Feb-2023)
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+rootfs: 48412/372416 files (0.1% non-contiguous), 422672/1487867 blocks
+610302 of 1487867 blocks are in use.
+e2fsck 1.47.0 (5-Feb-2023)
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+rootfs: 48412/372416 files (0.1% non-contiguous), 422672/1487867 blocks
+resize2fs 1.47.0 (5-Feb-2023)
+Resizing the filesystem on /dev/mapper/loop14p3 to 610302 (4k) blocks.
+The filesystem on /dev/mapper/loop14p3 is now 610302 (4k) blocks long.
+
+Root filesystem has been shrinked to 610302 blocks.
+Root partition has been shrinked to 2847924224.
+Caution: invalid backup GPT header, but valid main header; regenerating
+backup header from main header.
+
+Warning! Error 25 reading partition table for CRC check!
+Warning! One or more CRCs don't match. You should repair the disk!
+Main header: OK
+Backup header: ERROR
+Main partition table: OK
+Backup partition table: ERROR
+
+Image shrunked from 6442450944 to 2847941632.
+rbuild is finished.
+Execution started at 2025-08-05T2124-0700
+Total execution time: 00:13:00
+Build success
+################################################################################################################################
+ Building for: rock-pi-4c xfce - Tue Aug  5 09:37:37 PM PDT 2025
+################################################################################################################################
+latest: Pulling from godebos/debos
+Digest: sha256:6786ba076bc303a6327d65817b4127712ad11b7bca6a4838392207388d2ff878
+Status: Image is up to date for godebos/debos:latest
+docker.io/godebos/debos:latest
+Using debian_bookworm_xfce.tar rootfs.
+2025/08/06 04:37:43 ==== Set up swap ====
+2025/08/06 04:37:44 ==== Enable swap device ====
+2025/08/06 04:37:44 set -e... | mkswap: /dev/vda: warning: wiping old swap signature.
+2025/08/06 04:37:44 set -e... | Setting up swapspace version 1, size = 4 GiB (4294963200 bytes)
+2025/08/06 04:37:44 set -e... | no label, UUID=ad1ea439-32af-4e66-8be7-b454363316a4
+2025/08/06 04:37:44 ==== Set up on-disk layout ====
+2025/08/06 04:37:44 Formatting partition 1 | mkfs.fat: Warning: lowercase labels might not work properly on some systems
+2025/08/06 04:37:44 Formatting partition 1 | WARNING: Number of clusters for 32 bit FAT is less then suggested minimum.
+2025/08/06 04:37:44 Formatting partition 1 | mkfs.fat 4.2 (2021-01-31)
+2025/08/06 04:37:45 Formatting partition 2 | mkfs.fat: Warning: lowercase labels might not work properly on some systems
+2025/08/06 04:37:45 Formatting partition 2 | mkfs.fat 4.2 (2021-01-31)
+2025/08/06 04:37:45 Formatting partition 3 | mke2fs 1.47.0 (5-Feb-2023)
+2025/08/06 04:37:45 Formatting partition 3 | Discarding device blocks:       0/1487867               done                            
+2025/08/06 04:37:45 Formatting partition 3 | Creating filesystem with 1487867 4k blocks and 372416 inodes
+2025/08/06 04:37:45 Formatting partition 3 | Filesystem UUID: f3502083-0c56-42c6-ab8e-606b32f64dba
+2025/08/06 04:37:45 Formatting partition 3 | Superblock backups stored on blocks: 
+2025/08/06 04:37:45 Formatting partition 3 | 	32768, 98304, 163840, 229376, 294912, 819200, 884736
+2025/08/06 04:37:45 Formatting partition 3 | 
+2025/08/06 04:37:45 Formatting partition 3 | Allocating group tables:  0/46     done                            
+2025/08/06 04:37:45 Formatting partition 3 | Writing inode tables:  0/46     done                            
+2025/08/06 04:37:45 Formatting partition 3 | Creating journal (16384 blocks): done
+2025/08/06 04:37:45 Formatting partition 3 | Writing superblocks and filesystem accounting information:  0/46     done
+2025/08/06 04:37:45 Formatting partition 3 | 
+2025/08/06 04:37:45 ==== Unpack rootfs ====
+2025/08/06 04:38:07 ==== Deploying filesystem onto image ====
+2025/08/06 04:38:11 Setting up /etc/fstab
+2025/08/06 04:38:11 ==== Install task-rock-pi-4c package ====
+2025/08/06 04:38:12 apt | Get:1 https://radxa-repo.github.io/bookworm bookworm InRelease [14.8 kB]
+2025/08/06 04:38:13 apt | Get:2 https://deb.debian.org/debian bookworm InRelease [151 kB]
+2025/08/06 04:38:13 apt | Get:3 https://download.vscodium.com/debs vscodium InRelease
+2025/08/06 04:38:13 apt | Get:4 https://deb.debian.org/debian bookworm-backports InRelease [59.4 kB]
+2025/08/06 04:38:13 apt | Get:5 https://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+2025/08/06 04:38:13 apt | Get:6 https://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+2025/08/06 04:38:14 apt | Get:7 https://radxa-repo.github.io/bookworm bookworm/main all Packages [38.0 kB]
+2025/08/06 04:38:14 apt | Get:8 https://radxa-repo.github.io/bookworm bookworm/main arm64 Packages [50.9 kB]
+2025/08/06 04:38:15 apt | Get:9 https://download.vscodium.com/debs vscodium/main arm64 Packages [1218 B]
+2025/08/06 04:38:17 apt | Get:10 https://deb.debian.org/debian bookworm/main arm64 Packages [8693 kB]
+2025/08/06 04:38:19 apt | Get:11 https://deb.debian.org/debian bookworm/main Translation-en [6109 kB]
+2025/08/06 04:38:19 apt | Get:12 https://deb.debian.org/debian bookworm/contrib arm64 Packages [45.7 kB]
+2025/08/06 04:38:19 apt | Get:13 https://deb.debian.org/debian bookworm/contrib Translation-en [48.4 kB]
+2025/08/06 04:38:20 apt | Get:14 https://deb.debian.org/debian bookworm/non-free arm64 Packages [75.8 kB]
+2025/08/06 04:38:20 apt | Get:15 https://deb.debian.org/debian bookworm/non-free Translation-en [68.1 kB]
+2025/08/06 04:38:20 apt | Get:16 https://deb.debian.org/debian bookworm/non-free-firmware arm64 Packages [5832 B]
+2025/08/06 04:38:20 apt | Get:17 https://deb.debian.org/debian bookworm/non-free-firmware Translation-en [20.9 kB]
+2025/08/06 04:38:20 apt | Get:18 https://deb.debian.org/debian bookworm-backports/main arm64 Packages [303 kB]
+2025/08/06 04:38:20 apt | Get:19 https://deb.debian.org/debian bookworm-backports/main Translation-en [257 kB]
+2025/08/06 04:38:20 apt | Get:20 https://deb.debian.org/debian bookworm-backports/contrib arm64 Packages [5176 B]
+2025/08/06 04:38:20 apt | Get:21 https://deb.debian.org/debian bookworm-backports/contrib Translation-en [5864 B]
+2025/08/06 04:38:20 apt | Get:22 https://deb.debian.org/debian bookworm-backports/non-free arm64 Packages [12.6 kB]
+2025/08/06 04:38:20 apt | Get:23 https://deb.debian.org/debian bookworm-backports/non-free Translation-en [8460 B]
+2025/08/06 04:38:20 apt | Get:24 https://deb.debian.org/debian bookworm-backports/non-free-firmware arm64 Packages [3832 B]
+2025/08/06 04:38:20 apt | Get:25 https://deb.debian.org/debian bookworm-backports/non-free-firmware Translation-en [2860 B]
+2025/08/06 04:38:22 apt | Get:26 https://deb.debian.org/debian-security bookworm-security/main arm64 Packages [268 kB]
+2025/08/06 04:38:22 apt | Get:27 https://deb.debian.org/debian-security bookworm-security/main Translation-en [163 kB]
+2025/08/06 04:38:22 apt | Get:28 https://deb.debian.org/debian-security bookworm-security/contrib arm64 Packages [508 B]
+2025/08/06 04:38:22 apt | Get:29 https://deb.debian.org/debian-security bookworm-security/contrib Translation-en [652 B]
+2025/08/06 04:38:22 apt | Get:30 https://deb.debian.org/debian-security bookworm-security/non-free-firmware Translation-en [472 B]
+2025/08/06 04:38:24 apt | Get:31 https://deb.debian.org/debian bookworm-updates/main arm64 Packages [6936 B]
+2025/08/06 04:38:24 apt | Get:32 https://deb.debian.org/debian bookworm-updates/main Translation-en [5448 B]
+2025/08/06 04:38:26 apt | Fetched 16.5 MB in 14s (1161 kB/s)
+2025/08/06 04:38:31 apt | Reading package lists...
+2025/08/06 04:38:31 apt | Reading package lists...
+2025/08/06 04:38:32 apt | Building dependency tree...
+2025/08/06 04:38:32 apt | Reading state information...
+2025/08/06 04:38:32 apt | The following additional packages will be installed:
+2025/08/06 04:38:32 apt |   bzip2 dkms dpkg-dev gcc gcc-12 libasan8 libatomic1 libcc1-0 libdpkg-perl
+2025/08/06 04:38:32 apt |   libgcc-12-dev libhwasan0 libitm1 liblsan0 libtsan2 libubsan1 make patch
+2025/08/06 04:38:32 apt |   r8125-dkms radxa-system-config-bookworm radxa-system-config-common
+2025/08/06 04:38:32 apt |   radxa-system-config-kernel-cmdline-ttyfiq0 radxa-system-config-r8125-dkms
+2025/08/06 04:38:32 apt | Suggested packages:
+2025/08/06 04:38:32 apt |   bzip2-doc menu debian-keyring gcc-multilib manpages-dev autoconf automake
+2025/08/06 04:38:32 apt |   libtool flex bison gdb gcc-doc gcc-12-doc gcc-12-locales gnupg | sq | sqop
+2025/08/06 04:38:32 apt |   | pgpainless-cli bzr make-doc ed diffutils-doc
+2025/08/06 04:38:32 apt | Recommended packages:
+2025/08/06 04:38:32 apt |   fakeroot linux-headers-generic | linux-headers-686-pae | linux-headers-amd64
+2025/08/06 04:38:32 apt |   | linux-headers build-essential gnupg | sq | sqop | pgpainless-cli
+2025/08/06 04:38:32 apt |   libalgorithm-merge-perl libc6-dev | libc-dev libc6-dev
+2025/08/06 04:38:32 apt |   libfile-fcntllock-perl radxa-desktop-branding task-rk3399
+2025/08/06 04:38:33 apt | The following NEW packages will be installed:
+2025/08/06 04:38:33 apt |   bzip2 dkms dpkg-dev gcc gcc-12 libasan8 libatomic1 libcc1-0 libdpkg-perl
+2025/08/06 04:38:33 apt |   libgcc-12-dev libhwasan0 libitm1 liblsan0 libtsan2 libubsan1 make patch
+2025/08/06 04:38:33 apt |   r8125-dkms radxa-system-config-bookworm radxa-system-config-common
+2025/08/06 04:38:33 apt |   radxa-system-config-kernel-cmdline-ttyfiq0 radxa-system-config-r8125-dkms
+2025/08/06 04:38:33 apt |   task-rock-pi-4c
+2025/08/06 04:38:33 apt | 0 upgraded, 23 newly installed, 0 to remove and 2 not upgraded.
+2025/08/06 04:38:33 apt | Need to get 27.1 MB of archives.
+2025/08/06 04:38:33 apt | After this operation, 104 MB of additional disk space will be used.
+2025/08/06 04:38:33 apt | Get:1 https://deb.debian.org/debian bookworm/main arm64 libcc1-0 arm64 12.2.0-14+deb12u1 [37.7 kB]
+2025/08/06 04:38:33 apt | Get:2 https://deb.debian.org/debian bookworm/main arm64 libitm1 arm64 12.2.0-14+deb12u1 [24.0 kB]
+2025/08/06 04:38:33 apt | Get:3 https://deb.debian.org/debian bookworm/main arm64 libatomic1 arm64 12.2.0-14+deb12u1 [9568 B]
+2025/08/06 04:38:33 apt | Get:4 https://deb.debian.org/debian bookworm/main arm64 libasan8 arm64 12.2.0-14+deb12u1 [2096 kB]
+2025/08/06 04:38:33 apt | Get:5 https://radxa-repo.github.io/bookworm bookworm/main arm64 r8125-dkms all 9.013.02-1-3 [106 kB]
+2025/08/06 04:38:33 apt | Get:6 https://radxa-repo.github.io/bookworm bookworm/main arm64 radxa-system-config-common all 0.6.17 [10.3 kB]
+2025/08/06 04:38:34 apt | Get:7 https://deb.debian.org/debian bookworm/main arm64 liblsan0 arm64 12.2.0-14+deb12u1 [926 kB]
+2025/08/06 04:38:34 apt | Get:8 https://radxa-repo.github.io/bookworm bookworm/main arm64 radxa-system-config-bookworm all 0.6.17 [11.8 kB]
+2025/08/06 04:38:34 apt | Get:9 https://deb.debian.org/debian bookworm/main arm64 libtsan2 arm64 12.2.0-14+deb12u1 [2178 kB]
+2025/08/06 04:38:34 apt | Get:10 https://radxa-repo.github.io/bookworm bookworm/main arm64 radxa-system-config-kernel-cmdline-ttyfiq0 all 0.6.17 [6824 B]
+2025/08/06 04:38:34 apt | Get:11 https://radxa-repo.github.io/bookworm bookworm/main arm64 radxa-system-config-r8125-dkms all 0.6.17 [6820 B]
+2025/08/06 04:38:34 apt | Get:12 https://deb.debian.org/debian bookworm/main arm64 libubsan1 arm64 12.2.0-14+deb12u1 [862 kB]
+2025/08/06 04:38:34 apt | Get:13 https://radxa-repo.github.io/bookworm bookworm/main arm64 task-rock-pi-4c all 0.4.32 [5288 B]
+2025/08/06 04:38:34 apt | Get:14 https://deb.debian.org/debian bookworm/main arm64 libhwasan0 arm64 12.2.0-14+deb12u1 [999 kB]
+2025/08/06 04:38:34 apt | Get:15 https://deb.debian.org/debian bookworm/main arm64 libgcc-12-dev arm64 12.2.0-14+deb12u1 [956 kB]
+2025/08/06 04:38:34 apt | Get:16 https://deb.debian.org/debian bookworm/main arm64 gcc-12 arm64 12.2.0-14+deb12u1 [16.3 MB]
+2025/08/06 04:38:36 apt | Get:17 https://deb.debian.org/debian bookworm/main arm64 gcc arm64 4:12.2.0-3 [5244 B]
+2025/08/06 04:38:36 apt | Get:18 https://deb.debian.org/debian bookworm/main arm64 libdpkg-perl all 1.21.22 [603 kB]
+2025/08/06 04:38:36 apt | Get:19 https://deb.debian.org/debian bookworm/main arm64 bzip2 arm64 1.0.8-5+b1 [48.9 kB]
+2025/08/06 04:38:36 apt | Get:20 https://deb.debian.org/debian bookworm/main arm64 patch arm64 2.7.6-7 [121 kB]
+2025/08/06 04:38:36 apt | Get:21 https://deb.debian.org/debian bookworm/main arm64 make arm64 4.3-4.1 [391 kB]
+2025/08/06 04:38:36 apt | Get:22 https://deb.debian.org/debian bookworm/main arm64 dpkg-dev all 1.21.22 [1353 kB]
+2025/08/06 04:38:36 apt | Get:23 https://deb.debian.org/debian bookworm/main arm64 dkms all 3.0.10-8+deb12u1 [48.7 kB]
+2025/08/06 04:38:39 apt | Fetched 27.1 MB in 3s (8427 kB/s)
+2025/08/06 04:38:39 apt | Selecting previously unselected package libcc1-0:arm64.
+2025/08/06 04:38:39 apt | (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 62042 files and directories currently installed.)
+2025/08/06 04:38:39 apt | Preparing to unpack .../00-libcc1-0_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:38:39 apt | Unpacking libcc1-0:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:38:39 apt | Selecting previously unselected package libitm1:arm64.
+2025/08/06 04:38:39 apt | Preparing to unpack .../01-libitm1_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:38:39 apt | Unpacking libitm1:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:38:40 apt | Selecting previously unselected package libatomic1:arm64.
+2025/08/06 04:38:40 apt | Preparing to unpack .../02-libatomic1_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:38:40 apt | Unpacking libatomic1:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:38:40 apt | Selecting previously unselected package libasan8:arm64.
+2025/08/06 04:38:40 apt | Preparing to unpack .../03-libasan8_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:38:40 apt | Unpacking libasan8:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:38:41 apt | Selecting previously unselected package liblsan0:arm64.
+2025/08/06 04:38:41 apt | Preparing to unpack .../04-liblsan0_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:38:41 apt | Unpacking liblsan0:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:38:41 apt | Selecting previously unselected package libtsan2:arm64.
+2025/08/06 04:38:41 apt | Preparing to unpack .../05-libtsan2_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:38:41 apt | Unpacking libtsan2:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:38:42 apt | Selecting previously unselected package libubsan1:arm64.
+2025/08/06 04:38:42 apt | Preparing to unpack .../06-libubsan1_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:38:42 apt | Unpacking libubsan1:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:38:43 apt | Selecting previously unselected package libhwasan0:arm64.
+2025/08/06 04:38:43 apt | Preparing to unpack .../07-libhwasan0_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:38:43 apt | Unpacking libhwasan0:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:38:43 apt | Selecting previously unselected package libgcc-12-dev:arm64.
+2025/08/06 04:38:43 apt | Preparing to unpack .../08-libgcc-12-dev_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:38:43 apt | Unpacking libgcc-12-dev:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:38:44 apt | Selecting previously unselected package gcc-12.
+2025/08/06 04:38:44 apt | Preparing to unpack .../09-gcc-12_12.2.0-14+deb12u1_arm64.deb ...
+2025/08/06 04:38:44 apt | Unpacking gcc-12 (12.2.0-14+deb12u1) ...
+2025/08/06 04:38:47 apt | Selecting previously unselected package gcc.
+2025/08/06 04:38:47 apt | Preparing to unpack .../10-gcc_4%3a12.2.0-3_arm64.deb ...
+2025/08/06 04:38:47 apt | Unpacking gcc (4:12.2.0-3) ...
+2025/08/06 04:38:47 apt | Selecting previously unselected package libdpkg-perl.
+2025/08/06 04:38:47 apt | Preparing to unpack .../11-libdpkg-perl_1.21.22_all.deb ...
+2025/08/06 04:38:47 apt | Unpacking libdpkg-perl (1.21.22) ...
+2025/08/06 04:38:48 apt | Selecting previously unselected package bzip2.
+2025/08/06 04:38:48 apt | Preparing to unpack .../12-bzip2_1.0.8-5+b1_arm64.deb ...
+2025/08/06 04:38:48 apt | Unpacking bzip2 (1.0.8-5+b1) ...
+2025/08/06 04:38:48 apt | Selecting previously unselected package patch.
+2025/08/06 04:38:48 apt | Preparing to unpack .../13-patch_2.7.6-7_arm64.deb ...
+2025/08/06 04:38:48 apt | Unpacking patch (2.7.6-7) ...
+2025/08/06 04:38:48 apt | Selecting previously unselected package make.
+2025/08/06 04:38:48 apt | Preparing to unpack .../14-make_4.3-4.1_arm64.deb ...
+2025/08/06 04:38:48 apt | Unpacking make (4.3-4.1) ...
+2025/08/06 04:38:48 apt | Selecting previously unselected package dpkg-dev.
+2025/08/06 04:38:48 apt | Preparing to unpack .../15-dpkg-dev_1.21.22_all.deb ...
+2025/08/06 04:38:48 apt | Unpacking dpkg-dev (1.21.22) ...
+2025/08/06 04:38:49 apt | Selecting previously unselected package dkms.
+2025/08/06 04:38:49 apt | Preparing to unpack .../16-dkms_3.0.10-8+deb12u1_all.deb ...
+2025/08/06 04:38:51 apt | Unpacking dkms (3.0.10-8+deb12u1) ...
+2025/08/06 04:38:52 apt | Selecting previously unselected package r8125-dkms.
+2025/08/06 04:38:52 apt | Preparing to unpack .../17-r8125-dkms_9.013.02-1-3_all.deb ...
+2025/08/06 04:38:52 apt | Unpacking r8125-dkms (9.013.02-1-3) ...
+2025/08/06 04:38:52 apt | Selecting previously unselected package radxa-system-config-common.
+2025/08/06 04:38:52 apt | Preparing to unpack .../18-radxa-system-config-common_0.6.17_all.deb ...
+2025/08/06 04:38:52 apt | Unpacking radxa-system-config-common (0.6.17) ...
+2025/08/06 04:38:52 apt | Selecting previously unselected package radxa-system-config-bookworm.
+2025/08/06 04:38:52 apt | Preparing to unpack .../19-radxa-system-config-bookworm_0.6.17_all.deb ...
+2025/08/06 04:38:52 apt | Adding 'diversion of /usr/share/desktop-base/kf5-settings/kdeglobals to /usr/share/desktop-base/kf5-settings/kdeglobals.bak by radxa-system-config-bookworm'
+2025/08/06 04:38:52 apt | Unpacking radxa-system-config-bookworm (0.6.17) ...
+2025/08/06 04:38:52 apt | Selecting previously unselected package radxa-system-config-kernel-cmdline-ttyfiq0.
+2025/08/06 04:38:52 apt | Preparing to unpack .../20-radxa-system-config-kernel-cmdline-ttyfiq0_0.6.17_all.deb ...
+2025/08/06 04:38:52 apt | Unpacking radxa-system-config-kernel-cmdline-ttyfiq0 (0.6.17) ...
+2025/08/06 04:38:53 apt | Selecting previously unselected package radxa-system-config-r8125-dkms.
+2025/08/06 04:38:53 apt | Preparing to unpack .../21-radxa-system-config-r8125-dkms_0.6.17_all.deb ...
+2025/08/06 04:38:53 apt | Unpacking radxa-system-config-r8125-dkms (0.6.17) ...
+2025/08/06 04:38:53 apt | Selecting previously unselected package task-rock-pi-4c.
+2025/08/06 04:38:53 apt | Preparing to unpack .../22-task-rock-pi-4c_0.4.32_all.deb ...
+2025/08/06 04:38:53 apt | Unpacking task-rock-pi-4c (0.4.32) ...
+2025/08/06 04:38:53 apt | Setting up radxa-system-config-common (0.6.17) ...
+2025/08/06 04:38:54 apt | Setting up bzip2 (1.0.8-5+b1) ...
+2025/08/06 04:38:54 apt | Setting up make (4.3-4.1) ...
+2025/08/06 04:38:54 apt | Setting up libatomic1:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:38:54 apt | Setting up patch (2.7.6-7) ...
+2025/08/06 04:38:54 apt | Setting up libdpkg-perl (1.21.22) ...
+2025/08/06 04:38:54 apt | Setting up libubsan1:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:38:54 apt | Setting up libhwasan0:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:38:54 apt | Setting up libasan8:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:38:54 apt | Setting up libtsan2:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:38:54 apt | Setting up radxa-system-config-kernel-cmdline-ttyfiq0 (0.6.17) ...
+2025/08/06 04:38:54 apt | P: Checking for EXTLINUX directory... not found.
+2025/08/06 04:38:54 apt | P: Creating EXTLINUX directory... done: /boot/extlinux
+2025/08/06 04:38:54 apt | P: Updating /boot/extlinux/extlinux.conf...
+2025/08/06 04:38:54 apt | Setting up libcc1-0:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:38:54 apt | Setting up liblsan0:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:38:54 apt | Setting up libitm1:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:38:54 apt | Setting up dpkg-dev (1.21.22) ...
+2025/08/06 04:38:54 apt | Setting up libgcc-12-dev:arm64 (12.2.0-14+deb12u1) ...
+2025/08/06 04:38:54 apt | Setting up gcc-12 (12.2.0-14+deb12u1) ...
+2025/08/06 04:38:54 apt | Setting up gcc (4:12.2.0-3) ...
+2025/08/06 04:38:55 apt | Setting up dkms (3.0.10-8+deb12u1) ...
+2025/08/06 04:38:57 apt | Setting up r8125-dkms (9.013.02-1-3) ...
+2025/08/06 04:38:58 apt | Loading new r8125-9.013.02-1 DKMS files...
+2025/08/06 04:38:59 apt | It is likely that 6.1.0-31-amd64 belongs to a chroot's host
+2025/08/06 04:38:59 apt | Building for 
+2025/08/06 04:38:59 apt | Setting up radxa-system-config-r8125-dkms (0.6.17) ...
+2025/08/06 04:38:59 apt | Processing triggers for u-boot-menu (4.2.2) ...
+2025/08/06 04:38:59 apt | P: Checking for EXTLINUX directory... found.
+2025/08/06 04:39:00 apt | Processing triggers for desktop-file-utils (0.26-1) ...
+2025/08/06 04:39:00 apt | Processing triggers for initramfs-tools (0.142+deb12u3) ...
+2025/08/06 04:39:01 apt | Processing triggers for libc-bin (2.36-9+deb12u10) ...
+2025/08/06 04:39:01 apt | Processing triggers for man-db (2.11.2-2) ...
+2025/08/06 04:39:04 apt | Setting up radxa-system-config-bookworm (0.6.17) ...
+2025/08/06 04:39:04 apt | Processing triggers for initramfs-tools (0.142+deb12u3) ...
+2025/08/06 04:39:05 apt | Setting up task-rock-pi-4c (0.4.32) ...
+2025/08/06 04:39:06 ==== Add rockchip-bookworm Repo ====
+2025/08/06 04:39:06 ==== Installl keyring from package ====
+2025/08/06 04:39:06 ==== Add repo ====
+2025/08/06 04:39:06 set -e... |   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+2025/08/06 04:39:06 set -e... |                                  Dload  Upload   Total   Spent    Left  Speed
+2025/08/06 04:39:07 set -e... |   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  2342  100  2342    0     0   3220      0 --:--:-- --:--:-- --:--:--  3252
+2025/08/06 04:39:07 ==== Install task-rock-pi-4c with vendor packages ====
+2025/08/06 04:39:08 dpkg --remove --force-depends task-rock-... | (Reading database ... 62877 files and directories currently installed.)
+2025/08/06 04:39:08 dpkg --remove --force-depends task-rock-... | Removing task-rock-pi-4c (0.4.32) ...
+2025/08/06 04:39:09 dpkg --remove --force-depends task-rock-... | Hit:1 https://deb.debian.org/debian bookworm InRelease
+2025/08/06 04:39:09 dpkg --remove --force-depends task-rock-... | Hit:2 https://deb.debian.org/debian bookworm-backports InRelease
+2025/08/06 04:39:09 dpkg --remove --force-depends task-rock-... | Hit:3 https://deb.debian.org/debian-security bookworm-security InRelease
+2025/08/06 04:39:09 dpkg --remove --force-depends task-rock-... | Hit:4 https://deb.debian.org/debian bookworm-updates InRelease
+2025/08/06 04:39:09 dpkg --remove --force-depends task-rock-... | Hit:5 https://download.vscodium.com/debs vscodium InRelease
+2025/08/06 04:39:09 dpkg --remove --force-depends task-rock-... | Get:6 https://radxa-repo.github.io/bookworm rockchip-bookworm InRelease [14.8 kB]
+2025/08/06 04:39:09 dpkg --remove --force-depends task-rock-... | Hit:7 https://radxa-repo.github.io/bookworm bookworm InRelease
+2025/08/06 04:39:19 dpkg --remove --force-depends task-rock-... | Get:8 https://radxa-repo.github.io/bookworm rockchip-bookworm/main arm64 Packages [387 B]
+2025/08/06 04:39:19 dpkg --remove --force-depends task-rock-... | Get:9 https://radxa-repo.github.io/bookworm rockchip-bookworm/main all Packages [387 B]
+2025/08/06 04:39:20 dpkg --remove --force-depends task-rock-... | Fetched 15.6 kB in 12s (1330 B/s)
+2025/08/06 04:39:24 dpkg --remove --force-depends task-rock-... | Reading package lists...
+2025/08/06 04:39:25 dpkg --remove --force-depends task-rock-... | Reading package lists...
+2025/08/06 04:39:26 dpkg --remove --force-depends task-rock-... | Building dependency tree...
+2025/08/06 04:39:26 dpkg --remove --force-depends task-rock-... | Reading state information...
+2025/08/06 04:39:26 dpkg --remove --force-depends task-rock-... | Recommended packages:
+2025/08/06 04:39:26 dpkg --remove --force-depends task-rock-... |   task-rk3399
+2025/08/06 04:39:26 dpkg --remove --force-depends task-rock-... | The following NEW packages will be installed:
+2025/08/06 04:39:26 dpkg --remove --force-depends task-rock-... |   task-rock-pi-4c
+2025/08/06 04:39:27 dpkg --remove --force-depends task-rock-... | 0 upgraded, 1 newly installed, 0 to remove and 2 not upgraded.
+2025/08/06 04:39:27 dpkg --remove --force-depends task-rock-... | Need to get 5288 B of archives.
+2025/08/06 04:39:27 dpkg --remove --force-depends task-rock-... | After this operation, 12.3 kB of additional disk space will be used.
+2025/08/06 04:39:27 dpkg --remove --force-depends task-rock-... | Get:1 https://radxa-repo.github.io/bookworm bookworm/main arm64 task-rock-pi-4c all 0.4.32 [5288 B]
+2025/08/06 04:39:29 dpkg --remove --force-depends task-rock-... | dpkg-preconfigure: unable to re-open stdin: No such file or directory
+2025/08/06 04:39:29 dpkg --remove --force-depends task-rock-... | Fetched 5288 B in 0s (11.1 kB/s)
+2025/08/06 04:39:29 dpkg --remove --force-depends task-rock-... | Selecting previously unselected package task-rock-pi-4c.
+2025/08/06 04:39:29 dpkg --remove --force-depends task-rock-... | (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 62874 files and directories currently installed.)
+2025/08/06 04:39:29 dpkg --remove --force-depends task-rock-... | Preparing to unpack .../task-rock-pi-4c_0.4.32_all.deb ...
+2025/08/06 04:39:29 dpkg --remove --force-depends task-rock-... | Unpacking task-rock-pi-4c (0.4.32) ...
+2025/08/06 04:39:30 dpkg --remove --force-depends task-rock-... | Setting up task-rock-pi-4c (0.4.32) ...
+2025/08/06 04:39:31 ==== Upgrade stale rootfs ====
+2025/08/06 04:39:32 set -e... | Hit:1 https://download.vscodium.com/debs vscodium InRelease
+2025/08/06 04:39:32 set -e... | Hit:2 https://deb.debian.org/debian bookworm InRelease
+2025/08/06 04:39:32 set -e... | Hit:3 https://deb.debian.org/debian bookworm-backports InRelease
+2025/08/06 04:39:32 set -e... | Hit:4 https://radxa-repo.github.io/bookworm rockchip-bookworm InRelease
+2025/08/06 04:39:32 set -e... | Hit:5 https://radxa-repo.github.io/bookworm bookworm InRelease
+2025/08/06 04:39:32 set -e... | Hit:6 https://deb.debian.org/debian-security bookworm-security InRelease
+2025/08/06 04:39:32 set -e... | Hit:7 https://deb.debian.org/debian bookworm-updates InRelease
+2025/08/06 04:39:47 set -e... | Reading package lists...
+2025/08/06 04:39:48 set -e... | Reading package lists...
+2025/08/06 04:39:49 set -e... | Building dependency tree...
+2025/08/06 04:39:49 set -e... | Reading state information...
+2025/08/06 04:39:49 set -e... | Calculating upgrade...
+2025/08/06 04:39:50 set -e... | The following packages will be upgraded:
+2025/08/06 04:39:50 set -e... |   libgnutls30 radxa-archive-keyring
+2025/08/06 04:39:50 set -e... | 2 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+2025/08/06 04:39:50 set -e... | Need to get 1320 kB of archives.
+2025/08/06 04:39:50 set -e... | After this operation, 2048 B disk space will be freed.
+2025/08/06 04:39:50 set -e... | Get:1 https://deb.debian.org/debian-security bookworm-security/main arm64 libgnutls30 arm64 3.7.9-2+deb12u5 [1314 kB]
+2025/08/06 04:39:50 set -e... | Get:2 https://radxa-repo.github.io/bookworm bookworm/main arm64 radxa-archive-keyring all 0.2.0 [6740 B]
+2025/08/06 04:39:52 set -e... | apt-listchanges: Reading changelogs...
+2025/08/06 04:39:53 set -e... | dpkg-preconfigure: unable to re-open stdin: No such file or directory
+2025/08/06 04:39:54 set -e... | Fetched 1320 kB in 1s (2105 kB/s)
+2025/08/06 04:39:54 set -e... | (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 62877 files and directories currently installed.)
+2025/08/06 04:39:54 set -e... | Preparing to unpack .../libgnutls30_3.7.9-2+deb12u5_arm64.deb ...
+2025/08/06 04:39:54 set -e... | Unpacking libgnutls30:arm64 (3.7.9-2+deb12u5) over (3.7.9-2+deb12u4) ...
+2025/08/06 04:39:54 set -e... | Setting up libgnutls30:arm64 (3.7.9-2+deb12u5) ...
+2025/08/06 04:39:55 set -e... | (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 62877 files and directories currently installed.)
+2025/08/06 04:39:55 set -e... | Preparing to unpack .../radxa-archive-keyring_0.2.0_all.deb ...
+2025/08/06 04:39:55 set -e... | Unpacking radxa-archive-keyring (0.2.0) over (0.2.0) ...
+2025/08/06 04:39:55 set -e... | Setting up radxa-archive-keyring (0.2.0) ...
+2025/08/06 04:39:55 set -e... | Processing triggers for libc-bin (2.36-9+deb12u10) ...
+2025/08/06 04:39:57 set -e... | Reading package lists...
+2025/08/06 04:39:57 set -e... | Building dependency tree...
+2025/08/06 04:39:57 set -e... | Reading state information...
+2025/08/06 04:39:58 set -e... | Calculating upgrade...
+2025/08/06 04:39:58 set -e... | 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+2025/08/06 04:39:59 set -e... | Reading package lists...
+2025/08/06 04:39:59 set -e... | Building dependency tree...
+2025/08/06 04:39:59 set -e... | Reading state information...
+2025/08/06 04:40:00 set -e... | 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+2025/08/06 04:40:00 ==== Install Radxa firmware ====
+2025/08/06 04:40:01 apt | Hit:1 https://radxa-repo.github.io/bookworm rockchip-bookworm InRelease
+2025/08/06 04:40:01 apt | Hit:2 https://deb.debian.org/debian bookworm InRelease
+2025/08/06 04:40:01 apt | Hit:3 https://deb.debian.org/debian bookworm-backports InRelease
+2025/08/06 04:40:01 apt | Hit:4 https://deb.debian.org/debian-security bookworm-security InRelease
+2025/08/06 04:40:01 apt | Hit:5 https://deb.debian.org/debian bookworm-updates InRelease
+2025/08/06 04:40:01 apt | Hit:6 https://radxa-repo.github.io/bookworm bookworm InRelease
+2025/08/06 04:40:01 apt | Hit:7 https://download.vscodium.com/debs vscodium InRelease
+2025/08/06 04:40:17 apt | Reading package lists...
+2025/08/06 04:40:17 apt | Reading package lists...
+2025/08/06 04:40:18 apt | Building dependency tree...
+2025/08/06 04:40:18 apt | Reading state information...
+2025/08/06 04:40:19 apt | The following additional packages will be installed:
+2025/08/06 04:40:19 apt |   u-boot-latest
+2025/08/06 04:40:19 apt | The following NEW packages will be installed:
+2025/08/06 04:40:19 apt |   u-boot-latest u-boot-rock-pi-4c
+2025/08/06 04:40:20 apt | 0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+2025/08/06 04:40:20 apt | Need to get 7082 kB of archives.
+2025/08/06 04:40:20 apt | After this operation, 57.2 MB of additional disk space will be used.
+2025/08/06 04:40:20 apt | Get:1 https://radxa-repo.github.io/bookworm bookworm/main arm64 u-boot-latest arm64 2023.10-12-cc60ff40 [7081 kB]
+2025/08/06 04:40:20 apt | Get:2 https://radxa-repo.github.io/bookworm bookworm/main arm64 u-boot-rock-pi-4c all 2023.10-12-b4f0ad0 [1120 B]
+2025/08/06 04:40:23 apt | Fetched 7082 kB in 2s (4618 kB/s)
+2025/08/06 04:40:23 apt | Selecting previously unselected package u-boot-latest.
+2025/08/06 04:40:23 apt | (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 62876 files and directories currently installed.)
+2025/08/06 04:40:23 apt | Preparing to unpack .../u-boot-latest_2023.10-12-cc60ff40_arm64.deb ...
+2025/08/06 04:40:23 apt | Unpacking u-boot-latest (2023.10-12-cc60ff40) ...
+2025/08/06 04:40:26 apt | Selecting previously unselected package u-boot-rock-pi-4c.
+2025/08/06 04:40:26 apt | Preparing to unpack .../u-boot-rock-pi-4c_2023.10-12-b4f0ad0_all.deb ...
+2025/08/06 04:40:26 apt | Unpacking u-boot-rock-pi-4c (2023.10-12-b4f0ad0) ...
+2025/08/06 04:40:26 apt | Setting up u-boot-latest (2023.10-12-cc60ff40) ...
+2025/08/06 04:40:26 apt | Setting up u-boot-rock-pi-4c (2023.10-12-b4f0ad0) ...
+2025/08/06 04:40:27 ==== Apply to disk ====
+2025/08/06 04:40:27 set -e... | Writting to /dev/vdb
+2025/08/06 04:40:27 set -e... | 431+1 records in
+2025/08/06 04:40:27 set -e... | 431+1 records out
+2025/08/06 04:40:27 set -e... | 221180 bytes (221 kB, 216 KiB) copied, 0.00472679 s, 46.8 MB/s
+2025/08/06 04:40:27 set -e... | 2048+0 records in
+2025/08/06 04:40:27 set -e... | 2048+0 records out
+2025/08/06 04:40:27 set -e... | 1048576 bytes (1.0 MB, 1.0 MiB) copied, 0.0216496 s, 48.4 MB/s
+2025/08/06 04:40:27 set -e... | 2048+0 records in
+2025/08/06 04:40:27 set -e... | 2048+0 records out
+2025/08/06 04:40:27 set -e... | 1048576 bytes (1.0 MB, 1.0 MiB) copied, 0.0216912 s, 48.3 MB/s
+2025/08/06 04:40:27 ==== Install Radxa kernel header ====
+2025/08/06 04:40:29 apt | Hit:1 https://download.vscodium.com/debs vscodium InRelease
+2025/08/06 04:40:29 apt | Hit:2 https://deb.debian.org/debian bookworm InRelease
+2025/08/06 04:40:29 apt | Hit:3 https://deb.debian.org/debian bookworm-backports InRelease
+2025/08/06 04:40:29 apt | Hit:4 https://deb.debian.org/debian-security bookworm-security InRelease
+2025/08/06 04:40:29 apt | Hit:5 https://radxa-repo.github.io/bookworm rockchip-bookworm InRelease
+2025/08/06 04:40:29 apt | Hit:6 https://radxa-repo.github.io/bookworm bookworm InRelease
+2025/08/06 04:40:29 apt | Hit:7 https://deb.debian.org/debian bookworm-updates InRelease
+2025/08/06 04:40:44 apt | Reading package lists...
+2025/08/06 04:40:45 apt | Reading package lists...
+2025/08/06 04:40:46 apt | Building dependency tree...
+2025/08/06 04:40:46 apt | Reading state information...
+2025/08/06 04:40:46 apt | The following additional packages will be installed:
+2025/08/06 04:40:46 apt |   linux-headers-6.1.115-3-rk2501
+2025/08/06 04:40:46 apt | The following NEW packages will be installed:
+2025/08/06 04:40:46 apt |   linux-headers-6.1.115-3-rk2501 linux-headers-rock-pi-4c
+2025/08/06 04:40:47 apt | 0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+2025/08/06 04:40:47 apt | Need to get 8555 kB of archives.
+2025/08/06 04:40:47 apt | After this operation, 53.1 MB of additional disk space will be used.
+2025/08/06 04:40:47 apt | Get:1 https://radxa-repo.github.io/bookworm bookworm/main arm64 linux-headers-6.1.115-3-rk2501 arm64 6.1.115-3 [8553 kB]
+2025/08/06 04:40:48 apt | Get:2 https://radxa-repo.github.io/bookworm bookworm/main arm64 linux-headers-rock-pi-4c all 6.1.115-3 [2040 B]
+2025/08/06 04:40:51 apt | Fetched 8555 kB in 2s (4616 kB/s)
+2025/08/06 04:40:51 apt | Selecting previously unselected package linux-headers-6.1.115-3-rk2501.
+2025/08/06 04:40:51 apt | (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 63032 files and directories currently installed.)
+2025/08/06 04:40:51 apt | Preparing to unpack .../linux-headers-6.1.115-3-rk2501_6.1.115-3_arm64.deb ...
+2025/08/06 04:40:51 apt | Unpacking linux-headers-6.1.115-3-rk2501 (6.1.115-3) ...
+2025/08/06 04:40:55 apt | Selecting previously unselected package linux-headers-rock-pi-4c.
+2025/08/06 04:40:55 apt | Preparing to unpack .../linux-headers-rock-pi-4c_6.1.115-3_all.deb ...
+2025/08/06 04:40:55 apt | Unpacking linux-headers-rock-pi-4c (6.1.115-3) ...
+2025/08/06 04:40:55 apt | Setting up linux-headers-6.1.115-3-rk2501 (6.1.115-3) ...
+2025/08/06 04:40:55 apt | Setting up linux-headers-rock-pi-4c (6.1.115-3) ...
+2025/08/06 04:40:56 ==== Install Radxa kernel ====
+2025/08/06 04:40:57 apt | Hit:1 https://radxa-repo.github.io/bookworm rockchip-bookworm InRelease
+2025/08/06 04:40:57 apt | Hit:2 https://deb.debian.org/debian bookworm InRelease
+2025/08/06 04:40:57 apt | Hit:3 https://deb.debian.org/debian bookworm-backports InRelease
+2025/08/06 04:40:57 apt | Hit:4 https://deb.debian.org/debian-security bookworm-security InRelease
+2025/08/06 04:40:57 apt | Hit:5 https://radxa-repo.github.io/bookworm bookworm InRelease
+2025/08/06 04:40:57 apt | Hit:6 https://download.vscodium.com/debs vscodium InRelease
+2025/08/06 04:40:57 apt | Hit:7 https://deb.debian.org/debian bookworm-updates InRelease
+2025/08/06 04:41:13 apt | Reading package lists...
+2025/08/06 04:41:14 apt | Reading package lists...
+2025/08/06 04:41:14 apt | Building dependency tree...
+2025/08/06 04:41:14 apt | Reading state information...
+2025/08/06 04:41:15 apt | The following additional packages will be installed:
+2025/08/06 04:41:15 apt |   linux-image-6.1.115-3-rk2501 radxa-overlays-dkms
+2025/08/06 04:41:15 apt | The following NEW packages will be installed:
+2025/08/06 04:41:15 apt |   linux-image-6.1.115-3-rk2501 linux-image-rock-pi-4c radxa-overlays-dkms
+2025/08/06 04:41:16 apt | 0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+2025/08/06 04:41:16 apt | Need to get 28.0 MB of archives.
+2025/08/06 04:41:16 apt | After this operation, 109 MB of additional disk space will be used.
+2025/08/06 04:41:16 apt | Get:1 https://radxa-repo.github.io/bookworm bookworm/main arm64 linux-image-6.1.115-3-rk2501 arm64 6.1.115-3 [27.9 MB]
+2025/08/06 04:41:19 apt | Get:2 https://radxa-repo.github.io/bookworm bookworm/main arm64 radxa-overlays-dkms all 0.1.28 [78.5 kB]
+2025/08/06 04:41:19 apt | Get:3 https://radxa-repo.github.io/bookworm bookworm/main arm64 linux-image-rock-pi-4c all 6.1.115-3 [2048 B]
+2025/08/06 04:41:21 apt | Fetched 28.0 MB in 4s (7236 kB/s)
+2025/08/06 04:41:22 apt | Selecting previously unselected package linux-image-6.1.115-3-rk2501.
+2025/08/06 04:41:22 apt | (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 73699 files and directories currently installed.)
+2025/08/06 04:41:22 apt | Preparing to unpack .../linux-image-6.1.115-3-rk2501_6.1.115-3_arm64.deb ...
+2025/08/06 04:41:22 apt | Unpacking linux-image-6.1.115-3-rk2501 (6.1.115-3) ...
+2025/08/06 04:41:25 apt | Selecting previously unselected package radxa-overlays-dkms.
+2025/08/06 04:41:25 apt | Preparing to unpack .../radxa-overlays-dkms_0.1.28_all.deb ...
+2025/08/06 04:41:25 apt | Unpacking radxa-overlays-dkms (0.1.28) ...
+2025/08/06 04:41:25 apt | Selecting previously unselected package linux-image-rock-pi-4c.
+2025/08/06 04:41:25 apt | Preparing to unpack .../linux-image-rock-pi-4c_6.1.115-3_all.deb ...
+2025/08/06 04:41:25 apt | Unpacking linux-image-rock-pi-4c (6.1.115-3) ...
+2025/08/06 04:41:26 apt | Setting up linux-image-6.1.115-3-rk2501 (6.1.115-3) ...
+2025/08/06 04:41:26 apt | dkms: running auto installation service for kernel 6.1.115-3-rk2501.
+2025/08/06 04:41:27 apt | Sign command: /lib/modules/6.1.115-3-rk2501/build/scripts/sign-file
+2025/08/06 04:41:27 apt | Binary /lib/modules/6.1.115-3-rk2501/build/scripts/sign-file not found, modules won't be signed
+2025/08/06 04:41:28 apt | 
+2025/08/06 04:41:28 apt | Building module:
+2025/08/06 04:41:29 apt | Cleaning build area...
+2025/08/06 04:42:16 apt | make -j4 KERNELRELEASE=6.1.115-3-rk2501 -C /lib/modules/6.1.115-3-rk2501/build M=/var/lib/dkms/r8125/9.013.02-1/build..................
+2025/08/06 04:42:18 apt | Cleaning build area...
+2025/08/06 04:42:18 apt | 
+2025/08/06 04:42:18 apt | r8125.ko.xz:
+2025/08/06 04:42:18 apt | Running module version sanity check.
+2025/08/06 04:42:18 apt |  - Original module
+2025/08/06 04:42:18 apt |    - No original module exists within this kernel
+2025/08/06 04:42:18 apt |  - Installation
+2025/08/06 04:42:18 apt |    - Installing to /lib/modules/6.1.115-3-rk2501/updates/dkms/
+2025/08/06 04:42:23 apt | depmod....
+2025/08/06 04:42:23 apt | dkms: autoinstall for kernel: 6.1.115-3-rk2501.
+2025/08/06 04:42:23 apt | update-initramfs: Generating /boot/initrd.img-6.1.115-3-rk2501
+2025/08/06 04:44:22 apt | I: The initramfs will attempt to resume from /dev/vda
+2025/08/06 04:44:22 apt | I: Set the RESUME variable to override this.
+2025/08/06 04:44:47 apt | Decompressing /boot/vmlinuz-6.1.115-3-rk2501 ...
+2025/08/06 04:44:48 apt | Rebuilding overlay data folder for '6.1.115-3-rk2501'...
+2025/08/06 04:44:48 apt | Building list of compatible overlays...
+2025/08/06 04:44:49 apt | Installing compatible overlays...
+2025/08/06 04:44:49 apt | Reenable previously enabled overlays...
+2025/08/06 04:44:49 apt | Commiting changes...
+2025/08/06 04:44:49 apt | Overlay data folder has been successfully rebuilt.
+2025/08/06 04:44:49 apt | P: Checking for EXTLINUX directory... found.
+2025/08/06 04:44:50 apt | P: Writing config for vmlinuz-6.1.115-3-rk2501...
+2025/08/06 04:44:50 apt | P: Updating /boot/extlinux/extlinux.conf...
+2025/08/06 04:44:50 apt | Setting up radxa-overlays-dkms (0.1.28) ...
+2025/08/06 04:44:51 apt | Loading new radxa-overlays-0.1.28 DKMS files...
+2025/08/06 04:44:52 apt | It is likely that 6.1.0-31-amd64 belongs to a chroot's host
+2025/08/06 04:44:52 apt | Building for 6.1.115-3-rk2501
+2025/08/06 04:44:53 apt | Building initial module for 6.1.115-3-rk2501
+2025/08/06 04:46:46 apt | Done.
+2025/08/06 04:46:50 apt | 
+2025/08/06 04:46:50 apt | radxa-overlays.ko.xz:
+2025/08/06 04:46:50 apt | Running module version sanity check.
+2025/08/06 04:46:50 apt |  - Original module
+2025/08/06 04:46:50 apt |    - No original module exists within this kernel
+2025/08/06 04:46:50 apt |  - Installation
+2025/08/06 04:46:50 apt |    - Installing to /lib/modules/6.1.115-3-rk2501/updates/dkms/
+2025/08/06 04:46:50 apt | 
+2025/08/06 04:46:50 apt | Running the post_install script:
+2025/08/06 04:46:50 apt | Kernel '6.1.115-3-rk2501' does not support 'allwinner'. Skip.
+2025/08/06 04:46:50 apt | Kernel '6.1.115-3-rk2501' does not support 'amlogic'. Skip.
+2025/08/06 04:46:50 apt | Linking '/var/lib/dkms/radxa-overlays/0.1.28/6.1.115-3-rk2501/aarch64/module/arch/arm64/boot/dts/rockchip/overlays' to '/usr/lib/linux-image-6.1.115-3-rk2501/rockchip/overlays'...
+2025/08/06 04:46:51 apt | Rebuilding overlay data folder for '6.1.115-3-rk2501'...
+2025/08/06 04:46:51 apt | Removing managed overlays...
+2025/08/06 04:46:51 apt | Building list of compatible overlays...
+2025/08/06 04:46:51 apt | Installing compatible overlays...
+2025/08/06 04:47:18 apt | Reenable previously enabled overlays...
+2025/08/06 04:47:18 apt | Commiting changes...
+2025/08/06 04:47:18 apt | Overlay data folder has been successfully rebuilt.
+2025/08/06 04:47:23 apt | depmod....
+2025/08/06 04:47:23 apt | Setting up linux-image-rock-pi-4c (6.1.115-3) ...
+2025/08/06 04:47:24 ==== Product specific setup ====
+2025/08/06 04:47:25 ==== Clean up rootfs ====
+2025/08/06 04:47:25 ==== Clean up rootfs ====
+2025/08/06 04:47:25 apt clean... | 
+2025/08/06 04:47:25 apt clean... | WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+2025/08/06 04:47:25 apt clean... | 
+2025/08/06 04:47:25 ==== Clean up swap device ====
+2025/08/06 04:47:25 ==== Workaround cloud-initramfs-growroot bug ====
+2025/08/06 04:47:25 ==== Rebuild initramfs to not waiting for (now missing) suspend/resume device ====
+2025/08/06 04:47:26 set -e... | update-initramfs: Generating /boot/initrd.img-6.1.115-3-rk2501
+2025/08/06 04:49:50 ==== Recipe done ====
+Partition 3 is root partition.
+e2fsck 1.47.0 (5-Feb-2023)
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+rootfs: 86810/372416 files (0.1% non-contiguous), 904661/1487867 blocks
+1059707 of 1487867 blocks are in use.
+e2fsck 1.47.0 (5-Feb-2023)
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+rootfs: 86810/372416 files (0.1% non-contiguous), 904661/1487867 blocks
+resize2fs 1.47.0 (5-Feb-2023)
+Resizing the filesystem on /dev/mapper/loop14p3 to 1059707 (4k) blocks.
+The filesystem on /dev/mapper/loop14p3 is now 1059707 (4k) blocks long.
+
+Root filesystem has been shrinked to 1059707 blocks.
+Root partition has been shrinked to 4688687104.
+Caution: invalid backup GPT header, but valid main header; regenerating
+backup header from main header.
+
+Warning! Error 25 reading partition table for CRC check!
+Warning! One or more CRCs don't match. You should repair the disk!
+Main header: OK
+Backup header: ERROR
+Main partition table: OK
+Backup partition table: ERROR
+
+Image shrunked from 6442450944 to 4688704512.
+rbuild is finished.
+Execution started at 2025-08-05T2137-0700
+Total execution time: 00:18:39
+Build success
+################################################################################################################################
+ All builds completed successfully - Tue Aug  5 09:56:16 PM PDT 2025
+################################################################################################################################
